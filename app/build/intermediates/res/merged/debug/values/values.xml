@@ -34,6 +34,7 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#90A4AE</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="common_action_bar_splitter">#d2d2d2</color>

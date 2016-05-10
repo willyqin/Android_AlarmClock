@@ -12,6 +12,13 @@
     tools:context="com.example.han.myalarmclock.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="暂时没有闹钟"
+        android:id="@+id/empty_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
