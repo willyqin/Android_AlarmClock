@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:alarm_switch="http://schemas.android.com/apk/res-auto"
 
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -38,13 +39,18 @@
             <Switch
                 android:id="@+id/alarm_switch"
                 android:layout_marginTop="15dp"
+                android:thumbTint="#0099ee"
+                android:thumbTintMode="add"
                 android:switchMinWidth="60dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:theme="@style/Color1SwitchStyle"
                 android:layout_alignParentRight="true"/>
             <TextView
                 android:id="@+id/time_until_text_view"
+                android:textSize="12sp"
+                android:layout_marginLeft="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"

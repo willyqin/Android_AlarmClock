@@ -112,6 +112,10 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alarm_property_activity.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\layout\\alarm_property_activity.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_alert_dialog_material.xml"
     },

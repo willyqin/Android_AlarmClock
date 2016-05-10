@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:2:1-28:1
 		INJECTED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AndroidCode\MyAlarmClock\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:24.0.0-alpha1] D:\AndroidCode\MyAlarmClock\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.1] D:\AndroidCode\MyAlarmClock\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
@@ -54,13 +54,17 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.han.myalarmclock.AlarmPropertyActivity
+ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:21:9-58
+	android:name
+		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:21:19-56
 meta-data#com.google.android.gms.version
-ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:23:9-25:69
+ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:24:9-26:69
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] D:\AndroidCode\MyAlarmClock\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:25:13-66
+		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:26:13-66
 	android:name
-		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:24:13-58
+		ADDED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml:25:13-58
 uses-sdk
 INJECTED from D:\AndroidCode\MyAlarmClock\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\AndroidCode\MyAlarmClock\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43

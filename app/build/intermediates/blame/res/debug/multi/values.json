@@ -1787,14 +1787,7 @@
                     "endOffset": 31758
                 },
                 "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 90,
-                        "endColumn": 56,
-                        "endOffset": 142
-                    }
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\values\\dimens.xml"
                 }
             },
             {
@@ -4934,9 +4927,30 @@
                     "startLine": 1262,
                     "startColumn": 4,
                     "startOffset": 101277,
-                    "endLine": 1299,
+                    "endLine": 1264,
                     "endColumn": 12,
-                    "endOffset": 104161
+                    "endOffset": 101380
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 788,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1265,
+                    "startColumn": 4,
+                    "startOffset": 101385,
+                    "endLine": 1302,
+                    "endColumn": 12,
+                    "endOffset": 104269
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -4944,12 +4958,12 @@
             },
             {
                 "to": {
-                    "startLine": 1300,
+                    "startLine": 1303,
                     "startColumn": 4,
-                    "startOffset": 104166,
-                    "endLine": 1338,
+                    "startOffset": 104274,
+                    "endLine": 1341,
                     "endColumn": 12,
-                    "endOffset": 107191
+                    "endOffset": 107299
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -4957,12 +4971,12 @@
             },
             {
                 "to": {
-                    "startLine": 1339,
+                    "startLine": 1342,
                     "startColumn": 4,
-                    "startOffset": 107196,
-                    "endLine": 1348,
+                    "startOffset": 107304,
+                    "endLine": 1351,
                     "endColumn": 12,
-                    "endOffset": 107831
+                    "endOffset": 107939
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -4970,12 +4984,12 @@
             },
             {
                 "to": {
-                    "startLine": 1349,
+                    "startLine": 1352,
                     "startColumn": 4,
-                    "startOffset": 107836,
-                    "endLine": 1357,
+                    "startOffset": 107944,
+                    "endLine": 1360,
                     "endColumn": 12,
-                    "endOffset": 108455
+                    "endOffset": 108563
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -4983,12 +4997,12 @@
             },
             {
                 "to": {
-                    "startLine": 1358,
+                    "startLine": 1361,
                     "startColumn": 4,
-                    "startOffset": 108460,
-                    "endLine": 1359,
+                    "startOffset": 108568,
+                    "endLine": 1362,
                     "endColumn": 12,
-                    "endOffset": 108568
+                    "endOffset": 108676
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -4996,12 +5010,12 @@
             },
             {
                 "to": {
-                    "startLine": 1360,
+                    "startLine": 1363,
                     "startColumn": 4,
-                    "startOffset": 108573,
-                    "endLine": 1363,
+                    "startOffset": 108681,
+                    "endLine": 1366,
                     "endColumn": 12,
-                    "endOffset": 108797
+                    "endOffset": 108905
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5009,25 +5023,12 @@
             },
             {
                 "to": {
-                    "startLine": 1364,
+                    "startLine": 1367,
                     "startColumn": 4,
-                    "startOffset": 108802,
-                    "endLine": 1367,
-                    "endColumn": 12,
-                    "endOffset": 109135
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1368,
-                    "startColumn": 4,
-                    "startOffset": 109140,
+                    "startOffset": 108910,
                     "endLine": 1370,
                     "endColumn": 12,
-                    "endOffset": 109295
+                    "endOffset": 109243
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5037,10 +5038,10 @@
                 "to": {
                     "startLine": 1371,
                     "startColumn": 4,
-                    "startOffset": 109300,
+                    "startOffset": 109248,
                     "endLine": 1373,
                     "endColumn": 12,
-                    "endOffset": 109447
+                    "endOffset": 109403
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5050,10 +5051,10 @@
                 "to": {
                     "startLine": 1374,
                     "startColumn": 4,
-                    "startOffset": 109452,
+                    "startOffset": 109408,
                     "endLine": 1376,
                     "endColumn": 12,
-                    "endOffset": 109618
+                    "endOffset": 109555
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5063,10 +5064,10 @@
                 "to": {
                     "startLine": 1377,
                     "startColumn": 4,
-                    "startOffset": 109623,
+                    "startOffset": 109560,
                     "endLine": 1379,
                     "endColumn": 12,
-                    "endOffset": 109785
+                    "endOffset": 109726
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5076,10 +5077,10 @@
                 "to": {
                     "startLine": 1380,
                     "startColumn": 4,
-                    "startOffset": 109790,
-                    "endLine": 1383,
+                    "startOffset": 109731,
+                    "endLine": 1382,
                     "endColumn": 12,
-                    "endOffset": 110028
+                    "endOffset": 109893
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5087,12 +5088,12 @@
             },
             {
                 "to": {
-                    "startLine": 1384,
+                    "startLine": 1383,
                     "startColumn": 4,
-                    "startOffset": 110033,
+                    "startOffset": 109898,
                     "endLine": 1386,
                     "endColumn": 12,
-                    "endOffset": 110198
+                    "endOffset": 110136
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5102,10 +5103,10 @@
                 "to": {
                     "startLine": 1387,
                     "startColumn": 4,
-                    "startOffset": 110203,
+                    "startOffset": 110141,
                     "endLine": 1389,
                     "endColumn": 12,
-                    "endOffset": 110371
+                    "endOffset": 110306
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5115,10 +5116,10 @@
                 "to": {
                     "startLine": 1390,
                     "startColumn": 4,
-                    "startOffset": 110376,
+                    "startOffset": 110311,
                     "endLine": 1392,
                     "endColumn": 12,
-                    "endOffset": 110542
+                    "endOffset": 110479
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5128,10 +5129,10 @@
                 "to": {
                     "startLine": 1393,
                     "startColumn": 4,
-                    "startOffset": 110547,
-                    "endLine": 1396,
+                    "startOffset": 110484,
+                    "endLine": 1395,
                     "endColumn": 12,
-                    "endOffset": 110816
+                    "endOffset": 110650
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5139,12 +5140,12 @@
             },
             {
                 "to": {
-                    "startLine": 1397,
+                    "startLine": 1396,
                     "startColumn": 4,
-                    "startOffset": 110821,
+                    "startOffset": 110655,
                     "endLine": 1399,
                     "endColumn": 12,
-                    "endOffset": 111015
+                    "endOffset": 110924
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5154,10 +5155,10 @@
                 "to": {
                     "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 111020,
+                    "startOffset": 110929,
                     "endLine": 1402,
                     "endColumn": 12,
-                    "endOffset": 111262
+                    "endOffset": 111123
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5167,33 +5168,10 @@
                 "to": {
                     "startLine": 1403,
                     "startColumn": 4,
-                    "startOffset": 111267,
-                    "endColumn": 83,
-                    "endOffset": 111346
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1404,
-                    "startColumn": 4,
-                    "startOffset": 111351,
-                    "endColumn": 95,
-                    "endOffset": 111442
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1405,
-                    "startColumn": 4,
-                    "startOffset": 111447,
-                    "endColumn": 95,
-                    "endOffset": 111538
+                    "startOffset": 111128,
+                    "endLine": 1405,
+                    "endColumn": 12,
+                    "endOffset": 111370
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5203,9 +5181,9 @@
                 "to": {
                     "startLine": 1406,
                     "startColumn": 4,
-                    "startOffset": 111543,
-                    "endColumn": 97,
-                    "endOffset": 111636
+                    "startOffset": 111375,
+                    "endColumn": 83,
+                    "endOffset": 111454
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5215,9 +5193,9 @@
                 "to": {
                     "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 111641,
-                    "endColumn": 99,
-                    "endOffset": 111736
+                    "startOffset": 111459,
+                    "endColumn": 95,
+                    "endOffset": 111550
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5227,9 +5205,9 @@
                 "to": {
                     "startLine": 1408,
                     "startColumn": 4,
-                    "startOffset": 111741,
-                    "endColumn": 101,
-                    "endOffset": 111838
+                    "startOffset": 111555,
+                    "endColumn": 95,
+                    "endOffset": 111646
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5239,9 +5217,9 @@
                 "to": {
                     "startLine": 1409,
                     "startColumn": 4,
-                    "startOffset": 111843,
-                    "endColumn": 101,
-                    "endOffset": 111940
+                    "startOffset": 111651,
+                    "endColumn": 97,
+                    "endOffset": 111744
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5251,9 +5229,9 @@
                 "to": {
                     "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 111945,
-                    "endColumn": 101,
-                    "endOffset": 112042
+                    "startOffset": 111749,
+                    "endColumn": 99,
+                    "endOffset": 111844
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5263,9 +5241,9 @@
                 "to": {
                     "startLine": 1411,
                     "startColumn": 4,
-                    "startOffset": 112047,
+                    "startOffset": 111849,
                     "endColumn": 101,
-                    "endOffset": 112144
+                    "endOffset": 111946
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5275,9 +5253,9 @@
                 "to": {
                     "startLine": 1412,
                     "startColumn": 4,
-                    "startOffset": 112149,
+                    "startOffset": 111951,
                     "endColumn": 101,
-                    "endOffset": 112246
+                    "endOffset": 112048
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5287,9 +5265,9 @@
                 "to": {
                     "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 112251,
-                    "endColumn": 99,
-                    "endOffset": 112346
+                    "startOffset": 112053,
+                    "endColumn": 101,
+                    "endOffset": 112150
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5299,9 +5277,9 @@
                 "to": {
                     "startLine": 1414,
                     "startColumn": 4,
-                    "startOffset": 112351,
-                    "endColumn": 95,
-                    "endOffset": 112442
+                    "startOffset": 112155,
+                    "endColumn": 101,
+                    "endOffset": 112252
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5311,9 +5289,9 @@
                 "to": {
                     "startLine": 1415,
                     "startColumn": 4,
-                    "startOffset": 112447,
-                    "endColumn": 111,
-                    "endOffset": 112554
+                    "startOffset": 112257,
+                    "endColumn": 101,
+                    "endOffset": 112354
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5323,9 +5301,9 @@
                 "to": {
                     "startLine": 1416,
                     "startColumn": 4,
-                    "startOffset": 112559,
-                    "endColumn": 128,
-                    "endOffset": 112683
+                    "startOffset": 112359,
+                    "endColumn": 99,
+                    "endOffset": 112454
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5335,9 +5313,9 @@
                 "to": {
                     "startLine": 1417,
                     "startColumn": 4,
-                    "startOffset": 112688,
-                    "endColumn": 122,
-                    "endOffset": 112806
+                    "startOffset": 112459,
+                    "endColumn": 95,
+                    "endOffset": 112550
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5347,10 +5325,21 @@
                 "to": {
                     "startLine": 1418,
                     "startColumn": 4,
-                    "startOffset": 112811,
-                    "endLine": 1419,
-                    "endColumn": 12,
-                    "endOffset": 112960
+                    "startOffset": 112555,
+                    "endColumn": 111,
+                    "endOffset": 112662
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1419,
+                    "startColumn": 4,
+                    "startOffset": 112667,
+                    "endColumn": 128,
+                    "endOffset": 112791
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5360,10 +5349,9 @@
                 "to": {
                     "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 112965,
-                    "endLine": 1421,
-                    "endColumn": 12,
-                    "endOffset": 113114
+                    "startOffset": 112796,
+                    "endColumn": 122,
+                    "endOffset": 112914
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5371,11 +5359,12 @@
             },
             {
                 "to": {
-                    "startLine": 1422,
+                    "startLine": 1421,
                     "startColumn": 4,
-                    "startOffset": 113119,
-                    "endColumn": 97,
-                    "endOffset": 113212
+                    "startOffset": 112919,
+                    "endLine": 1422,
+                    "endColumn": 12,
+                    "endOffset": 113068
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5385,21 +5374,10 @@
                 "to": {
                     "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 113217,
-                    "endColumn": 113,
-                    "endOffset": 113326
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1424,
-                    "startColumn": 4,
-                    "startOffset": 113331,
-                    "endColumn": 93,
-                    "endOffset": 113420
+                    "startOffset": 113073,
+                    "endLine": 1424,
+                    "endColumn": 12,
+                    "endOffset": 113222
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5409,10 +5387,21 @@
                 "to": {
                     "startLine": 1425,
                     "startColumn": 4,
-                    "startOffset": 113425,
-                    "endLine": 1426,
-                    "endColumn": 12,
-                    "endOffset": 113560
+                    "startOffset": 113227,
+                    "endColumn": 97,
+                    "endOffset": 113320
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1426,
+                    "startColumn": 4,
+                    "startOffset": 113325,
+                    "endColumn": 113,
+                    "endOffset": 113434
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5422,10 +5411,9 @@
                 "to": {
                     "startLine": 1427,
                     "startColumn": 4,
-                    "startOffset": 113565,
-                    "endLine": 1428,
-                    "endColumn": 12,
-                    "endOffset": 113694
+                    "startOffset": 113439,
+                    "endColumn": 93,
+                    "endOffset": 113528
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5433,11 +5421,12 @@
             },
             {
                 "to": {
-                    "startLine": 1429,
+                    "startLine": 1428,
                     "startColumn": 4,
-                    "startOffset": 113699,
-                    "endColumn": 95,
-                    "endOffset": 113790
+                    "startOffset": 113533,
+                    "endLine": 1429,
+                    "endColumn": 12,
+                    "endOffset": 113668
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5447,21 +5436,10 @@
                 "to": {
                     "startLine": 1430,
                     "startColumn": 4,
-                    "startOffset": 113795,
-                    "endColumn": 111,
-                    "endOffset": 113902
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1431,
-                    "startColumn": 4,
-                    "startOffset": 113907,
-                    "endColumn": 99,
-                    "endOffset": 114002
+                    "startOffset": 113673,
+                    "endLine": 1431,
+                    "endColumn": 12,
+                    "endOffset": 113802
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5471,9 +5449,9 @@
                 "to": {
                     "startLine": 1432,
                     "startColumn": 4,
-                    "startOffset": 114007,
-                    "endColumn": 115,
-                    "endOffset": 114118
+                    "startOffset": 113807,
+                    "endColumn": 95,
+                    "endOffset": 113898
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5483,9 +5461,9 @@
                 "to": {
                     "startLine": 1433,
                     "startColumn": 4,
-                    "startOffset": 114123,
-                    "endColumn": 95,
-                    "endOffset": 114214
+                    "startOffset": 113903,
+                    "endColumn": 111,
+                    "endOffset": 114010
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5495,9 +5473,9 @@
                 "to": {
                     "startLine": 1434,
                     "startColumn": 4,
-                    "startOffset": 114219,
-                    "endColumn": 111,
-                    "endOffset": 114326
+                    "startOffset": 114015,
+                    "endColumn": 99,
+                    "endOffset": 114110
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5507,10 +5485,21 @@
                 "to": {
                     "startLine": 1435,
                     "startColumn": 4,
-                    "startOffset": 114331,
-                    "endLine": 1436,
-                    "endColumn": 12,
-                    "endOffset": 114466
+                    "startOffset": 114115,
+                    "endColumn": 115,
+                    "endOffset": 114226
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1436,
+                    "startColumn": 4,
+                    "startOffset": 114231,
+                    "endColumn": 95,
+                    "endOffset": 114322
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5520,10 +5509,9 @@
                 "to": {
                     "startLine": 1437,
                     "startColumn": 4,
-                    "startOffset": 114471,
-                    "endLine": 1438,
-                    "endColumn": 12,
-                    "endOffset": 114614
+                    "startOffset": 114327,
+                    "endColumn": 111,
+                    "endOffset": 114434
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5531,12 +5519,12 @@
             },
             {
                 "to": {
-                    "startLine": 1439,
+                    "startLine": 1438,
                     "startColumn": 4,
-                    "startOffset": 114619,
-                    "endLine": 1440,
+                    "startOffset": 114439,
+                    "endLine": 1439,
                     "endColumn": 12,
-                    "endOffset": 114778
+                    "endOffset": 114574
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5544,12 +5532,12 @@
             },
             {
                 "to": {
-                    "startLine": 1441,
+                    "startLine": 1440,
                     "startColumn": 4,
-                    "startOffset": 114783,
-                    "endLine": 1442,
+                    "startOffset": 114579,
+                    "endLine": 1441,
                     "endColumn": 12,
-                    "endOffset": 114920
+                    "endOffset": 114722
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5557,12 +5545,12 @@
             },
             {
                 "to": {
-                    "startLine": 1443,
+                    "startLine": 1442,
                     "startColumn": 4,
-                    "startOffset": 114925,
-                    "endLine": 1444,
+                    "startOffset": 114727,
+                    "endLine": 1443,
                     "endColumn": 12,
-                    "endOffset": 115078
+                    "endOffset": 114886
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5570,12 +5558,12 @@
             },
             {
                 "to": {
-                    "startLine": 1445,
+                    "startLine": 1444,
                     "startColumn": 4,
-                    "startOffset": 115083,
-                    "endLine": 1446,
+                    "startOffset": 114891,
+                    "endLine": 1445,
                     "endColumn": 12,
-                    "endOffset": 115228
+                    "endOffset": 115028
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5583,11 +5571,12 @@
             },
             {
                 "to": {
-                    "startLine": 1447,
+                    "startLine": 1446,
                     "startColumn": 4,
-                    "startOffset": 115233,
-                    "endColumn": 140,
-                    "endOffset": 115369
+                    "startOffset": 115033,
+                    "endLine": 1447,
+                    "endColumn": 12,
+                    "endOffset": 115186
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5597,10 +5586,10 @@
                 "to": {
                     "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 115374,
+                    "startOffset": 115191,
                     "endLine": 1449,
                     "endColumn": 12,
-                    "endOffset": 115513
+                    "endOffset": 115336
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5610,9 +5599,9 @@
                 "to": {
                     "startLine": 1450,
                     "startColumn": 4,
-                    "startOffset": 115518,
-                    "endColumn": 134,
-                    "endOffset": 115648
+                    "startOffset": 115341,
+                    "endColumn": 140,
+                    "endOffset": 115477
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5622,10 +5611,10 @@
                 "to": {
                     "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 115653,
+                    "startOffset": 115482,
                     "endLine": 1452,
                     "endColumn": 12,
-                    "endOffset": 115784
+                    "endOffset": 115621
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5635,10 +5624,9 @@
                 "to": {
                     "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 115789,
-                    "endLine": 1454,
-                    "endColumn": 12,
-                    "endOffset": 115926
+                    "startOffset": 115626,
+                    "endColumn": 134,
+                    "endOffset": 115756
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5646,12 +5634,12 @@
             },
             {
                 "to": {
-                    "startLine": 1455,
+                    "startLine": 1454,
                     "startColumn": 4,
-                    "startOffset": 115931,
-                    "endLine": 1456,
+                    "startOffset": 115761,
+                    "endLine": 1455,
                     "endColumn": 12,
-                    "endOffset": 116068
+                    "endOffset": 115892
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5659,11 +5647,12 @@
             },
             {
                 "to": {
-                    "startLine": 1457,
+                    "startLine": 1456,
                     "startColumn": 4,
-                    "startOffset": 116073,
-                    "endColumn": 111,
-                    "endOffset": 116180
+                    "startOffset": 115897,
+                    "endLine": 1457,
+                    "endColumn": 12,
+                    "endOffset": 116034
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5673,9 +5662,10 @@
                 "to": {
                     "startLine": 1458,
                     "startColumn": 4,
-                    "startOffset": 116185,
-                    "endColumn": 139,
-                    "endOffset": 116320
+                    "startOffset": 116039,
+                    "endLine": 1459,
+                    "endColumn": 12,
+                    "endOffset": 116176
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5683,25 +5673,36 @@
             },
             {
                 "to": {
-                    "startLine": 1459,
+                    "startLine": 1460,
                     "startColumn": 4,
-                    "startOffset": 116325,
-                    "endLine": 1461,
-                    "endColumn": 12,
-                    "endOffset": 116521
+                    "startOffset": 116181,
+                    "endColumn": 111,
+                    "endOffset": 116288
                 },
                 "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1461,
+                    "startColumn": 4,
+                    "startOffset": 116293,
+                    "endColumn": 139,
+                    "endOffset": 116428
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 1462,
                     "startColumn": 4,
-                    "startOffset": 116526,
+                    "startOffset": 116433,
                     "endLine": 1464,
                     "endColumn": 12,
-                    "endOffset": 116688
+                    "endOffset": 116629
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -5711,10 +5712,10 @@
                 "to": {
                     "startLine": 1465,
                     "startColumn": 4,
-                    "startOffset": 116693,
+                    "startOffset": 116634,
                     "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 116863
+                    "endOffset": 116796
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -5724,10 +5725,10 @@
                 "to": {
                     "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 116868,
+                    "startOffset": 116801,
                     "endLine": 1470,
                     "endColumn": 12,
-                    "endOffset": 117033
+                    "endOffset": 116971
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -5737,10 +5738,10 @@
                 "to": {
                     "startLine": 1471,
                     "startColumn": 4,
-                    "startOffset": 117038,
-                    "endLine": 1474,
+                    "startOffset": 116976,
+                    "endLine": 1473,
                     "endColumn": 12,
-                    "endOffset": 117279
+                    "endOffset": 117141
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -5748,12 +5749,12 @@
             },
             {
                 "to": {
-                    "startLine": 1475,
+                    "startLine": 1474,
                     "startColumn": 4,
-                    "startOffset": 117284,
-                    "endLine": 1479,
+                    "startOffset": 117146,
+                    "endLine": 1477,
                     "endColumn": 12,
-                    "endOffset": 117547
+                    "endOffset": 117387
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -5761,47 +5762,24 @@
             },
             {
                 "to": {
-                    "startLine": 1480,
+                    "startLine": 1478,
                     "startColumn": 4,
-                    "startOffset": 117552,
-                    "endColumn": 67,
-                    "endOffset": 117615
+                    "startOffset": 117392,
+                    "endLine": 1482,
+                    "endColumn": 12,
+                    "endOffset": 117655
                 },
                 "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1481,
-                    "startColumn": 4,
-                    "startOffset": 117620,
-                    "endColumn": 72,
-                    "endOffset": 117688
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1482,
-                    "startColumn": 4,
-                    "startOffset": 117693,
-                    "endColumn": 73,
-                    "endOffset": 117762
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 1483,
                     "startColumn": 4,
-                    "startOffset": 117767,
-                    "endColumn": 72,
-                    "endOffset": 117835
+                    "startOffset": 117660,
+                    "endColumn": 67,
+                    "endOffset": 117723
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5811,9 +5789,9 @@
                 "to": {
                     "startLine": 1484,
                     "startColumn": 4,
-                    "startOffset": 117840,
-                    "endColumn": 73,
-                    "endOffset": 117909
+                    "startOffset": 117728,
+                    "endColumn": 72,
+                    "endOffset": 117796
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5823,10 +5801,21 @@
                 "to": {
                     "startLine": 1485,
                     "startColumn": 4,
-                    "startOffset": 117914,
-                    "endLine": 1486,
-                    "endColumn": 12,
-                    "endOffset": 118055
+                    "startOffset": 117801,
+                    "endColumn": 73,
+                    "endOffset": 117870
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1486,
+                    "startColumn": 4,
+                    "startOffset": 117875,
+                    "endColumn": 72,
+                    "endOffset": 117943
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5836,10 +5825,9 @@
                 "to": {
                     "startLine": 1487,
                     "startColumn": 4,
-                    "startOffset": 118060,
-                    "endLine": 1488,
-                    "endColumn": 12,
-                    "endOffset": 118199
+                    "startOffset": 117948,
+                    "endColumn": 73,
+                    "endOffset": 118017
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5847,12 +5835,12 @@
             },
             {
                 "to": {
-                    "startLine": 1489,
+                    "startLine": 1488,
                     "startColumn": 4,
-                    "startOffset": 118204,
-                    "endLine": 1490,
+                    "startOffset": 118022,
+                    "endLine": 1489,
                     "endColumn": 12,
-                    "endOffset": 118337
+                    "endOffset": 118163
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5860,11 +5848,12 @@
             },
             {
                 "to": {
-                    "startLine": 1491,
+                    "startLine": 1490,
                     "startColumn": 4,
-                    "startOffset": 118342,
-                    "endColumn": 65,
-                    "endOffset": 118403
+                    "startOffset": 118168,
+                    "endLine": 1491,
+                    "endColumn": 12,
+                    "endOffset": 118307
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5874,21 +5863,10 @@
                 "to": {
                     "startLine": 1492,
                     "startColumn": 4,
-                    "startOffset": 118408,
-                    "endColumn": 89,
-                    "endOffset": 118493
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1493,
-                    "startColumn": 4,
-                    "startOffset": 118498,
-                    "endColumn": 79,
-                    "endOffset": 118573
+                    "startOffset": 118312,
+                    "endLine": 1493,
+                    "endColumn": 12,
+                    "endOffset": 118445
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5898,9 +5876,9 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 118578,
-                    "endColumn": 91,
-                    "endOffset": 118665
+                    "startOffset": 118450,
+                    "endColumn": 65,
+                    "endOffset": 118511
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5910,9 +5888,9 @@
                 "to": {
                     "startLine": 1495,
                     "startColumn": 4,
-                    "startOffset": 118670,
-                    "endColumn": 97,
-                    "endOffset": 118763
+                    "startOffset": 118516,
+                    "endColumn": 89,
+                    "endOffset": 118601
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5922,10 +5900,21 @@
                 "to": {
                     "startLine": 1496,
                     "startColumn": 4,
-                    "startOffset": 118768,
-                    "endLine": 1497,
-                    "endColumn": 12,
-                    "endOffset": 118873
+                    "startOffset": 118606,
+                    "endColumn": 79,
+                    "endOffset": 118681
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1497,
+                    "startColumn": 4,
+                    "startOffset": 118686,
+                    "endColumn": 91,
+                    "endOffset": 118773
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5935,9 +5924,9 @@
                 "to": {
                     "startLine": 1498,
                     "startColumn": 4,
-                    "startOffset": 118878,
-                    "endColumn": 77,
-                    "endOffset": 118951
+                    "startOffset": 118778,
+                    "endColumn": 97,
+                    "endOffset": 118871
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5947,21 +5936,10 @@
                 "to": {
                     "startLine": 1499,
                     "startColumn": 4,
-                    "startOffset": 118956,
-                    "endColumn": 105,
-                    "endOffset": 119057
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1500,
-                    "startColumn": 4,
-                    "startOffset": 119062,
-                    "endColumn": 91,
-                    "endOffset": 119149
+                    "startOffset": 118876,
+                    "endLine": 1500,
+                    "endColumn": 12,
+                    "endOffset": 118981
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5971,9 +5949,9 @@
                 "to": {
                     "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 119154,
-                    "endColumn": 103,
-                    "endOffset": 119253
+                    "startOffset": 118986,
+                    "endColumn": 77,
+                    "endOffset": 119059
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5983,9 +5961,9 @@
                 "to": {
                     "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 119258,
-                    "endColumn": 109,
-                    "endOffset": 119363
+                    "startOffset": 119064,
+                    "endColumn": 105,
+                    "endOffset": 119165
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -5995,10 +5973,21 @@
                 "to": {
                     "startLine": 1503,
                     "startColumn": 4,
-                    "startOffset": 119368,
-                    "endLine": 1504,
-                    "endColumn": 12,
-                    "endOffset": 119485
+                    "startOffset": 119170,
+                    "endColumn": 91,
+                    "endOffset": 119257
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1504,
+                    "startColumn": 4,
+                    "startOffset": 119262,
+                    "endColumn": 103,
+                    "endOffset": 119361
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6008,10 +5997,22 @@
                 "to": {
                     "startLine": 1505,
                     "startColumn": 4,
-                    "startOffset": 119490,
-                    "endLine": 1508,
+                    "startOffset": 119366,
+                    "endColumn": 109,
+                    "endOffset": 119471
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1506,
+                    "startColumn": 4,
+                    "startOffset": 119476,
+                    "endLine": 1507,
                     "endColumn": 12,
-                    "endOffset": 119648
+                    "endOffset": 119593
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6019,12 +6020,12 @@
             },
             {
                 "to": {
-                    "startLine": 1509,
+                    "startLine": 1508,
                     "startColumn": 4,
-                    "startOffset": 119653,
-                    "endLine": 1512,
+                    "startOffset": 119598,
+                    "endLine": 1511,
                     "endColumn": 12,
-                    "endOffset": 119805
+                    "endOffset": 119756
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6032,35 +6033,12 @@
             },
             {
                 "to": {
-                    "startLine": 1513,
+                    "startLine": 1512,
                     "startColumn": 4,
-                    "startOffset": 119810,
-                    "endColumn": 79,
-                    "endOffset": 119885
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1514,
-                    "startColumn": 4,
-                    "startOffset": 119890,
-                    "endColumn": 99,
-                    "endOffset": 119985
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1515,
-                    "startColumn": 4,
-                    "startOffset": 119990,
-                    "endColumn": 89,
-                    "endOffset": 120075
+                    "startOffset": 119761,
+                    "endLine": 1515,
+                    "endColumn": 12,
+                    "endOffset": 119913
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6070,9 +6048,9 @@
                 "to": {
                     "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 120080,
-                    "endColumn": 109,
-                    "endOffset": 120185
+                    "startOffset": 119918,
+                    "endColumn": 79,
+                    "endOffset": 119993
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6082,9 +6060,9 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 120190,
-                    "endColumn": 91,
-                    "endOffset": 120277
+                    "startOffset": 119998,
+                    "endColumn": 99,
+                    "endOffset": 120093
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6094,10 +6072,21 @@
                 "to": {
                     "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 120282,
-                    "endLine": 1519,
-                    "endColumn": 12,
-                    "endOffset": 120377
+                    "startOffset": 120098,
+                    "endColumn": 89,
+                    "endOffset": 120183
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1519,
+                    "startColumn": 4,
+                    "startOffset": 120188,
+                    "endColumn": 109,
+                    "endOffset": 120293
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6107,10 +6096,9 @@
                 "to": {
                     "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 120382,
-                    "endLine": 1521,
-                    "endColumn": 12,
-                    "endOffset": 120489
+                    "startOffset": 120298,
+                    "endColumn": 91,
+                    "endOffset": 120385
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6118,12 +6106,12 @@
             },
             {
                 "to": {
-                    "startLine": 1522,
+                    "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 120494,
-                    "endLine": 1523,
+                    "startOffset": 120390,
+                    "endLine": 1522,
                     "endColumn": 12,
-                    "endOffset": 120603
+                    "endOffset": 120485
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6131,12 +6119,12 @@
             },
             {
                 "to": {
-                    "startLine": 1524,
+                    "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 120608,
-                    "endLine": 1525,
+                    "startOffset": 120490,
+                    "endLine": 1524,
                     "endColumn": 12,
-                    "endOffset": 120719
+                    "endOffset": 120597
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6144,12 +6132,12 @@
             },
             {
                 "to": {
-                    "startLine": 1526,
+                    "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 120724,
-                    "endLine": 1527,
+                    "startOffset": 120602,
+                    "endLine": 1526,
                     "endColumn": 12,
-                    "endOffset": 120835
+                    "endOffset": 120711
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6157,11 +6145,12 @@
             },
             {
                 "to": {
-                    "startLine": 1528,
+                    "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 120840,
-                    "endColumn": 93,
-                    "endOffset": 120929
+                    "startOffset": 120716,
+                    "endLine": 1528,
+                    "endColumn": 12,
+                    "endOffset": 120827
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6171,21 +6160,10 @@
                 "to": {
                     "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 120934,
-                    "endColumn": 113,
-                    "endOffset": 121043
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1530,
-                    "startColumn": 4,
-                    "startOffset": 121048,
-                    "endColumn": 117,
-                    "endOffset": 121161
+                    "startOffset": 120832,
+                    "endLine": 1530,
+                    "endColumn": 12,
+                    "endOffset": 120943
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6195,10 +6173,21 @@
                 "to": {
                     "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 121166,
-                    "endLine": 1532,
-                    "endColumn": 12,
-                    "endOffset": 121263
+                    "startOffset": 120948,
+                    "endColumn": 93,
+                    "endOffset": 121037
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1532,
+                    "startColumn": 4,
+                    "startOffset": 121042,
+                    "endColumn": 113,
+                    "endOffset": 121151
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6208,10 +6197,9 @@
                 "to": {
                     "startLine": 1533,
                     "startColumn": 4,
-                    "startOffset": 121268,
-                    "endLine": 1534,
-                    "endColumn": 12,
-                    "endOffset": 121383
+                    "startOffset": 121156,
+                    "endColumn": 117,
+                    "endOffset": 121269
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6219,12 +6207,12 @@
             },
             {
                 "to": {
-                    "startLine": 1535,
+                    "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 121388,
-                    "endLine": 1536,
+                    "startOffset": 121274,
+                    "endLine": 1535,
                     "endColumn": 12,
-                    "endOffset": 121505
+                    "endOffset": 121371
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6232,11 +6220,12 @@
             },
             {
                 "to": {
-                    "startLine": 1537,
+                    "startLine": 1536,
                     "startColumn": 4,
-                    "startOffset": 121510,
-                    "endColumn": 81,
-                    "endOffset": 121587
+                    "startOffset": 121376,
+                    "endLine": 1537,
+                    "endColumn": 12,
+                    "endOffset": 121491
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6246,21 +6235,10 @@
                 "to": {
                     "startLine": 1538,
                     "startColumn": 4,
-                    "startOffset": 121592,
-                    "endColumn": 103,
-                    "endOffset": 121691
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1539,
-                    "startColumn": 4,
-                    "startOffset": 121696,
-                    "endColumn": 119,
-                    "endOffset": 121811
+                    "startOffset": 121496,
+                    "endLine": 1539,
+                    "endColumn": 12,
+                    "endOffset": 121613
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6270,9 +6248,9 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 121816,
-                    "endColumn": 125,
-                    "endOffset": 121937
+                    "startOffset": 121618,
+                    "endColumn": 81,
+                    "endOffset": 121695
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6282,9 +6260,9 @@
                 "to": {
                     "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 121942,
-                    "endColumn": 93,
-                    "endOffset": 122031
+                    "startOffset": 121700,
+                    "endColumn": 103,
+                    "endOffset": 121799
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6294,9 +6272,9 @@
                 "to": {
                     "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 122036,
-                    "endColumn": 87,
-                    "endOffset": 122119
+                    "startOffset": 121804,
+                    "endColumn": 119,
+                    "endOffset": 121919
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6306,9 +6284,9 @@
                 "to": {
                     "startLine": 1543,
                     "startColumn": 4,
-                    "startOffset": 122124,
-                    "endColumn": 111,
-                    "endOffset": 122231
+                    "startOffset": 121924,
+                    "endColumn": 125,
+                    "endOffset": 122045
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6318,9 +6296,9 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 122236,
-                    "endColumn": 115,
-                    "endOffset": 122347
+                    "startOffset": 122050,
+                    "endColumn": 93,
+                    "endOffset": 122139
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6330,9 +6308,9 @@
                 "to": {
                     "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 122352,
-                    "endColumn": 121,
-                    "endOffset": 122469
+                    "startOffset": 122144,
+                    "endColumn": 87,
+                    "endOffset": 122227
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6342,9 +6320,9 @@
                 "to": {
                     "startLine": 1546,
                     "startColumn": 4,
-                    "startOffset": 122474,
+                    "startOffset": 122232,
                     "endColumn": 111,
-                    "endOffset": 122581
+                    "endOffset": 122339
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6354,10 +6332,33 @@
                 "to": {
                     "startLine": 1547,
                     "startColumn": 4,
-                    "startOffset": 122586,
-                    "endLine": 1549,
-                    "endColumn": 12,
-                    "endOffset": 122756
+                    "startOffset": 122344,
+                    "endColumn": 115,
+                    "endOffset": 122455
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1548,
+                    "startColumn": 4,
+                    "startOffset": 122460,
+                    "endColumn": 121,
+                    "endOffset": 122577
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1549,
+                    "startColumn": 4,
+                    "startOffset": 122582,
+                    "endColumn": 111,
+                    "endOffset": 122689
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6367,34 +6368,22 @@
                 "to": {
                     "startLine": 1550,
                     "startColumn": 4,
-                    "startOffset": 122761,
-                    "endColumn": 115,
-                    "endOffset": 122872
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1551,
-                    "startColumn": 4,
-                    "startOffset": 122877,
-                    "endColumn": 85,
-                    "endOffset": 122958
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1552,
-                    "startColumn": 4,
-                    "startOffset": 122963,
-                    "endLine": 1553,
+                    "startOffset": 122694,
+                    "endLine": 1552,
                     "endColumn": 12,
-                    "endOffset": 123070
+                    "endOffset": 122864
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1553,
+                    "startColumn": 4,
+                    "startOffset": 122869,
+                    "endColumn": 115,
+                    "endOffset": 122980
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6404,10 +6393,9 @@
                 "to": {
                     "startLine": 1554,
                     "startColumn": 4,
-                    "startOffset": 123075,
-                    "endLine": 1555,
-                    "endColumn": 12,
-                    "endOffset": 123194
+                    "startOffset": 122985,
+                    "endColumn": 85,
+                    "endOffset": 123066
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6415,11 +6403,12 @@
             },
             {
                 "to": {
-                    "startLine": 1556,
+                    "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 123199,
-                    "endColumn": 66,
-                    "endOffset": 123261
+                    "startOffset": 123071,
+                    "endLine": 1556,
+                    "endColumn": 12,
+                    "endOffset": 123178
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6429,10 +6418,10 @@
                 "to": {
                     "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 123266,
+                    "startOffset": 123183,
                     "endLine": 1558,
                     "endColumn": 12,
-                    "endOffset": 123387
+                    "endOffset": 123302
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6442,9 +6431,9 @@
                 "to": {
                     "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 123392,
-                    "endColumn": 67,
-                    "endOffset": 123455
+                    "startOffset": 123307,
+                    "endColumn": 66,
+                    "endOffset": 123369
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6454,10 +6443,10 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 123460,
+                    "startOffset": 123374,
                     "endLine": 1561,
                     "endColumn": 12,
-                    "endOffset": 123583
+                    "endOffset": 123495
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6467,10 +6456,9 @@
                 "to": {
                     "startLine": 1562,
                     "startColumn": 4,
-                    "startOffset": 123588,
-                    "endLine": 1563,
-                    "endColumn": 12,
-                    "endOffset": 123727
+                    "startOffset": 123500,
+                    "endColumn": 67,
+                    "endOffset": 123563
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6478,12 +6466,12 @@
             },
             {
                 "to": {
-                    "startLine": 1564,
+                    "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 123732,
-                    "endLine": 1565,
+                    "startOffset": 123568,
+                    "endLine": 1564,
                     "endColumn": 12,
-                    "endOffset": 123855
+                    "endOffset": 123691
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6491,11 +6479,12 @@
             },
             {
                 "to": {
-                    "startLine": 1566,
+                    "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 123860,
-                    "endColumn": 68,
-                    "endOffset": 123924
+                    "startOffset": 123696,
+                    "endLine": 1566,
+                    "endColumn": 12,
+                    "endOffset": 123835
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6505,21 +6494,10 @@
                 "to": {
                     "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 123929,
-                    "endColumn": 94,
-                    "endOffset": 124019
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1568,
-                    "startColumn": 4,
-                    "startOffset": 124024,
-                    "endColumn": 114,
-                    "endOffset": 124134
+                    "startOffset": 123840,
+                    "endLine": 1568,
+                    "endColumn": 12,
+                    "endOffset": 123963
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6529,9 +6507,9 @@
                 "to": {
                     "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 124139,
-                    "endColumn": 112,
-                    "endOffset": 124247
+                    "startOffset": 123968,
+                    "endColumn": 68,
+                    "endOffset": 124032
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6541,9 +6519,9 @@
                 "to": {
                     "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 124252,
-                    "endColumn": 98,
-                    "endOffset": 124346
+                    "startOffset": 124037,
+                    "endColumn": 94,
+                    "endOffset": 124127
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6553,9 +6531,9 @@
                 "to": {
                     "startLine": 1571,
                     "startColumn": 4,
-                    "startOffset": 124351,
-                    "endColumn": 108,
-                    "endOffset": 124455
+                    "startOffset": 124132,
+                    "endColumn": 114,
+                    "endOffset": 124242
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6565,9 +6543,9 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 124460,
-                    "endColumn": 110,
-                    "endOffset": 124566
+                    "startOffset": 124247,
+                    "endColumn": 112,
+                    "endOffset": 124355
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6577,9 +6555,9 @@
                 "to": {
                     "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 124571,
-                    "endColumn": 110,
-                    "endOffset": 124677
+                    "startOffset": 124360,
+                    "endColumn": 98,
+                    "endOffset": 124454
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6589,9 +6567,9 @@
                 "to": {
                     "startLine": 1574,
                     "startColumn": 4,
-                    "startOffset": 124682,
-                    "endColumn": 100,
-                    "endOffset": 124778
+                    "startOffset": 124459,
+                    "endColumn": 108,
+                    "endOffset": 124563
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6601,9 +6579,9 @@
                 "to": {
                     "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 124783,
-                    "endColumn": 104,
-                    "endOffset": 124883
+                    "startOffset": 124568,
+                    "endColumn": 110,
+                    "endOffset": 124674
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6613,10 +6591,21 @@
                 "to": {
                     "startLine": 1576,
                     "startColumn": 4,
-                    "startOffset": 124888,
-                    "endLine": 1577,
-                    "endColumn": 12,
-                    "endOffset": 124995
+                    "startOffset": 124679,
+                    "endColumn": 110,
+                    "endOffset": 124785
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1577,
+                    "startColumn": 4,
+                    "startOffset": 124790,
+                    "endColumn": 100,
+                    "endOffset": 124886
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6626,10 +6615,9 @@
                 "to": {
                     "startLine": 1578,
                     "startColumn": 4,
-                    "startOffset": 125000,
-                    "endLine": 1579,
-                    "endColumn": 12,
-                    "endOffset": 125125
+                    "startOffset": 124891,
+                    "endColumn": 104,
+                    "endOffset": 124991
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6637,11 +6625,12 @@
             },
             {
                 "to": {
-                    "startLine": 1580,
+                    "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 125130,
-                    "endColumn": 90,
-                    "endOffset": 125216
+                    "startOffset": 124996,
+                    "endLine": 1580,
+                    "endColumn": 12,
+                    "endOffset": 125103
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6651,9 +6640,10 @@
                 "to": {
                     "startLine": 1581,
                     "startColumn": 4,
-                    "startOffset": 125221,
-                    "endColumn": 122,
-                    "endOffset": 125339
+                    "startOffset": 125108,
+                    "endLine": 1582,
+                    "endColumn": 12,
+                    "endOffset": 125233
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6661,12 +6651,11 @@
             },
             {
                 "to": {
-                    "startLine": 1582,
+                    "startLine": 1583,
                     "startColumn": 4,
-                    "startOffset": 125344,
-                    "endLine": 1583,
-                    "endColumn": 12,
-                    "endOffset": 125451
+                    "startOffset": 125238,
+                    "endColumn": 90,
+                    "endOffset": 125324
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6676,9 +6665,9 @@
                 "to": {
                     "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 125456,
-                    "endColumn": 85,
-                    "endOffset": 125537
+                    "startOffset": 125329,
+                    "endColumn": 122,
+                    "endOffset": 125447
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6688,9 +6677,10 @@
                 "to": {
                     "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 125542,
-                    "endColumn": 103,
-                    "endOffset": 125641
+                    "startOffset": 125452,
+                    "endLine": 1586,
+                    "endColumn": 12,
+                    "endOffset": 125559
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6698,12 +6688,11 @@
             },
             {
                 "to": {
-                    "startLine": 1586,
+                    "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 125646,
-                    "endLine": 1587,
-                    "endColumn": 12,
-                    "endOffset": 125749
+                    "startOffset": 125564,
+                    "endColumn": 85,
+                    "endOffset": 125645
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6713,10 +6702,22 @@
                 "to": {
                     "startLine": 1588,
                     "startColumn": 4,
+                    "startOffset": 125650,
+                    "endColumn": 103,
+                    "endOffset": 125749
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1589,
+                    "startColumn": 4,
                     "startOffset": 125754,
-                    "endLine": 1589,
+                    "endLine": 1590,
                     "endColumn": 12,
-                    "endOffset": 125849
+                    "endOffset": 125857
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6724,12 +6725,12 @@
             },
             {
                 "to": {
-                    "startLine": 1590,
+                    "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 125854,
-                    "endLine": 1591,
+                    "startOffset": 125862,
+                    "endLine": 1592,
                     "endColumn": 12,
-                    "endOffset": 125967
+                    "endOffset": 125957
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6737,12 +6738,12 @@
             },
             {
                 "to": {
-                    "startLine": 1592,
+                    "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 125972,
-                    "endLine": 1593,
+                    "startOffset": 125962,
+                    "endLine": 1594,
                     "endColumn": 12,
-                    "endOffset": 126071
+                    "endOffset": 126075
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6750,12 +6751,12 @@
             },
             {
                 "to": {
-                    "startLine": 1594,
+                    "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 126076,
-                    "endLine": 1595,
+                    "startOffset": 126080,
+                    "endLine": 1596,
                     "endColumn": 12,
-                    "endOffset": 126175
+                    "endOffset": 126179
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6763,24 +6764,12 @@
             },
             {
                 "to": {
-                    "startLine": 1596,
+                    "startLine": 1597,
                     "startColumn": 4,
-                    "startOffset": 126180,
-                    "endLine": 1597,
+                    "startOffset": 126184,
+                    "endLine": 1598,
                     "endColumn": 12,
-                    "endOffset": 126301
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1598,
-                    "startColumn": 4,
-                    "startOffset": 126306,
-                    "endColumn": 87,
-                    "endOffset": 126389
+                    "endOffset": 126283
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6790,21 +6779,10 @@
                 "to": {
                     "startLine": 1599,
                     "startColumn": 4,
-                    "startOffset": 126394,
-                    "endColumn": 89,
-                    "endOffset": 126479
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1600,
-                    "startColumn": 4,
-                    "startOffset": 126484,
-                    "endColumn": 109,
-                    "endOffset": 126589
+                    "startOffset": 126288,
+                    "endLine": 1600,
+                    "endColumn": 12,
+                    "endOffset": 126409
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6814,9 +6792,9 @@
                 "to": {
                     "startLine": 1601,
                     "startColumn": 4,
-                    "startOffset": 126594,
-                    "endColumn": 83,
-                    "endOffset": 126673
+                    "startOffset": 126414,
+                    "endColumn": 87,
+                    "endOffset": 126497
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6826,9 +6804,9 @@
                 "to": {
                     "startLine": 1602,
                     "startColumn": 4,
-                    "startOffset": 126678,
-                    "endColumn": 53,
-                    "endOffset": 126727
+                    "startOffset": 126502,
+                    "endColumn": 89,
+                    "endOffset": 126587
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6838,9 +6816,9 @@
                 "to": {
                     "startLine": 1603,
                     "startColumn": 4,
-                    "startOffset": 126732,
-                    "endColumn": 121,
-                    "endOffset": 126849
+                    "startOffset": 126592,
+                    "endColumn": 109,
+                    "endOffset": 126697
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6850,9 +6828,9 @@
                 "to": {
                     "startLine": 1604,
                     "startColumn": 4,
-                    "startOffset": 126854,
-                    "endColumn": 105,
-                    "endOffset": 126955
+                    "startOffset": 126702,
+                    "endColumn": 83,
+                    "endOffset": 126781
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6862,9 +6840,9 @@
                 "to": {
                     "startLine": 1605,
                     "startColumn": 4,
-                    "startOffset": 126960,
-                    "endColumn": 109,
-                    "endOffset": 127065
+                    "startOffset": 126786,
+                    "endColumn": 53,
+                    "endOffset": 126835
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6874,9 +6852,9 @@
                 "to": {
                     "startLine": 1606,
                     "startColumn": 4,
-                    "startOffset": 127070,
-                    "endColumn": 83,
-                    "endOffset": 127149
+                    "startOffset": 126840,
+                    "endColumn": 121,
+                    "endOffset": 126957
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6886,9 +6864,9 @@
                 "to": {
                     "startLine": 1607,
                     "startColumn": 4,
-                    "startOffset": 127154,
-                    "endColumn": 125,
-                    "endOffset": 127275
+                    "startOffset": 126962,
+                    "endColumn": 105,
+                    "endOffset": 127063
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
@@ -6898,10 +6876,46 @@
                 "to": {
                     "startLine": 1608,
                     "startColumn": 4,
-                    "startOffset": 127280,
-                    "endLine": 1611,
+                    "startOffset": 127068,
+                    "endColumn": 109,
+                    "endOffset": 127173
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1609,
+                    "startColumn": 4,
+                    "startOffset": 127178,
+                    "endColumn": 83,
+                    "endOffset": 127257
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1610,
+                    "startColumn": 4,
+                    "startOffset": 127262,
+                    "endColumn": 125,
+                    "endOffset": 127383
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1611,
+                    "startColumn": 4,
+                    "startOffset": 127388,
+                    "endLine": 1614,
                     "endColumn": 12,
-                    "endOffset": 127486
+                    "endOffset": 127594
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6909,25 +6923,12 @@
             },
             {
                 "to": {
-                    "startLine": 1612,
+                    "startLine": 1615,
                     "startColumn": 4,
-                    "startOffset": 127491,
-                    "endLine": 1617,
-                    "endColumn": 12,
-                    "endOffset": 127917
-                },
-                "from": {
-                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 1618,
-                    "startColumn": 4,
-                    "startOffset": 127922,
+                    "startOffset": 127599,
                     "endLine": 1620,
                     "endColumn": 12,
-                    "endOffset": 128076
+                    "endOffset": 128025
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6937,10 +6938,10 @@
                 "to": {
                     "startLine": 1621,
                     "startColumn": 4,
-                    "startOffset": 128081,
-                    "endLine": 1629,
+                    "startOffset": 128030,
+                    "endLine": 1623,
                     "endColumn": 12,
-                    "endOffset": 128615
+                    "endOffset": 128184
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6948,12 +6949,12 @@
             },
             {
                 "to": {
-                    "startLine": 1630,
+                    "startLine": 1624,
                     "startColumn": 4,
-                    "startOffset": 128620,
-                    "endLine": 1635,
+                    "startOffset": 128189,
+                    "endLine": 1632,
                     "endColumn": 12,
-                    "endOffset": 128962
+                    "endOffset": 128723
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6961,12 +6962,12 @@
             },
             {
                 "to": {
-                    "startLine": 1636,
+                    "startLine": 1633,
                     "startColumn": 4,
-                    "startOffset": 128967,
+                    "startOffset": 128728,
                     "endLine": 1638,
                     "endColumn": 12,
-                    "endOffset": 129091
+                    "endOffset": 129070
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6976,10 +6977,10 @@
                 "to": {
                     "startLine": 1639,
                     "startColumn": 4,
-                    "startOffset": 129096,
-                    "endLine": 1648,
+                    "startOffset": 129075,
+                    "endLine": 1641,
                     "endColumn": 12,
-                    "endOffset": 129786
+                    "endOffset": 129199
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -6987,12 +6988,12 @@
             },
             {
                 "to": {
-                    "startLine": 1649,
+                    "startLine": 1642,
                     "startColumn": 4,
-                    "startOffset": 129791,
-                    "endLine": 1652,
+                    "startOffset": 129204,
+                    "endLine": 1651,
                     "endColumn": 12,
-                    "endOffset": 129966
+                    "endOffset": 129894
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
@@ -7000,12 +7001,25 @@
             },
             {
                 "to": {
-                    "startLine": 1653,
+                    "startLine": 1652,
                     "startColumn": 4,
-                    "startOffset": 129971,
-                    "endLine": 1656,
+                    "startOffset": 129899,
+                    "endLine": 1655,
                     "endColumn": 12,
-                    "endOffset": 130216
+                    "endOffset": 130074
+                },
+                "from": {
+                    "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1656,
+                    "startColumn": 4,
+                    "startOffset": 130079,
+                    "endLine": 1659,
+                    "endColumn": 12,
+                    "endOffset": 130324
                 },
                 "from": {
                     "file": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values\\values.xml"
