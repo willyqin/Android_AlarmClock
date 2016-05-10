@@ -1,10 +1,12 @@
 package com.example.han.myalarmclock;
 
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 Alarm newAlarm = new Alarm();
                 alarmList.add(newAlarm);
                 mAdapter.notifyDataSetChanged();
+                ColorDrawable drawable = new ColorDrawable(0x0099ee);
+                if (alarmList.size() == 1) recyclerView.setBackground(drawable);
 
             }
         });
@@ -69,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new MyAdapter(alarmList,this);
         recyclerView.setAdapter(mAdapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
-
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         ItemTouchHelper.Callback callback = new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
@@ -81,17 +85,21 @@ public class MainActivity extends AppCompatActivity {
                 final int pos = viewHolder.getAdapterPosition();
                 final Alarm tempAlarm = alarmList.remove(viewHolder.getAdapterPosition());
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+                final ColorDrawable drawable = new ColorDrawable(0x120099ee);
+                if(pos == 0) recyclerView.setBackground(drawable);
                 Snackbar.make(recyclerView, "已经成功删除", Snackbar.LENGTH_LONG)
                         .setAction("撤销删除", new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        alarmList.add(pos,tempAlarm);
+                                        alarmList.add(pos, tempAlarm);
                                         mAdapter.notifyItemInserted(pos);
-
+                                        ColorDrawable drawable = new ColorDrawable(0x00000000);
+                                        if (0 == pos) recyclerView.setBackground(drawable);
                                     }
                                 }
 
                         ).show();
+
                         }
             };
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
