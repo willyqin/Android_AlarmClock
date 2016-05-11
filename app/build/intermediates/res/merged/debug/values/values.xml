@@ -312,8 +312,8 @@
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#607D8B</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:listDivider">@drawable/divider_bg</item>
     </style>
@@ -323,6 +323,13 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.Property">
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#607D8B</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
@@ -1262,7 +1269,7 @@
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
     <style name="Color1SwitchStyle">
-        <item name="colorControlActivated">#0099ee</item>
+        <item name="colorControlActivated">#607D8B</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

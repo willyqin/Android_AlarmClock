@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="#ffffff"
+
+    >
+    <item
+        android:id="@+id/save_alarm"
+        android:icon="@mipmap/ic_save_white_36dp"
+        android:title="保存"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/hours_change"
+        android:title="切换为24小时制"
+        android:textColor="#ffffff"
+        app:showAsAction="never"/>
+</menu>

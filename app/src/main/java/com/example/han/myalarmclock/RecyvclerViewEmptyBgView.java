@@ -1,5 +1,6 @@
 package com.example.han.myalarmclock;
 
+import android.app.DialogFragment;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -25,6 +26,8 @@ public class RecyvclerViewEmptyBgView extends View {
         paint.setStrokeWidth(4);
         paint.setTextSize(48);
         paint.setShader(null);
-        canvas.drawText("Hello",1.0f,1.0f,paint);
+        canvas.drawText("Hello", 1.0f, 1.0f, paint);
     }
+
+
 }
