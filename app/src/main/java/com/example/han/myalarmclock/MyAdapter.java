@@ -59,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
 //        holder.textView.setText(mData[position]);
-        Alarm tempAlarm = mData.get(position);
+        final Alarm tempAlarm = mData.get(position);
         holder.timeTextView.setText(tempAlarm.getAlarmTimeString());
         holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
         holder.repeatDays.setText(tempAlarm.getDaysString());
@@ -68,7 +68,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Alarm tempAlarm = mData.get(position);
                 Bundle data = new Bundle();
                 data.putSerializable("Alarm", tempAlarm);
                 Intent intent = new Intent(mcontext,AlarmPropertyActivity.class);
