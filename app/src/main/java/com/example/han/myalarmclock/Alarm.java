@@ -2,6 +2,7 @@ package com.example.han.myalarmclock;
 
 import android.media.RingtoneManager;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by Han on 2016/4/13.
  */
-public class Alarm {
+public class Alarm implements Serializable {
     public enum Day{
         SUNDAY,
         MONDAY,
@@ -50,11 +51,18 @@ public class Alarm {
     private Day[] days = {Day.SUNDAY,Day.MONDAY,Day.TUESDAY,Day.WEDNSDAY,Day.THURSDAY,Day.FRIDAY,Day.SATURDAY};
     private String alarmTonePath = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM).toString();
     private Boolean vibrate = true;
+    private Boolean repeatFlag = true;
     private String alarmName;
     private String alarmText = new String("请输入明天想喊醒自己的话");
 
     Alarm(){
 
+    }
+    public Boolean getRepeatFlag(){
+        return repeatFlag;
+    }
+    public void  setRepeatFlag(Boolean repeatFlag){
+        this.repeatFlag = repeatFlag;
     }
     public Boolean getAlarmActive(){
         return alarmActive;
@@ -65,11 +73,14 @@ public class Alarm {
     }
 
     public Calendar getAlarmTime(){     //不仅要返回alarmTime属性，还有刷新alarmTime属性
+        alarmTime.set(Calendar.getInstance().get(Calendar.YEAR),Calendar.getInstance().get(Calendar.MONTH),Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
         while (alarmTime.before(Calendar.getInstance())){
             alarmTime.add(Calendar.DAY_OF_MONTH,1);
         }
-        while (!Arrays.asList(getDays()).contains(Day.values()[alarmTime.get(Calendar.DAY_OF_WEEK) - 1])){
-            alarmTime.add(Calendar.DAY_OF_MONTH,1);
+        if(repeatFlag == true) {
+            while (!Arrays.asList(getDays()).contains(Day.values()[alarmTime.get(Calendar.DAY_OF_WEEK) - 1])) {
+                alarmTime.add(Calendar.DAY_OF_MONTH, 1);
+            }
         }
         return alarmTime;
     }
@@ -217,9 +228,9 @@ public class Alarm {
 
     public  String getDaysString(){
         StringBuilder Days = new StringBuilder();
-        if (days.length == 0){
-            Days.append("闹钟已关闭");
-            setAlarmActive(false);
+        if (repeatFlag == false){
+            Days.append("仅一次");
+//            setAlarmActive(false);
         }else{
             Arrays.sort(days, new Comparator<Day>() {
                 @Override

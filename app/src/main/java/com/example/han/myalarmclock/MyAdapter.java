@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -67,7 +69,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 Alarm tempAlarm = mData.get(position);
+                Bundle data = new Bundle();
+                data.putSerializable("Alarm", tempAlarm);
                 Intent intent = new Intent(mcontext,AlarmPropertyActivity.class);
+                intent.putExtras(data);
                 mcontext.startActivity(intent);
 
             }

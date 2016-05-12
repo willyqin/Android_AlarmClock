@@ -38,6 +38,7 @@
                 android:layout_alignParentTop="true"
                 android:timePickerMode="spinner"></TimePicker>
             <TextView
+                android:id="@+id/until_text_view_property"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -78,7 +79,7 @@
                 android:layout_marginLeft="4dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="不重复"/>
+                android:text="仅一次"/>
             <TextView
                 android:id="@+id/liu"
                 android:layout_toLeftOf="@id/no_repeat"

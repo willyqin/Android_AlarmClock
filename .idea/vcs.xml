@@ -3,6 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MyAlarmClock" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SpeechAlarmClock" vcs="Git" />
   </component>
 </project>
