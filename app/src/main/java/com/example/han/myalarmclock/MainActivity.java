@@ -1,5 +1,6 @@
 package com.example.han.myalarmclock;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -71,6 +72,17 @@ public class MainActivity extends AppCompatActivity {
         }
         mAdapter = new MyAdapter(alarmList,this);
         recyclerView.setAdapter(mAdapter);
+
+        mAdapter.setOnItemClickListener(new MyAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onItemClick(Alarm alarm) {
+                Bundle data = new Bundle();
+                data.putSerializable("Alarm", alarm);
+                Intent intent = new Intent(MainActivity.this,AlarmPropertyActivity.class);
+                intent.putExtras(data);
+                startActivity(intent);
+            }
+        });
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         ItemTouchHelper.Callback callback = new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.RIGHT) {

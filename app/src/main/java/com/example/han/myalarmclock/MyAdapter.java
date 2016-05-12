@@ -22,15 +22,19 @@ import java.util.List;
 /**
  * Created by Han on 2016/5/7.
  */
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implements View.OnClickListener{
     private List<Alarm> mData;
     private Context mcontext;
+    private RecyclerViewClickListener recyclerViewClickListener = null;
     MyAdapter(List<Alarm> mData,Context context) {
         this.mData = mData;
         mcontext = context;
     }
 
 
+    public void setOnItemClickListener(RecyclerViewClickListener recyclerViewClickListener) {
+        this.recyclerViewClickListener = recyclerViewClickListener;
+    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public CardView cardView;
@@ -64,18 +68,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
         holder.repeatDays.setText(tempAlarm.getDaysString());
         holder.aSwitch.setChecked(tempAlarm.getAlarmActive());
-
-        holder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bundle data = new Bundle();
-                data.putSerializable("Alarm", tempAlarm);
-                Intent intent = new Intent(mcontext,AlarmPropertyActivity.class);
-                intent.putExtras(data);
-                mcontext.startActivity(intent);
-
-            }
-        });
+        holder.cardView.setTag(tempAlarm);
+        holder.cardView.setOnClickListener(this);
+//        new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Bundle data = new Bundle();
+//                data.putSerializable("Alarm", tempAlarm);
+//                Intent intent = new Intent(mcontext,AlarmPropertyActivity.class);
+//                intent.putExtras(data);
+//                mcontext.startActivity(intent);
+//
+//            }
+//        }
 
         holder.aSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,4 +102,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public int getItemCount() {
         return mData.size();
     }
+
+
+    public static interface RecyclerViewClickListener{
+        void onItemClick(Alarm alarm);
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        if (recyclerViewClickListener != null) {
+            recyclerViewClickListener.onItemClick((Alarm)v.getTag());
+        }
+    }
+
 }

@@ -19,22 +19,121 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java" line="27" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32306b85-cca5-4df4-8f13-dbc6ff952d98" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MyAdapter.class" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\design\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\appcompat\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\cardview\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\recyclerview\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\recyclerview\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\recyclerview\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\recyclerview\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\android\support\v7\recyclerview\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MainActivity$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MyAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MyAdapter$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MyAdapter$ViewHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\MyAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$mipmap.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\RecyvclerViewEmptyBgView.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\example\han\myalarmclock\TimePickFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$raw.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$raw.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroidCode\MyAlarmClock\app\build\intermediates\classes\debug\com\google\android\gms\appindexing\R.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.1_d810e98dbf4794c7433c94e0d78c212e5ff5e260.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.1_d810e98dbf4794c7433c94e0d78c212e5ff5e260.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.0.0-alpha1_2d47f4aa5dbf465699070df798634fcc16cc2242.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.0.0-alpha1_2d47f4aa5dbf465699070df798634fcc16cc2242.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.1_75af5a3587f9c8a8c529ddf2b740fad4adb50c43.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.1_75af5a3587f9c8a8c529ddf2b740fad4adb50c43.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0-alpha1_a558b53ad853704008f1f3ac59980dc7d8744bfd.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0-alpha1_a558b53ad853704008f1f3ac59980dc7d8744bfd.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0-alpha1_977f7754c36cfc69688061850439dbbc0cfd9ee7.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0-alpha1_977f7754c36cfc69688061850439dbbc0cfd9ee7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_05cc2d58cb27b0aaf5e29c6945c602d5d9b15231.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_05cc2d58cb27b0aaf5e29c6945c602d5d9b15231.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_1fa14370ce70b18be63fccc03549a5ea6dea51cd.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_1fa14370ce70b18be63fccc03549a5ea6dea51cd.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_d69b17c808f95f9aafad037490b768d8b774f88c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_d69b17c808f95f9aafad037490b768d8b774f88c.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha1_5524b8213910a72c5bc3cc39ff835271a51fc1c5.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha1_5524b8213910a72c5bc3cc39ff835271a51fc1c5.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha1_f070cab736a9da2cd0d2ba30889ccb4fbf1dd820.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha1_f070cab736a9da2cd0d2ba30889ccb4fbf1dd820.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="8725a823-694a-4810-b42e-22cf30231870" name="Failed commit: Default" comment="创建了Alarm类，并且在MainActivity中对Alarm类中的方法进行了测试。" />
@@ -68,28 +167,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="368" column="27" selection-start-line="368" selection-start-column="27" selection-end-line="368" selection-end-column="27" />
+              <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
               <folding>
-                <element signature="e#2097#2445#0" expanded="true" />
-                <element signature="e#2444#2445#0" expanded="true" />
-                <element signature="e#4227#6176#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
-                <element signature="e#6210#8160#0" expanded="true" />
-                <element signature="e#8159#8160#0" expanded="true" />
-                <element signature="e#8194#10148#0" expanded="true" />
-                <element signature="e#10147#10148#0" expanded="true" />
-                <element signature="e#10183#12146#0" expanded="true" />
-                <element signature="e#12145#12146#0" expanded="true" />
-                <element signature="e#12180#14139#0" expanded="true" />
-                <element signature="e#14138#14139#0" expanded="true" />
-                <element signature="e#14172#16121#0" expanded="true" />
-                <element signature="e#16120#16121#0" expanded="true" />
-                <element signature="e#16156#18119#0" expanded="true" />
-                <element signature="e#18118#18119#0" expanded="true" />
-                <element signature="e#18159#18304#0" expanded="true" />
-                <element signature="e#18303#18304#0" expanded="true" />
-                <element signature="e#18515#18657#0" expanded="true" />
-                <element signature="e#18656#18657#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#18606#18607#0" expanded="false" />
+                <element signature="e#18646#18647#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,39 +189,36 @@
       </file>
       <file leaf-file-name="alarm_property_activity.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alarm_property_activity.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.314285">
+            <state vertical-scroll-proportion="0.0">
               <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
               <folding>
-                <element signature="e#3719#4238#0" expanded="true" />
-                <element signature="e#4237#4238#0" expanded="true" />
+                <element signature="e#2663#3071#0" expanded="true" />
+                <element signature="e#3070#3071#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3262032">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-              <folding>
-                <element signature="e#2446#2835#0" expanded="true" />
-                <element signature="e#2834#2835#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="114" column="53" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,50 +242,40 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7714286">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.342857">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="recyclerview_item.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recyclerview_item.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="36.657143">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="3" selection-end-column="61" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.909091">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="41" />
-              <folding />
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -1956,7 +2025,6 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/RecyvclerViewEmptyBgView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/TimePickFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/property_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -1965,6 +2033,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/alarm_property_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java" />
       </list>
     </option>
@@ -2020,6 +2089,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAlarmClock" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAlarmClock" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2054,115 +2143,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myalarmclock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyAlarmClock" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2427,7 +2410,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463040578529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改了一个bug。该bug是，如果在mainactivity中删除了一个闹钟，当点击最后一个闹钟时，应用会退出。">
+      <created>1463041268011</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1463041268011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2444,15 +2433,14 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33031675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33031675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.506424" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.49357602" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32579187" sideWeight="0.49357602" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.49250534" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2472,6 +2460,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2496,7 +2485,8 @@
     <MESSAGE value="重复commite第二次" />
     <MESSAGE value="重复commite第三次，测试网络" />
     <MESSAGE value="AlarmPropertyActivity界面内部的业务逻辑，包括TimePicker和选择重复天的卡片。除此之外，利用Bundle将MainActivity中的Alarm对象数据传到对应的AlarmPropertyActivity中。" />
-    <option name="LAST_COMMIT_MESSAGE" value="AlarmPropertyActivity界面内部的业务逻辑，包括TimePicker和选择重复天的卡片。除此之外，利用Bundle将MainActivity中的Alarm对象数据传到对应的AlarmPropertyActivity中。" />
+    <MESSAGE value="修改了一个bug。该bug是，如果在mainactivity中删除了一个闹钟，当点击最后一个闹钟时，应用会退出。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了一个bug。该bug是，如果在mainactivity中删除了一个闹钟，当点击最后一个闹钟时，应用会退出。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2528,25 +2518,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java">
@@ -2564,26 +2554,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2607,14 +2597,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java">
@@ -2632,14 +2622,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java">
@@ -2657,14 +2647,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
@@ -2701,13 +2691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09694794">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/androidsdk/sources/android-22/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4819" column="9" selection-start-line="4819" selection-start-column="9" selection-end-line="4819" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -2827,7 +2810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.909091">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="41" />
           <folding />
         </state>
@@ -2842,47 +2825,47 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alarm_property_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.314285">
+        <state vertical-scroll-proportion="0.0">
           <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7714286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.342857">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recyclerview_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recyclerview_item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="36.657143">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="3" selection-end-column="61" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java">
@@ -2903,50 +2886,38 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="368" column="27" selection-start-line="368" selection-start-column="27" selection-end-line="368" selection-end-column="27" />
+          <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
           <folding>
-            <element signature="e#2097#2445#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#4227#6176#0" expanded="true" />
-            <element signature="e#6175#6176#0" expanded="true" />
-            <element signature="e#6210#8160#0" expanded="true" />
-            <element signature="e#8159#8160#0" expanded="true" />
-            <element signature="e#8194#10148#0" expanded="true" />
-            <element signature="e#10147#10148#0" expanded="true" />
-            <element signature="e#10183#12146#0" expanded="true" />
-            <element signature="e#12145#12146#0" expanded="true" />
-            <element signature="e#12180#14139#0" expanded="true" />
-            <element signature="e#14138#14139#0" expanded="true" />
-            <element signature="e#14172#16121#0" expanded="true" />
-            <element signature="e#16120#16121#0" expanded="true" />
-            <element signature="e#16156#18119#0" expanded="true" />
-            <element signature="e#18118#18119#0" expanded="true" />
-            <element signature="e#18159#18304#0" expanded="true" />
-            <element signature="e#18303#18304#0" expanded="true" />
-            <element signature="e#18515#18657#0" expanded="true" />
-            <element signature="e#18656#18657#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#18606#18607#0" expanded="false" />
+            <element signature="e#18646#18647#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java">
+    <entry file="file://D:/androidsdk/sources/android-22/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-          <folding>
-            <element signature="e#3719#4238#0" expanded="true" />
-            <element signature="e#4237#4238#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="4721" column="16" selection-start-line="4721" selection-start-column="16" selection-end-line="4721" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3262032">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="53" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
           <folding>
-            <element signature="e#2446#2835#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
+            <element signature="e#2663#3071#0" expanded="true" />
+            <element signature="e#3070#3071#0" expanded="true" />
           </folding>
         </state>
       </provider>
