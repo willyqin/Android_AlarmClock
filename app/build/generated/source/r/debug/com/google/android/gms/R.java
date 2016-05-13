@@ -31,11 +31,11 @@ public final class R {
 		public static final int common_ic_googleplayservices = 0x7f02003c;
 	}
 	public static final class id {
-		public static final int adjust_height = 0x7f0c002c;
-		public static final int adjust_width = 0x7f0c002d;
-		public static final int none = 0x7f0c0010;
-		public static final int normal = 0x7f0c000c;
-		public static final int wrap_content = 0x7f0c0037;
+		public static final int adjust_height = 0x7f0c002e;
+		public static final int adjust_width = 0x7f0c002f;
+		public static final int none = 0x7f0c0012;
+		public static final int normal = 0x7f0c000e;
+		public static final int wrap_content = 0x7f0c0039;
 	}
 	public static final class integer {
 		public static final int google_play_services_version = 0x7f0a0005;

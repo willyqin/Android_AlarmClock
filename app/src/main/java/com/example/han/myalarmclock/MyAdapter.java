@@ -1,22 +1,14 @@
 package com.example.han.myalarmclock;
 
-import android.app.Application;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -26,6 +18,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
     private List<Alarm> mData;
     private Context mcontext;
     private RecyclerViewClickListener recyclerViewClickListener = null;
+    private final static int ALARM_TYPE = 1;
+    private final static int POSITION_TYPE = 0;
     MyAdapter(List<Alarm> mData,Context context) {
         this.mData = mData;
         mcontext = context;
@@ -68,7 +62,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
         holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
         holder.repeatDays.setText(tempAlarm.getDaysString());
         holder.aSwitch.setChecked(tempAlarm.getAlarmActive());
-        holder.cardView.setTag(tempAlarm);
+        holder.cardView.setTag(R.id.alarm_tag, tempAlarm);
+        Integer pos;
+        pos = position;
+        holder.cardView.setTag(R.id.position_tag,pos);
         holder.cardView.setOnClickListener(this);
 //        new View.OnClickListener() {
 //            @Override
@@ -105,14 +102,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
 
 
     public static interface RecyclerViewClickListener{
-        void onItemClick(Alarm alarm);
+        void onItemClick(Alarm alarm,int position);
     }
 
 
     @Override
     public void onClick(View v) {
         if (recyclerViewClickListener != null) {
-            recyclerViewClickListener.onItemClick((Alarm)v.getTag());
+            recyclerViewClickListener.onItemClick((Alarm)v.getTag(R.id.alarm_tag),(Integer)v.getTag(R.id.position_tag));
         }
     }
 

@@ -44,6 +44,8 @@ public class AlarmPropertyActivity extends AppCompatActivity {
     private TextView wu;
     private TextView liu;
     private TextView norepeat;
+    private Intent intent;
+    private int position;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -55,8 +57,9 @@ public class AlarmPropertyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_property_activity);
 
-        Intent intent = getIntent();
+        intent = getIntent();
         alarm = (Alarm) intent.getSerializableExtra("Alarm");
+        position = intent.getIntExtra("AlarmPosition",-1);
 
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(true);
@@ -395,6 +398,12 @@ public class AlarmPropertyActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.save_alarm:
+                Bundle data = new Bundle();
+                data.putSerializable("AlarmSaved",alarm);
+                intent.putExtras(data);
+                intent.putExtra("AlarmSavedPosition", position);
+                AlarmPropertyActivity.this.setResult(1, intent);
+                AlarmPropertyActivity.this.finish();
                 break;
             case R.id.hours_change:
                 if (timePicker.is24HourView()) {
@@ -410,45 +419,7 @@ public class AlarmPropertyActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "AlarmProperty Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.example.han.myalarmclock/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "AlarmProperty Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.example.han.myalarmclock/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
-    }
 
     private void noRepeat(){
         if (alarm.getRepeatFlag() == false) {

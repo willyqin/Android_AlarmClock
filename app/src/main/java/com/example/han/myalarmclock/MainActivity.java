@@ -29,15 +29,25 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    RecyclerView.Adapter mAdapter;
+    com.example.han.myalarmclock.MyAdapter mAdapter;
     TextView textView;
     RecyclerView.LayoutManager layoutManager;
     List<Alarm> alarmList;
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == 0 && resultCode == 1){
+            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+            int position = data.getIntExtra("AlarmSavedPosition",-1);
+            alarmList.set(position,alarm);
+            mAdapter.notifyDataSetChanged();
+        }
+    }
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,17 +80,18 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 6; i++){
             alarmList.add(new Alarm());
         }
-        mAdapter = new MyAdapter(alarmList,this);
+        mAdapter = new com.example.han.myalarmclock.MyAdapter(alarmList,this);
         recyclerView.setAdapter(mAdapter);
 
         mAdapter.setOnItemClickListener(new MyAdapter.RecyclerViewClickListener() {
             @Override
-            public void onItemClick(Alarm alarm) {
+            public void onItemClick(Alarm alarm,int position) {
                 Bundle data = new Bundle();
                 data.putSerializable("Alarm", alarm);
                 Intent intent = new Intent(MainActivity.this,AlarmPropertyActivity.class);
                 intent.putExtras(data);
-                startActivity(intent);
+                intent.putExtra("AlarmPosition",position);
+                startActivityForResult(intent, 0);
             }
         });
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
@@ -141,6 +152,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 }
