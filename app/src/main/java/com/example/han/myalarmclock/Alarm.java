@@ -53,7 +53,7 @@ public class Alarm implements Serializable {
     private Boolean vibrate = true;
     private Boolean repeatFlag = true;
     private String alarmName;
-    private String alarmText = new String("请输入明天想喊醒自己的话");
+    private String alarmText = new String("");
 
     Alarm(){
 
@@ -229,7 +229,7 @@ public class Alarm implements Serializable {
     public  String getDaysString(){
         StringBuilder Days = new StringBuilder();
         if (repeatFlag == false){
-            Days.append("仅一次");
+            Days.append("仅一次 ");
 //            setAlarmActive(false);
         }else{
             Arrays.sort(days, new Comparator<Day>() {
@@ -273,4 +273,5 @@ public class Alarm implements Serializable {
         }
         return untilTime;
     }
+
 }

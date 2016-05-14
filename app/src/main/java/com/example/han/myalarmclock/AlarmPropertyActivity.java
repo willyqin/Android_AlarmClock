@@ -13,8 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -44,6 +46,8 @@ public class AlarmPropertyActivity extends AppCompatActivity {
     private TextView wu;
     private TextView liu;
     private TextView norepeat;
+    private TextView delete;
+    private EditText inputWords;
     private Intent intent;
     private int position;
     /**
@@ -84,7 +88,10 @@ public class AlarmPropertyActivity extends AppCompatActivity {
         si = (TextView) findViewById(R.id.si);
         wu = (TextView) findViewById(R.id.wu);
         liu = (TextView) findViewById(R.id.liu);
+        inputWords = (EditText) findViewById(R.id.input_word);
         norepeat = (TextView) findViewById(R.id.no_repeat);
+
+        inputWords.setText(alarm.getAlarmText());
 
 
         final List<Alarm.Day> tempList = Arrays.asList(alarm.getDays());
@@ -373,12 +380,27 @@ public class AlarmPropertyActivity extends AppCompatActivity {
             }
         });
 
+        delete = (TextView) findViewById(R.id.delete_alarm);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle data = new Bundle();
+                data.putSerializable("AlarmSaved",alarm);
+                intent.putExtras(data);
+                intent.putExtra("AlarmSavedPosition", position);
+                AlarmPropertyActivity.this.setResult(0, intent);
+                AlarmPropertyActivity.this.finish();
+            }
+        });
+
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.mipmap.ic_close_white_36dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Toast.makeText(AlarmPropertyActivity.this,"hello",Toast.LENGTH_SHORT).show();
+                AlarmPropertyActivity.this.setResult(2,intent);
                 finish();
             }
         });
@@ -393,11 +415,20 @@ public class AlarmPropertyActivity extends AppCompatActivity {
         return true;
     }
 
+
+    @Override
+    public void onBackPressed() {
+//        Toast.makeText(AlarmPropertyActivity.this,"hello",Toast.LENGTH_SHORT).show();
+        setResult(2,intent);
+        finish();
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
             case R.id.save_alarm:
+                alarm.setAlarmText(inputWords.getText().toString());
                 Bundle data = new Bundle();
                 data.putSerializable("AlarmSaved",alarm);
                 intent.putExtras(data);

@@ -210,7 +210,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:id="@+id/input_password"
+                    android:id="@+id/input_word"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入唤醒自己的文字：" />
@@ -223,10 +223,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/delete_alarm"
             android:layout_margin="20dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:gravity="center"
             android:textSize="22sp"
             android:textStyle="bold"
             android:text="删除闹钟"/>

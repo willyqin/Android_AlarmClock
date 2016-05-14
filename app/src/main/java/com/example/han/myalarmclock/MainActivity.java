@@ -1,6 +1,9 @@
 package com.example.han.myalarmclock;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -21,16 +24,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.StreamCorruptedException;
 import java.util.ArrayList;
 import java.util.List;
+
+import Database.MyDataBaseHelper;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private MyDataBaseHelper mDataBaseHelper;
+    private SQLiteDatabase db;
     RecyclerView recyclerView;
     com.example.han.myalarmclock.MyAdapter mAdapter;
-    TextView textView;
+    TextView emptyView;
     RecyclerView.LayoutManager layoutManager;
     List<Alarm> alarmList;
 
@@ -39,8 +53,30 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == 0 && resultCode == 1){
             Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
             int position = data.getIntExtra("AlarmSavedPosition",-1);
-            alarmList.set(position,alarm);
+            alarm.setAlarmActive(true);
+            alarmList.set(position, alarm);
             mAdapter.notifyDataSetChanged();
+            emptyView.setVisibility(View.INVISIBLE);
+        }
+        if (requestCode == 1 && resultCode == 1){
+            recyclerView.setVisibility(View.VISIBLE);
+            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+            alarmList.add(alarm);
+            mAdapter.notifyDataSetChanged(); //mark
+            emptyView.setVisibility(View.INVISIBLE);
+        }
+        if (requestCode == 0 && resultCode == 0){
+            int position = data.getIntExtra("AlarmSavedPosition",-1);
+            alarmList.remove(position);
+            mAdapter.notifyDataSetChanged();
+            if (position == 0) emptyView.setVisibility(View.VISIBLE);
+        }
+        if(requestCode == 1 && resultCode == 0){
+            alarmList.remove(alarmList.size() - 1);
+            mAdapter.notifyDataSetChanged();
+        }
+        if (resultCode == 2){
+
         }
     }
 
@@ -53,22 +89,63 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mDataBaseHelper  = new MyDataBaseHelper(this,"Alarm.db",null,1);
+        db = mDataBaseHelper.getWritableDatabase();
+        alarmList = new ArrayList<Alarm>();
+        Cursor cursor = db.query("Alarm_Table",null,null,null,null,null,null);
+        if (cursor.moveToFirst()){
+            do {
+                Alarm alarm = new Alarm();
+                alarm.setAlarmActive(cursor.getInt(cursor.getColumnIndex("alarm_active")) == 1);
+                alarm.setAlarmText(cursor.getString(cursor.getColumnIndex("alarm_text")));
+                alarm.setAlarmTime(cursor.getString(cursor.getColumnIndex("alarm_time")));
+
+                byte[] repeatDaysBytes = cursor.getBlob(cursor.getColumnIndex("alarm_days"));
+                ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(repeatDaysBytes);
+                try {
+                    ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
+                    Alarm.Day[] repeatDays;
+                    Object object = objectInputStream.readObject();
+                    if(object instanceof Alarm.Day[]){
+                        repeatDays = (Alarm.Day[]) object;
+                        alarm.setDays(repeatDays);
+                    }
+                } catch (StreamCorruptedException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tone")));
+                alarmList.add(alarm);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        textView = (TextView)findViewById(R.id.empty_image);
+        emptyView = (TextView)findViewById(R.id.empty_image);
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Alarm newAlarm = new Alarm();
-                alarmList.add(newAlarm);
-                mAdapter.notifyDataSetChanged();
-                if (alarmList.size() == 1){
-                    recyclerView.setVisibility(View.VISIBLE);
-                    textView.setVisibility(View.INVISIBLE);
-                }
-
+                Bundle data = new Bundle();
+                data.putSerializable("Alarm", newAlarm);
+                Intent intent = new Intent(MainActivity.this,AlarmPropertyActivity.class);
+                intent.putExtras(data);
+                startActivityForResult(intent, 1);
+//                alarmList.add(newAlarm);
+//                mAdapter.notifyDataSetChanged();
+//                if (alarmList.size() == 1){
+//                    recyclerView.setVisibility(View.VISIBLE);
+//                    textView.setVisibility(View.INVISIBLE);
+//                }
             }
         });
 
@@ -76,10 +153,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        alarmList = new ArrayList<Alarm>();
-        for (int i = 0; i < 6; i++){
-            alarmList.add(new Alarm());
-        }
+
         mAdapter = new com.example.han.myalarmclock.MyAdapter(alarmList,this);
         recyclerView.setAdapter(mAdapter);
 
@@ -109,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
                 if(alarmList.size() == 0){
                     recyclerView.setVisibility(View.INVISIBLE);
-                    textView.setVisibility(View.VISIBLE);
+                    emptyView.setVisibility(View.VISIBLE);
                 }
                 Snackbar.make(recyclerView, "已经成功删除", Snackbar.LENGTH_LONG)
                         .setAction("撤销删除", new View.OnClickListener() {
@@ -118,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                                         alarmList.add(pos, tempAlarm);
                                         mAdapter.notifyItemInserted(pos);
                                         recyclerView.setVisibility(View.VISIBLE);
-                                        textView.setVisibility(View.INVISIBLE);
+                                        emptyView.setVisibility(View.INVISIBLE);
                                     }
                                 }
 
@@ -130,6 +204,8 @@ public class MainActivity extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
 
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -153,4 +229,32 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onDestroy() {
+        db.delete("Alarm_Table","1",null);
+        ContentValues values = new ContentValues();
+        for (Alarm alarm : alarmList){
+
+            values.put("alarm_active",alarm.getAlarmActive());
+            values.put("alarm_time",alarm.getAlarmTimeString());
+
+            try {
+                ByteArrayOutputStream bos = new ByteArrayOutputStream();
+                ObjectOutputStream oos = null;
+                oos = new ObjectOutputStream(bos);
+                oos.writeObject(alarm.getDays());
+                byte[] buff = bos.toByteArray();
+
+                values.put("alarm_days", buff);
+
+            } catch (Exception e){
+            }
+            values.put("alarm_text",alarm.getAlarmText());
+            values.put("alarm_tone",alarm.getAlarmTonePath());
+            db.insert("Alarm_Table",null,values);
+            values.clear();
+        }
+        db.close();
+        super.onDestroy();
+    }
 }

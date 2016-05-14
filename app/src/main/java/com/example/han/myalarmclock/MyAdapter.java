@@ -18,8 +18,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
     private List<Alarm> mData;
     private Context mcontext;
     private RecyclerViewClickListener recyclerViewClickListener = null;
-    private final static int ALARM_TYPE = 1;
-    private final static int POSITION_TYPE = 0;
     MyAdapter(List<Alarm> mData,Context context) {
         this.mData = mData;
         mcontext = context;
