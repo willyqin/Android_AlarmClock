@@ -1,6 +1,11 @@
 package com.example.han.myalarmclock;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.media.RingtoneManager;
+import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -55,7 +60,7 @@ public class Alarm implements Serializable {
     private String alarmName;
     private String alarmText = new String("");
 
-    Alarm(){
+    public Alarm(){
 
     }
     public Boolean getRepeatFlag(){
@@ -106,6 +111,7 @@ public class Alarm implements Serializable {
         Calendar alarmTimeCal = Calendar.getInstance();
         alarmTimeCal.set(Calendar.HOUR_OF_DAY,Integer.parseInt(alarmTimeSplit[0]));
         alarmTimeCal.set(Calendar.MINUTE,Integer.parseInt(alarmTimeSplit[1]));
+        alarmTimeCal.set(Calendar.SECOND,0);
         setAlarmTime(alarmTimeCal);
 
     }
@@ -247,7 +253,20 @@ public class Alarm implements Serializable {
         return Days.toString();
     }
 
-    public void schedule(){}//未完成
+    public void schedule(Context context){
+        setAlarmActive(true);
+
+        Intent myIntent = new Intent(context, AlertBroadcastReceiver.class);
+        myIntent.putExtra("alarm", this);
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+
+        AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+
+        alarmManager.set(AlarmManager.RTC_WAKEUP, getAlarmTime().getTimeInMillis(), pendingIntent);
+        Log.d("nihao", "schedule");
+        Log.d("nihao",getAlarmTimeString());
+    }
 
     public String getTimeUntilNextAlarmMessage(){
         String untilTime = new String("");
@@ -264,7 +283,7 @@ public class Alarm implements Serializable {
             untilTime += "分钟";
         }else {
             if (temp >= 60 * 1000){
-                min = (int) (temp /6000);
+                min = (int) (temp /60000);
                 untilTime += String.valueOf(min);
                 untilTime += "分钟";
             }else{

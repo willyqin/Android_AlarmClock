@@ -1,32 +1,21 @@
 package com.example.han.myalarmclock;
 
-import android.app.Activity;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import org.w3c.dom.Text;
-
-import java.text.DateFormat;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -73,7 +62,10 @@ public class AlarmPropertyActivity extends AppCompatActivity {
         timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
-                alarm.setAlarmTime(String.valueOf(hourOfDay) + ":" + String.valueOf(minute));
+//                Log.d("nihao",""+hourOfDay);
+//                Log.d("nihao",""+minute);
+                alarm.setAlarmTime(hourOfDay + ":" + minute);
+//                Log.d("nihao",alarm.getAlarmTimeString());
                 untilTimeText.setText("还有" + alarm.getTimeUntilNextAlarmMessage());
             }
         });

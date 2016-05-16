@@ -18,12 +18,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
     private List<Alarm> mData;
     private Context mcontext;
     private RecyclerViewClickListener recyclerViewClickListener = null;
+    private SwitchCheckedListener switchCheckedListener = null;
     MyAdapter(List<Alarm> mData,Context context) {
         this.mData = mData;
         mcontext = context;
     }
 
 
+    public void setOnSwtichCheckedListener(SwitchCheckedListener mswtichCheckedListener){
+        switchCheckedListener = mswtichCheckedListener;
+    }
     public void setOnItemClickListener(RecyclerViewClickListener recyclerViewClickListener) {
         this.recyclerViewClickListener = recyclerViewClickListener;
     }
@@ -60,9 +64,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
         holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
         holder.repeatDays.setText(tempAlarm.getDaysString());
         holder.aSwitch.setChecked(tempAlarm.getAlarmActive());
-        holder.cardView.setTag(R.id.alarm_tag, tempAlarm);
         Integer pos;
         pos = position;
+        holder.aSwitch.setTag(R.id.alarm_tag,tempAlarm);
+        holder.aSwitch.setTag(R.id.position_tag,pos);
+        holder.cardView.setTag(R.id.alarm_tag, tempAlarm);
         holder.cardView.setTag(R.id.position_tag,pos);
         holder.cardView.setOnClickListener(this);
 //        new View.OnClickListener() {
@@ -77,18 +83,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
 //            }
 //        }
 
+
         holder.aSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Switch tempSwitch = (Switch) v;
-                Alarm alarm = mData.get(position);
-                if (tempSwitch.isChecked()) {
-                    alarm.setAlarmActive(true);
-                    holder.timeUntilTextView.setText("还有" + mData.get(position).getTimeUntilNextAlarmMessage());
-                }else{
-                    alarm.setAlarmActive(false);
-                    holder.timeUntilTextView.setText("闹钟已关闭");
+                if (switchCheckedListener != null){
+                    switchCheckedListener.onChecked((Alarm)v.getTag(R.id.alarm_tag),(Integer)v.getTag(R.id.position_tag),holder.timeUntilTextView);
                 }
+//                Switch tempSwitch = (Switch) v;
+//                Alarm alarm = mData.get(position);
+//                if (tempSwitch.isChecked()) {
+//                    alarm.setAlarmActive(true);
+//                    holder.timeUntilTextView.setText("还有" + mData.get(position).getTimeUntilNextAlarmMessage());
+//                }else{
+//                    alarm.setAlarmActive(false);
+//                    holder.timeUntilTextView.setText("闹钟已关闭");
+//                }
             }
         });
     }
@@ -103,6 +113,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
         void onItemClick(Alarm alarm,int position);
     }
 
+    public static  interface SwitchCheckedListener{
+        void onChecked(Alarm alarm,int position,TextView textView);
+    }
 
     @Override
     public void onClick(View v) {

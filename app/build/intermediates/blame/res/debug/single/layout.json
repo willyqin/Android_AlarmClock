@@ -36,6 +36,10 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_simple_dropdown_hint.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_activity_layout.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\layout\\alert_activity_layout.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar_include.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar_include.xml"
     },
