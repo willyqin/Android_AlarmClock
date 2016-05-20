@@ -1,12 +1,11 @@
 package com.example.han.myalarmclock;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,6 +18,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by Han on 2016/5/9.
@@ -55,6 +56,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         setContentView(R.layout.alarm_property_activity);
 
         init();
+        setTimer();
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -519,5 +521,27 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                 finish();
             }
         });
+    }
+
+    private void setTimer(){
+        final Handler handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == 0x1233) {
+                    alarm.getAlarmTime();
+                    untilTimeText.setText("还有" + alarm.getTimeUntilNextAlarmMessage());
+                }
+
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Message msg = new Message();
+                msg.what = 0x1233;
+                handler.sendMessage(msg);
+            }
+        },0,60000);
     }
 }
