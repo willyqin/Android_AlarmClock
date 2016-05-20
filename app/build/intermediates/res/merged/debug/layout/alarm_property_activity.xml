@@ -16,223 +16,251 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-    android:orientation="vertical" android:layout_width="match_parent"
+    <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:elevation="2dp"
-        android:layout_margin="8dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TimePicker
-                android:id="@+id/timePicker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true"
-                android:timePickerMode="spinner"></TimePicker>
-            <TextView
-                android:id="@+id/until_text_view_property"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/timePicker"
-                android:textSize="16sp"
-                android:text="还有2小时3分钟"
-                android:layout_marginBottom="8dp"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+        android:layout_height="192dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"/>
+
+        <TimePicker
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="-20dp"
+            android:elevation="4dp"
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/card_view1"
+            android:timePickerMode="spinner"/>
+        <TextView
+            android:elevation="4dp"
+            android:layout_marginTop="-5dp"
+            android:id="@+id/until_text_view_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/timePicker"
+            android:textSize="16sp"
+            android:text="闹钟剩余时间"
+            android:layout_marginBottom="8dp"/>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_view1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/repeatButton"
+            android:elevation="4dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           >
-
-            <TextView
-                android:id="@+id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="20dp"
-                android:text="重复"/>
-            <TextView
-                android:id="@+id/no_repeat"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="仅一次"/>
-            <TextView
-                android:id="@+id/liu"
-                android:layout_toLeftOf="@id/no_repeat"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="六"/>
-            <TextView
-                android:id="@+id/wu"
-                android:layout_toLeftOf="@id/liu"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="五"/>
-            <TextView
-                android:layout_toLeftOf="@id/wu"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:id="@+id/si"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="四"/>
-            <TextView
-                android:id="@+id/san"
-                android:layout_toLeftOf="@id/si"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="三"/>
-            <TextView
-                android:id="@+id/er"
-                android:layout_toLeftOf="@id/san"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="二"/>
-            <TextView
-                android:id="@+id/yi"
-                android:layout_toLeftOf="@id/er"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="一"/>
-            <TextView
-                android:id="@+id/ri"
-                android:layout_toLeftOf="@id/yi"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_alignBaseline="@id/repeatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="日"/>
-
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
+            android:layout_alignLeft="@id/card_view2"
+            android:layout_alignBottom="@id/card_view2"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text="重复"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/no_repeat"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_alignRight="@id/card_view2"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅一次"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/liu"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/no_repeat"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="六"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/wu"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/liu"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五"/>
+        <TextView
+            android:elevation="4dp"
+            android:layout_toLeftOf="@id/wu"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:id="@+id/si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/san"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/si"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/er"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/san"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/yi"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/er"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一"/>
+        <TextView
+            android:elevation="4dp"
+            android:id="@+id/ri"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/yi"
+            android:layout_marginRight="8dp"
+            android:layout_alignBaseline="@id/repeatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"/>
 
     <LinearLayout
+        android:id="@+id/card_divider1"
         android:layout_width="match_parent"
+        android:layout_below="@id/card_view2"
+        android:layout_centerHorizontal="true"
         android:layout_height="1dp"
         android:background="#EEEEEE"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"></LinearLayout>
+        android:layout_marginRight="8dp"/>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
+        android:layout_below="@id/card_divider1"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
+        android:layout_marginRight="8dp"/>
+
+
+        <TextView
+            android:id="@+id/ring_type"
+            android:elevation="4dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            >
-
-            <TextView
-                android:id="@+id/ring_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="20dp"
-                android:text="铃声"/>
-            <TextView
-                android:id="@+id/ring_name"
-                android:layout_alignBaseline="@id/ring_type"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="4dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="默认铃声"/>
-
-
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+            android:layout_alignLeft="@id/card_view3"
+            android:layout_alignBottom="@id/card_view3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text="铃声"/>
+        <TextView
+            android:id="@+id/ring_name"
+            android:elevation="4dp"
+            android:layout_alignBaseline="@id/ring_type"
+            android:layout_alignRight="@id/card_view3"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认铃声"/>
 
     <LinearLayout
+        android:id="@+id/card_divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_view3"
         android:background="#EEEEEE"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"></LinearLayout>
+        android:layout_marginRight="8dp"/>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_divider2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp">
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="8dp"
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <EditText
+                android:id="@+id/input_word"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/input_word"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="请输入唤醒自己的文字：" />
-            </android.support.design.widget.TextInputLayout>
+                android:layout_height="wrap_content"
+                android:hint="请输入唤醒自己的文字：" />
+        </android.support.design.widget.TextInputLayout>
     </android.support.v7.widget.CardView>
 
+
     <android.support.v7.widget.CardView
+        android:id="@+id/card_view5"
+        android:layout_below="@id/card_view4"
+        android:layout_centerHorizontal="true"
         card_view:cardBackgroundColor="#F44336"
         android:layout_margin="8dp"
+        card_view:cardCornerRadius="2dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="72dp"/>
+
         <TextView
+            android:elevation="4dp"
             android:id="@+id/delete_alarm"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/card_view5"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:gravity="center"
             android:textSize="22sp"
             android:textStyle="bold"
             android:text="删除闹钟"/>
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+</RelativeLayout>
 </ScrollView>
 </LinearLayout>
