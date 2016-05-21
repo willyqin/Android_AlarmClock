@@ -83,13 +83,15 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         int id = item.getItemId();
         switch (id) {
             case R.id.save_alarm:
-                alarm.setAlarmText(inputWords.getText().toString());
-                Bundle data = new Bundle();
-                data.putSerializable("AlarmSaved",alarm);
-                intent.putExtras(data);
-                intent.putExtra("AlarmSavedPosition", position);
-                AlarmPropertyActivity.this.setResult(1, intent);
-                AlarmPropertyActivity.this.finish();
+                if (inputWords.getText().toString() != "") {
+                    alarm.setAlarmText(inputWords.getText().toString());
+                    Bundle data = new Bundle();
+                    data.putSerializable("AlarmSaved", alarm);
+                    intent.putExtras(data);
+                    intent.putExtra("AlarmSavedPosition", position);
+                    AlarmPropertyActivity.this.setResult(1, intent);
+                    AlarmPropertyActivity.this.finish();
+                }
                 break;
             case R.id.hours_change:
                 if (timePicker.is24HourView()) {

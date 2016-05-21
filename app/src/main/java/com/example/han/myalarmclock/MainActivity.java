@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +30,8 @@ import java.io.ObjectOutputStream;
 import java.io.StreamCorruptedException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import Database.MyDataBaseHelper;
 import service.AlarmServiceBroadcasetReceiver;
@@ -49,32 +53,31 @@ public class MainActivity extends AppCompatActivity {
             Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
             int position = data.getIntExtra("AlarmSavedPosition",-1);
             alarm.setAlarmActive(true);
-            alarmList.set(position, alarm);
+            alarmList.set(position, alarm);     //数据更新 ok
             mAdapter.notifyDataSetChanged();
             emptyView.setVisibility(View.INVISIBLE);
+            updataDatabase();
+
         }
         if (requestCode == 1 && resultCode == 1){
             recyclerView.setVisibility(View.VISIBLE);
             Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
-            alarmList.add(alarm);
+            alarmList.add(alarm);                //数据添加 ok
             mAdapter.notifyDataSetChanged(); //mark
             emptyView.setVisibility(View.INVISIBLE);
+            addDatabase(alarm);
         }
         if (requestCode == 0 && resultCode == 0){
             int position = data.getIntExtra("AlarmSavedPosition",-1);
-            alarmList.remove(position);
+            alarmList.remove(position);               //数据删除
             mAdapter.notifyDataSetChanged();
             if (position == 0) emptyView.setVisibility(View.VISIBLE);
+            updataDatabase();
         }
-        if(requestCode == 1 && resultCode == 0){
-            alarmList.remove(alarmList.size() - 1);
-            mAdapter.notifyDataSetChanged();
+        if(requestCode == 1 && resultCode == 0){        //fab启动的活动，返回失败
 
         }
-        if (resultCode == 2){
 
-        }
-        updataDatabase();
         callAlarmServiceBroadcastReceiver();
     }
 
@@ -129,6 +132,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         emptyView = (TextView)findViewById(R.id.empty_image);
+        if (alarmList.size() != 0){
+            emptyView.setVisibility(View.INVISIBLE);
+        }
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -227,6 +233,23 @@ public class MainActivity extends AppCompatActivity {
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
         itemTouchHelper.attachToRecyclerView(recyclerView);
 
+        final Handler handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == 0x123){
+                    mAdapter.notifyDataSetChanged();
+                }
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Message msg = new Message();
+                msg.what=0x123;
+                handler.sendMessage(msg);
+            }
+        }, 0 , 60000);
     }
 
 
@@ -288,7 +311,26 @@ public class MainActivity extends AppCompatActivity {
 
         Intent mathAlarmServiceIntent = new Intent(this, AlarmServiceBroadcasetReceiver.class);
         sendBroadcast(mathAlarmServiceIntent);
-
-
     }
+
+    private void addDatabase(Alarm alarm){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("alarm_active",alarm.getAlarmActive());
+        contentValues.put("alarm_time",alarm.getAlarmTimeString());
+        try {
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = null;
+            oos = new ObjectOutputStream(bos);
+            oos.writeObject(alarm.getDays());
+            byte[] buff = bos.toByteArray();
+
+            contentValues.put("alarm_days", buff);
+
+        } catch (Exception e){
+        }
+        contentValues.put("alarm.text",alarm.getAlarmText());
+        contentValues.put("alarm_tone",alarm.getAlarmTonePath());
+        db.insert("Alarm_Table", null,contentValues);
+    }
+
 }

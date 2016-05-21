@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -43,6 +44,8 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         Bundle bundle = this.getIntent().getExtras();
         alarm = (Alarm) bundle.getSerializable("alarm");
 
+        TextView textView =(TextView) findViewById(R.id.alert_textview2);
+        textView.setText(alarm.getAlarmText());
         editText = (EditText) findViewById(R.id.alert_textview);
         button = (Button) findViewById(R.id.alert_button);
         button.setOnClickListener(this);
@@ -101,24 +104,7 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         super.onDestroy();
     }
 
-    private void startAlert() {
-        mediaPlayer = new MediaPlayer();
-        Log.d("nihao","startAlert");
-        try{
-            File file = new File(Environment.getExternalStorageDirectory(),"1.mp3");
-            mediaPlayer.setDataSource(file.getPath());
-            mediaPlayer.prepare();
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
-            mediaPlayer.setLooping(true);
-            mediaPlayer.start();
-            Log.d("nihao","play");
-        } catch (IOException e) {
-            mediaPlayer.release();
-            alarmActive = false;
-            Log.d("nihao","yichang");
-        }
 
-    }
 
     @Override
     public void onClick(View v) {
