@@ -1,28 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <TextView
+    <android.support.v7.widget.CardView
+        android:id="@+id/alert_cardview1"
+        android:elevation="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/alert_textview2"/>
-    <android.support.design.widget.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/alert_textview"
+        android:layout_height="wrap_content">
+        <TextView
+            android:elevation="4dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="请输入"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_textview2"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/alert_cardview1"
+        android:id="@+id/alert_cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/alert_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入上方的文字"/>
+        </android.support.design.widget.TextInputLayout>
+    </android.support.v7.widget.CardView>
+
 
     <Button
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:id="@+id/alert_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="确定"
-        />
+        android:layout_below="@+id/alert_cardview2"
+        android:layout_alignParentEnd="true" />
 
-</LinearLayout>
+</RelativeLayout>

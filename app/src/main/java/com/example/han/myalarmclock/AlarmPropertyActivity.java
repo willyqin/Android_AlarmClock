@@ -1,17 +1,24 @@
 package com.example.han.myalarmclock;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -39,11 +46,17 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     private TextView liu;
     private TextView norepeat;
     private TextView delete;
+    private TextView errorInput;
     private EditText inputWords;
     private Intent intent;
     private int position;
     private int gray;
     private int fontColor;
+    private boolean input;
+    private Animation anim1;
+    private CardView cardView4;
+    private Animation animEmpty;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -83,14 +96,26 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         int id = item.getItemId();
         switch (id) {
             case R.id.save_alarm:
-                if (inputWords.getText().toString() != "") {
-                    alarm.setAlarmText(inputWords.getText().toString());
-                    Bundle data = new Bundle();
-                    data.putSerializable("AlarmSaved", alarm);
-                    intent.putExtras(data);
-                    intent.putExtra("AlarmSavedPosition", position);
-                    AlarmPropertyActivity.this.setResult(1, intent);
-                    AlarmPropertyActivity.this.finish();
+                if(inputWords.getText().toString().length() != 0) {
+                    if (input) {
+                        alarm.setAlarmText(inputWords.getText().toString());
+                        alarm.setAlarmActive(true);
+                        Bundle data = new Bundle();
+                        data.putSerializable("AlarmSaved", alarm);
+                        intent.putExtras(data);
+                        intent.putExtra("AlarmSavedPosition", position);
+                        AlarmPropertyActivity.this.setResult(1, intent);
+                        AlarmPropertyActivity.this.finish();
+                    } else {
+                        Toast.makeText(MyApplication.getContext(), "只能输入中文汉字", Toast.LENGTH_LONG).show();
+
+                        errorInput.startAnimation(anim1);
+
+                    }
+                }else{
+                    Toast.makeText(MyApplication.getContext(),"请输入唤醒自己的文字",Toast.LENGTH_SHORT).show();
+                    cardView4.setElevation(24);
+                    cardView4.startAnimation(animEmpty);
                 }
                 break;
             case R.id.hours_change:
@@ -159,9 +184,14 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     }
 
     private void init(){
+
+        cardView4 = (CardView) findViewById(R.id.card_view4);
+        anim1 = AnimationUtils.loadAnimation(this,R.anim.input_error_anim);
+        animEmpty = AnimationUtils.loadAnimation(this,R.anim.empty_shake);
+
         intent = getIntent();
         alarm = (Alarm) intent.getSerializableExtra("Alarm");
-        position = intent.getIntExtra("AlarmPosition",-1);
+        position = intent.getIntExtra("AlarmPosition", -1);
 
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.setIs24HourView(true);
@@ -191,8 +221,23 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         liu = (TextView) findViewById(R.id.liu);
         inputWords = (EditText) findViewById(R.id.input_word);
         norepeat = (TextView) findViewById(R.id.no_repeat);
+        errorInput = (TextView) findViewById(R.id.input_error);
 
         inputWords.setText(alarm.getAlarmText());
+        inputWords.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+                        if (! allIsChinese(source.toString())){
+                            errorInput.setVisibility(View.VISIBLE);
+                            input = false;
+                        }else{
+                            errorInput.setVisibility(View.INVISIBLE);
+                            input = true;
+                        }
+                        return null;
+                }
+        }} );
 
 
         gray = getResources().getColor(R.color.colorGray);
@@ -546,4 +591,35 @@ public class AlarmPropertyActivity extends AppCompatActivity{
             }
         },0,60000);
     }
+
+    public static boolean isChinese(Character c){
+        char[] chineseParam = new char[]{'」','，','。','？','…','：','～','【','＃','、','％','＊','＆','＄','（','‘','’','“','”','『','〔','｛','【'
+                ,'￥','￡','‖','〖','《','「','》','〗','】','｝','〕','』','”','）','！','；','—'};
+        for (Character temp : chineseParam){
+            if(c == temp)
+                return false;
+        }
+        Character.UnicodeBlock ub = Character.UnicodeBlock.of( c );
+        if ( ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
+                || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
+                || ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A
+                || ub == Character.UnicodeBlock.GENERAL_PUNCTUATION
+                || ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
+                || ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS ){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean allIsChinese(String text) {
+        char[] chars= text.toCharArray();
+        for (char temp:chars){
+            if (!isChinese(temp)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }

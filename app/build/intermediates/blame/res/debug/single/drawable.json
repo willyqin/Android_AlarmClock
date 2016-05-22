@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
-        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
-    },
-    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -26,6 +26,10 @@
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\color_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",

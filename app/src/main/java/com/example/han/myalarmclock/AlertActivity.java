@@ -39,8 +39,6 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
         setContentView(R.layout.alert_activity_layout);
 
-           Log.d("nihao", "AlertActivity");
-
         Bundle bundle = this.getIntent().getExtras();
         alarm = (Alarm) bundle.getSerializable("alarm");
 

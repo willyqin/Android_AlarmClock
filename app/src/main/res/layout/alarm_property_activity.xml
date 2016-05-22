@@ -1,266 +1,494 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#607D8B"
-        android:elevation="4dp"
-        />
-    <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <RelativeLayout android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+        android:background="#607D8B" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view1"
         android:layout_width="match_parent"
         android:layout_height="192dp"
         android:layout_centerHorizontal="true"
-        android:elevation="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"/>
+        android:elevation="4dp">
 
         <TimePicker
-            android:layout_marginTop="-25dp"
-            android:layout_marginBottom="-20dp"
-            android:elevation="4dp"
             android:id="@+id/timePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignTop="@id/card_view1"
-            android:timePickerMode="spinner"/>
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dip"
+            android:timePickerMode="spinner" />
+
         <TextView
-            android:elevation="4dp"
-            android:layout_marginTop="-5dp"
             android:id="@+id/until_text_view_property"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/timePicker"
-            android:textSize="16sp"
+            android:layout_gravity="bottom|center_horizontal"
             android:text="闹钟剩余时间"
-            android:layout_marginBottom="8dp"/>
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view2"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/card_view1"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
-
-
-        <TextView
-            android:id="@+id/repeatButton"
-            android:elevation="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/card_view2"
-            android:layout_alignBottom="@id/card_view2"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="20dp"
-            android:text="重复"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/no_repeat"
-            android:textStyle="bold"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_alignRight="@id/card_view2"
-            android:layout_marginRight="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="仅一次"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/liu"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/no_repeat"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="六"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/wu"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/liu"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="五"/>
-        <TextView
-            android:elevation="4dp"
-            android:layout_toLeftOf="@id/wu"
-            android:textStyle="bold"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:id="@+id/si"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="四"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/san"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/si"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="三"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/er"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/san"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="二"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/yi"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/er"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="一"/>
-        <TextView
-            android:elevation="4dp"
-            android:id="@+id/ri"
-            android:textStyle="bold"
-            android:layout_toLeftOf="@id/yi"
-            android:layout_marginRight="8dp"
-            android:layout_alignBaseline="@id/repeatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="日"/>
-
-    <LinearLayout
-        android:id="@+id/card_divider1"
-        android:layout_width="match_parent"
-        android:layout_below="@id/card_view2"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_height="1dp"
-        android:background="#EEEEEE"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="16dip"
+            android:layout_marginTop="16dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/repeatButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_weight="1"
+                android:text="重复"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="日"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="一"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/er"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="二"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/san"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="三"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="四"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="五"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/liu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="六"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/no_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="仅一次"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view3"
-        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_below="@id/card_divider1"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
-
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp">
 
         <TextView
             android:id="@+id/ring_type"
-            android:elevation="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/card_view3"
-            android:layout_alignBottom="@id/card_view3"
-            android:textSize="22sp"
-            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="20dp"
-            android:text="铃声"/>
+            android:text="铃声"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/ring_name"
-            android:elevation="4dp"
-            android:layout_alignBaseline="@id/ring_type"
-            android:layout_alignRight="@id/card_view3"
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="默认铃声"/>
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:text="默认铃声" />
+    </android.support.v7.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/card_divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/card_view3"
-        android:background="#EEEEEE"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view4"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/card_divider2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp">
+
         <android.support.design.widget.TextInputLayout
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
             android:focusable="true"
             android:focusableInTouchMode="true">
+
             <EditText
                 android:id="@+id/input_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="请输入唤醒自己的文字：" />
         </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_error"
+            android:text="只能输入汉字"
+            android:textColor="#B71C1C"
+            android:visibility="invisible"/>
     </android.support.v7.widget.CardView>
-
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view5"
-        android:layout_below="@id/card_view4"
-        android:layout_centerHorizontal="true"
-        card_view:cardBackgroundColor="#F44336"
-        android:layout_margin="8dp"
-        card_view:cardCornerRadius="2dp"
         android:layout_width="match_parent"
-        android:layout_height="72dp"/>
-
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
+        card_view:cardBackgroundColor="#FF4081"
+        card_view:cardCornerRadius="2dp">
         <TextView
-            android:elevation="4dp"
             android:id="@+id/delete_alarm"
-            android:layout_centerHorizontal="true"
-            android:layout_alignBottom="@id/card_view5"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="4dp"
             android:gravity="center"
+            android:text="删除闹钟"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:text="删除闹钟"/>
-</RelativeLayout>
-</ScrollView>
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
 </LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="#607D8B"-->
+        <!--android:elevation="4dp"-->
+        <!--/>-->
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<RelativeLayout android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="192dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:elevation="4dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginBottom="8dp"/>-->
+
+        <!--<TimePicker-->
+            <!--android:layout_marginTop="-25dp"-->
+            <!--android:layout_marginBottom="-20dp"-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/timePicker"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignTop="@id/card_view1"-->
+            <!--android:timePickerMode="spinner"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginTop="-5dp"-->
+            <!--android:id="@+id/until_text_view_property"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/timePicker"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="闹钟剩余时间"-->
+            <!--android:layout_marginBottom="8dp"/>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/card_view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/repeatButton"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@id/card_view2"-->
+            <!--android:layout_alignBottom="@id/card_view2"-->
+            <!--android:textSize="22sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:text="重复"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/no_repeat"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_alignRight="@id/card_view2"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="仅一次"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/liu"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/no_repeat"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="六"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/wu"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/liu"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="五"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_toLeftOf="@id/wu"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:id="@+id/si"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="四"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/san"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/si"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="三"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/er"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/san"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="二"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/yi"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/er"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="一"/>-->
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/ri"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_toLeftOf="@id/yi"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_alignBaseline="@id/repeatButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="日"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/card_divider1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@id/card_view2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#EEEEEE"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"/>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view3"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:layout_below="@id/card_divider1"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/ring_type"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@id/card_view3"-->
+            <!--android:layout_alignBottom="@id/card_view3"-->
+            <!--android:textSize="22sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:text="铃声"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/ring_name"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_alignBaseline="@id/ring_type"-->
+            <!--android:layout_alignRight="@id/card_view3"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="默认铃声"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/card_divider2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/card_view3"-->
+        <!--android:background="#EEEEEE"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"/>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view4"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/card_divider2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp">-->
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true">-->
+            <!--<EditText-->
+                <!--android:id="@+id/input_word"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="请输入唤醒自己的文字：" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view5"-->
+        <!--android:layout_below="@id/card_view4"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--card_view:cardBackgroundColor="#F44336"-->
+        <!--android:layout_margin="8dp"-->
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="72dp"/>-->
+
+        <!--<TextView-->
+            <!--android:elevation="4dp"-->
+            <!--android:id="@+id/delete_alarm"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignBottom="@id/card_view5"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="22sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="删除闹钟"/>-->
+<!--</RelativeLayout>-->
+<!--</ScrollView>-->
+<!--</LinearLayout>-->
+
