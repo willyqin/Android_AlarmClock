@@ -1,7 +1,14 @@
 package com.example.han.myalarmclock;
 
+import android.app.AlertDialog;
 import android.app.Application;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -10,6 +17,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,7 +63,14 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     private boolean input;
     private Animation anim1;
     private CardView cardView4;
+    private CardView cardView3;
     private Animation animEmpty;
+    private MediaPlayer mediaPlayer;
+    private String[] alarmTones;
+    private String[] alarmTonesPaths;
+    private AlertDialog.Builder alertDialog;
+    private String tonePath;
+
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -104,15 +119,17 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         data.putSerializable("AlarmSaved", alarm);
                         intent.putExtras(data);
                         intent.putExtra("AlarmSavedPosition", position);
+//                        Log.d("nihao","saved");
                         AlarmPropertyActivity.this.setResult(1, intent);
                         AlarmPropertyActivity.this.finish();
                     } else {
+//                        Log.d("nihao","errorInput");
                         Toast.makeText(MyApplication.getContext(), "只能输入中文汉字", Toast.LENGTH_LONG).show();
-
                         errorInput.startAnimation(anim1);
 
                     }
                 }else{
+                    Log.d("nihao","empty");
                     Toast.makeText(MyApplication.getContext(),"请输入唤醒自己的文字",Toast.LENGTH_SHORT).show();
                     cardView4.setElevation(24);
                     cardView4.startAnimation(animEmpty);
@@ -185,7 +202,99 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
     private void init(){
 
+        RingtoneManager ringtoneManager = new RingtoneManager(getApplicationContext());
+        ringtoneManager.setType(RingtoneManager.TYPE_ALARM);
+        Cursor cursor = ringtoneManager.getCursor();
+
+
+
+        alarmTones = new String[cursor.getCount()];
+        alarmTonesPaths = new String[cursor.getCount()];
+
+        if (cursor.moveToFirst()){
+            do {
+                alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
+                alarmTonesPaths[cursor.getPosition()] = ringtoneManager.getRingtoneUri(cursor.getPosition()).toString();
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+
+
+        alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setTitle("选取闹钟铃声");
+        CharSequence[] items = new CharSequence[alarmTones.length];
+        for (int i = 0; i < items.length;i ++){
+            items[i] = alarmTones[i];
+        }
+
+        alertDialog.setSingleChoiceItems(items,1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                tonePath = alarmTonesPaths[which];
+                if (tonePath != null){
+                    if (mediaPlayer == null){
+                        mediaPlayer = new MediaPlayer();
+                    }else {
+                        if (mediaPlayer.isPlaying())
+                            mediaPlayer.stop();
+                        mediaPlayer.reset();
+                    }
+                    try{
+                        mediaPlayer.setDataSource(AlarmPropertyActivity.this, Uri.parse(tonePath));
+                        mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
+                        mediaPlayer.setLooping(false);
+                        mediaPlayer.prepare();
+                        mediaPlayer.start();
+
+
+                    }catch (Exception e){
+                        try {
+                            if (mediaPlayer.isPlaying())
+                                mediaPlayer.stop();
+                        }catch (Exception e2){
+
+                        }
+                    }
+                }
+            }
+        });
+
+        alertDialog.setNegativeButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alarm.setAlarmTonePath(tonePath);
+                try{
+                    if (mediaPlayer.isPlaying()){
+                        mediaPlayer.stop();
+                    }
+                }catch (Exception e){
+
+                }
+
+            }
+        });
+        alertDialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                try{
+                    if (mediaPlayer.isPlaying()){
+                        mediaPlayer.stop();
+                    }
+                }catch (Exception e){
+
+                }
+            }
+        });
+
+
         cardView4 = (CardView) findViewById(R.id.card_view4);
+        cardView3 =(CardView) findViewById(R.id.card_view3);
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.show();
+            }
+        });
         anim1 = AnimationUtils.loadAnimation(this,R.anim.input_error_anim);
         animEmpty = AnimationUtils.loadAnimation(this,R.anim.empty_shake);
 
@@ -224,10 +333,19 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         errorInput = (TextView) findViewById(R.id.input_error);
 
         inputWords.setText(alarm.getAlarmText());
+        if (!allIsChinese(inputWords.getText().toString())){
+            errorInput.setVisibility(View.VISIBLE);
+            input = false;
+        }else {
+            errorInput.setVisibility(View.INVISIBLE);
+            input = true;
+        }
         inputWords.setFilters(new InputFilter[]{
                 new InputFilter() {
                     @Override
                     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+//                        Log.d("nihao",allIsChinese(source.toString())+"source");
+//                        Log.d("nihao",allIsChinese(inputWords.getText().toString())+"gettext");
                         if (! allIsChinese(source.toString())){
                             errorInput.setVisibility(View.VISIBLE);
                             input = false;

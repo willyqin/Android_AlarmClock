@@ -3,6 +3,7 @@
     package="com.example.han.myalarmclock">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name="com.example.han.myalarmclock.MyApplication"
