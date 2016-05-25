@@ -87,9 +87,11 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_property_activity);
 
-        Log.d("nihao","AlarmPropertyActivity onCreate before init()");
+        Log.d("nihao", "AlarmPropertyActivity onCreate before init()");
         init();
         setTimer();
+        Calendar calendar2 = Calendar.getInstance();
+        Log.d("nihao",calendar2.getTimeInMillis() - calendar1.getTimeInMillis() + "");
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -223,10 +225,10 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         alarmTones = new String[cursor.getCount()];
         alarmTonesPaths = new String[cursor.getCount()];
 
-//        final Handler handler = new Handler(){
-//            @Override
-//            public void handleMessage(Message msg) {
-//                if (msg.what == 0x12345){
+        final Handler handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == 0x12345){
                     if (cursor.moveToFirst()){
                         do {
                             alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
@@ -234,10 +236,16 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         } while (cursor.moveToNext());
                     }
                     cursor.close();
-//                }
-//            }
-//        };
+                }
+            }
+        };
 
+        new Thread(){
+            @Override
+            public void run() {
+                handler.sendEmptyMessage(0x12345);
+            }
+        }.start();
 //        new Timer().schedule(new TimerTask() {
 //            @Override
 //            public void run() {

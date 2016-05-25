@@ -18,13 +18,10 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a57c3e-4581-4cbf-a642-810550b70692" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/Alarm$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/Alarm$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/Alarm.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/Alarm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$11.class" />
@@ -39,15 +36,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlarmPropertyActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/service/AlarmService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/service/AlarmService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlertActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/AlertActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/han/myalarmclock/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/Database/MyDataBaseHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/Database/MyDataBaseHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
@@ -56,12 +44,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/Alarm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/service/AlarmService.java" afterPath="$PROJECT_DIR$/app/src/main/java/service/AlarmService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlertActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlertActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/MyDataBaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/MyDataBaseHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyAlarmClock.iws" />
@@ -93,45 +76,49 @@
       <file leaf-file-name="AlarmPropertyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9961165">
-              <caret line="240" column="0" selection-start-line="240" selection-start-column="2" selection-end-line="245" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.67241377">
+              <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
               <folding>
-                <element signature="e#8717#9966#0" expanded="true" />
-                <element signature="e#9965#9966#0" expanded="true" />
-                <element signature="e#10014#10552#0" expanded="true" />
-                <element signature="e#10551#10552#0" expanded="true" />
-                <element signature="e#10599#10947#0" expanded="true" />
-                <element signature="e#10946#10947#0" expanded="true" />
-                <element signature="e#11112#11264#0" expanded="true" />
-                <element signature="e#11263#11264#0" expanded="true" />
-                <element signature="e#11823#12291#0" expanded="true" />
-                <element signature="e#12290#12291#0" expanded="true" />
-                <element signature="e#13334#14099#0" expanded="true" />
-                <element signature="e#14098#14099#0" expanded="true" />
-                <element signature="e#15559#17253#0" expanded="true" />
-                <element signature="e#17252#17253#0" expanded="true" />
-                <element signature="e#17287#18982#0" expanded="true" />
-                <element signature="e#18981#18982#0" expanded="true" />
-                <element signature="e#19016#20715#0" expanded="true" />
-                <element signature="e#20714#20715#0" expanded="true" />
-                <element signature="e#20750#22458#0" expanded="true" />
-                <element signature="e#22457#22458#0" expanded="true" />
-                <element signature="e#22492#24196#0" expanded="true" />
-                <element signature="e#24195#24196#0" expanded="true" />
-                <element signature="e#24229#25923#0" expanded="true" />
-                <element signature="e#25922#25923#0" expanded="true" />
-                <element signature="e#25958#27666#0" expanded="true" />
-                <element signature="e#27665#27666#0" expanded="true" />
-                <element signature="e#27706#27851#0" expanded="true" />
-                <element signature="e#27850#27851#0" expanded="true" />
-                <element signature="e#27950#28391#0" expanded="true" />
-                <element signature="e#28390#28391#0" expanded="true" />
-                <element signature="e#28602#28904#0" expanded="true" />
-                <element signature="e#28903#28904#0" expanded="true" />
-                <element signature="e#28975#29279#0" expanded="true" />
-                <element signature="e#29278#29279#0" expanded="true" />
-                <element signature="e#29339#29556#0" expanded="true" />
-                <element signature="e#29555#29556#0" expanded="true" />
+                <element signature="e#7702#8345#0" expanded="true" />
+                <element signature="e#8344#8345#0" expanded="true" />
+                <element signature="e#8356#8498#0" expanded="true" />
+                <element signature="e#8497#8498#0" expanded="true" />
+                <element signature="e#9004#10253#0" expanded="true" />
+                <element signature="e#10252#10253#0" expanded="true" />
+                <element signature="e#10301#10839#0" expanded="true" />
+                <element signature="e#10838#10839#0" expanded="true" />
+                <element signature="e#10886#11234#0" expanded="true" />
+                <element signature="e#11233#11234#0" expanded="true" />
+                <element signature="e#11399#11551#0" expanded="true" />
+                <element signature="e#11550#11551#0" expanded="true" />
+                <element signature="e#12110#12578#0" expanded="true" />
+                <element signature="e#12577#12578#0" expanded="true" />
+                <element signature="e#13621#14386#0" expanded="true" />
+                <element signature="e#14385#14386#0" expanded="true" />
+                <element signature="e#15846#17540#0" expanded="true" />
+                <element signature="e#17539#17540#0" expanded="true" />
+                <element signature="e#17574#19269#0" expanded="true" />
+                <element signature="e#19268#19269#0" expanded="true" />
+                <element signature="e#19303#21002#0" expanded="true" />
+                <element signature="e#21001#21002#0" expanded="true" />
+                <element signature="e#21037#22745#0" expanded="true" />
+                <element signature="e#22744#22745#0" expanded="true" />
+                <element signature="e#22779#24483#0" expanded="true" />
+                <element signature="e#24482#24483#0" expanded="true" />
+                <element signature="e#24516#26210#0" expanded="true" />
+                <element signature="e#26209#26210#0" expanded="true" />
+                <element signature="e#26245#27953#0" expanded="true" />
+                <element signature="e#27952#27953#0" expanded="true" />
+                <element signature="e#27993#28138#0" expanded="true" />
+                <element signature="e#28137#28138#0" expanded="true" />
+                <element signature="e#28237#28678#0" expanded="true" />
+                <element signature="e#28677#28678#0" expanded="true" />
+                <element signature="e#28889#29191#0" expanded="true" />
+                <element signature="e#29190#29191#0" expanded="true" />
+                <element signature="e#29262#29566#0" expanded="true" />
+                <element signature="e#29565#29566#0" expanded="true" />
+                <element signature="e#29626#29843#0" expanded="true" />
+                <element signature="e#29842#29843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2164,12 +2151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464062876555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改了播放铃声的bug">
+      <created>1464177585631</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464177585631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2179,7 +2172,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.50214136" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37895927" sideWeight="0.49785867" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37104073" sideWeight="0.49785867" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2216,7 +2209,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了加载铃声功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了加载铃声功能" />
+    <MESSAGE value="修改了播放铃声的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了播放铃声的bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2230,42 +2224,46 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8717#9966#0" expanded="true" />
-            <element signature="e#9965#9966#0" expanded="true" />
-            <element signature="e#10014#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#10599#10947#0" expanded="true" />
-            <element signature="e#10946#10947#0" expanded="true" />
-            <element signature="e#11112#11264#0" expanded="true" />
-            <element signature="e#11263#11264#0" expanded="true" />
-            <element signature="e#11823#12291#0" expanded="true" />
-            <element signature="e#12290#12291#0" expanded="true" />
-            <element signature="e#13334#14099#0" expanded="true" />
-            <element signature="e#14098#14099#0" expanded="true" />
-            <element signature="e#15559#17253#0" expanded="true" />
-            <element signature="e#17252#17253#0" expanded="true" />
-            <element signature="e#17287#18982#0" expanded="true" />
-            <element signature="e#18981#18982#0" expanded="true" />
-            <element signature="e#19016#20715#0" expanded="true" />
-            <element signature="e#20714#20715#0" expanded="true" />
-            <element signature="e#20750#22458#0" expanded="true" />
-            <element signature="e#22457#22458#0" expanded="true" />
-            <element signature="e#22492#24196#0" expanded="true" />
-            <element signature="e#24195#24196#0" expanded="true" />
-            <element signature="e#24229#25923#0" expanded="true" />
-            <element signature="e#25922#25923#0" expanded="true" />
-            <element signature="e#25958#27666#0" expanded="true" />
-            <element signature="e#27665#27666#0" expanded="true" />
-            <element signature="e#27706#27851#0" expanded="true" />
-            <element signature="e#27850#27851#0" expanded="true" />
-            <element signature="e#27950#28391#0" expanded="true" />
-            <element signature="e#28390#28391#0" expanded="true" />
-            <element signature="e#28602#28904#0" expanded="true" />
-            <element signature="e#28903#28904#0" expanded="true" />
-            <element signature="e#28975#29279#0" expanded="true" />
-            <element signature="e#29278#29279#0" expanded="true" />
-            <element signature="e#29339#29556#0" expanded="true" />
-            <element signature="e#29555#29556#0" expanded="true" />
+            <element signature="e#7702#8345#0" expanded="true" />
+            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#8356#8498#0" expanded="true" />
+            <element signature="e#8497#8498#0" expanded="true" />
+            <element signature="e#9004#10253#0" expanded="true" />
+            <element signature="e#10252#10253#0" expanded="true" />
+            <element signature="e#10301#10839#0" expanded="true" />
+            <element signature="e#10838#10839#0" expanded="true" />
+            <element signature="e#10886#11234#0" expanded="true" />
+            <element signature="e#11233#11234#0" expanded="true" />
+            <element signature="e#11399#11551#0" expanded="true" />
+            <element signature="e#11550#11551#0" expanded="true" />
+            <element signature="e#12110#12578#0" expanded="true" />
+            <element signature="e#12577#12578#0" expanded="true" />
+            <element signature="e#13621#14386#0" expanded="true" />
+            <element signature="e#14385#14386#0" expanded="true" />
+            <element signature="e#15846#17540#0" expanded="true" />
+            <element signature="e#17539#17540#0" expanded="true" />
+            <element signature="e#17574#19269#0" expanded="true" />
+            <element signature="e#19268#19269#0" expanded="true" />
+            <element signature="e#19303#21002#0" expanded="true" />
+            <element signature="e#21001#21002#0" expanded="true" />
+            <element signature="e#21037#22745#0" expanded="true" />
+            <element signature="e#22744#22745#0" expanded="true" />
+            <element signature="e#22779#24483#0" expanded="true" />
+            <element signature="e#24482#24483#0" expanded="true" />
+            <element signature="e#24516#26210#0" expanded="true" />
+            <element signature="e#26209#26210#0" expanded="true" />
+            <element signature="e#26245#27953#0" expanded="true" />
+            <element signature="e#27952#27953#0" expanded="true" />
+            <element signature="e#27993#28138#0" expanded="true" />
+            <element signature="e#28137#28138#0" expanded="true" />
+            <element signature="e#28237#28678#0" expanded="true" />
+            <element signature="e#28677#28678#0" expanded="true" />
+            <element signature="e#28889#29191#0" expanded="true" />
+            <element signature="e#29190#29191#0" expanded="true" />
+            <element signature="e#29262#29566#0" expanded="true" />
+            <element signature="e#29565#29566#0" expanded="true" />
+            <element signature="e#29626#29843#0" expanded="true" />
+            <element signature="e#29842#29843#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2430,45 +2428,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/han/myalarmclock/AlarmPropertyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9961165">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="2" selection-end-line="245" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.67241377">
+          <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
           <folding>
-            <element signature="e#8717#9966#0" expanded="true" />
-            <element signature="e#9965#9966#0" expanded="true" />
-            <element signature="e#10014#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#10599#10947#0" expanded="true" />
-            <element signature="e#10946#10947#0" expanded="true" />
-            <element signature="e#11112#11264#0" expanded="true" />
-            <element signature="e#11263#11264#0" expanded="true" />
-            <element signature="e#11823#12291#0" expanded="true" />
-            <element signature="e#12290#12291#0" expanded="true" />
-            <element signature="e#13334#14099#0" expanded="true" />
-            <element signature="e#14098#14099#0" expanded="true" />
-            <element signature="e#15559#17253#0" expanded="true" />
-            <element signature="e#17252#17253#0" expanded="true" />
-            <element signature="e#17287#18982#0" expanded="true" />
-            <element signature="e#18981#18982#0" expanded="true" />
-            <element signature="e#19016#20715#0" expanded="true" />
-            <element signature="e#20714#20715#0" expanded="true" />
-            <element signature="e#20750#22458#0" expanded="true" />
-            <element signature="e#22457#22458#0" expanded="true" />
-            <element signature="e#22492#24196#0" expanded="true" />
-            <element signature="e#24195#24196#0" expanded="true" />
-            <element signature="e#24229#25923#0" expanded="true" />
-            <element signature="e#25922#25923#0" expanded="true" />
-            <element signature="e#25958#27666#0" expanded="true" />
-            <element signature="e#27665#27666#0" expanded="true" />
-            <element signature="e#27706#27851#0" expanded="true" />
-            <element signature="e#27850#27851#0" expanded="true" />
-            <element signature="e#27950#28391#0" expanded="true" />
-            <element signature="e#28390#28391#0" expanded="true" />
-            <element signature="e#28602#28904#0" expanded="true" />
-            <element signature="e#28903#28904#0" expanded="true" />
-            <element signature="e#28975#29279#0" expanded="true" />
-            <element signature="e#29278#29279#0" expanded="true" />
-            <element signature="e#29339#29556#0" expanded="true" />
-            <element signature="e#29555#29556#0" expanded="true" />
+            <element signature="e#7702#8345#0" expanded="true" />
+            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#8356#8498#0" expanded="true" />
+            <element signature="e#8497#8498#0" expanded="true" />
+            <element signature="e#9004#10253#0" expanded="true" />
+            <element signature="e#10252#10253#0" expanded="true" />
+            <element signature="e#10301#10839#0" expanded="true" />
+            <element signature="e#10838#10839#0" expanded="true" />
+            <element signature="e#10886#11234#0" expanded="true" />
+            <element signature="e#11233#11234#0" expanded="true" />
+            <element signature="e#11399#11551#0" expanded="true" />
+            <element signature="e#11550#11551#0" expanded="true" />
+            <element signature="e#12110#12578#0" expanded="true" />
+            <element signature="e#12577#12578#0" expanded="true" />
+            <element signature="e#13621#14386#0" expanded="true" />
+            <element signature="e#14385#14386#0" expanded="true" />
+            <element signature="e#15846#17540#0" expanded="true" />
+            <element signature="e#17539#17540#0" expanded="true" />
+            <element signature="e#17574#19269#0" expanded="true" />
+            <element signature="e#19268#19269#0" expanded="true" />
+            <element signature="e#19303#21002#0" expanded="true" />
+            <element signature="e#21001#21002#0" expanded="true" />
+            <element signature="e#21037#22745#0" expanded="true" />
+            <element signature="e#22744#22745#0" expanded="true" />
+            <element signature="e#22779#24483#0" expanded="true" />
+            <element signature="e#24482#24483#0" expanded="true" />
+            <element signature="e#24516#26210#0" expanded="true" />
+            <element signature="e#26209#26210#0" expanded="true" />
+            <element signature="e#26245#27953#0" expanded="true" />
+            <element signature="e#27952#27953#0" expanded="true" />
+            <element signature="e#27993#28138#0" expanded="true" />
+            <element signature="e#28137#28138#0" expanded="true" />
+            <element signature="e#28237#28678#0" expanded="true" />
+            <element signature="e#28677#28678#0" expanded="true" />
+            <element signature="e#28889#29191#0" expanded="true" />
+            <element signature="e#29190#29191#0" expanded="true" />
+            <element signature="e#29262#29566#0" expanded="true" />
+            <element signature="e#29565#29566#0" expanded="true" />
+            <element signature="e#29626#29843#0" expanded="true" />
+            <element signature="e#29842#29843#0" expanded="true" />
           </folding>
         </state>
       </provider>
