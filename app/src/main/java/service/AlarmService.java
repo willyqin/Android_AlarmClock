@@ -88,7 +88,8 @@ public class AlarmService extends Service {
                     e.printStackTrace();
                 }
 
-                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tone")));
+                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tonepath")));
+                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tonename")));
                 alarms.add(alarm);
             } while (cursor.moveToNext());
             cursor.close();

@@ -15,7 +15,8 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
             + "alarm_time text,"
             + "alarm_days blob,"
             + "alarm_text text,"
-            + "alarm_tone text)";
+            + "alarm_tonepath text,"
+            + "alarm_tonename text)";
     public MyDataBaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
         mcontext = context;

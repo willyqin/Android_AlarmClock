@@ -92,9 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
         callAlarmServiceBroadcastReceiver();
 
+        Log.d("nihao", "MainActivity onCreate1");
         mDataBaseHelper  = new MyDataBaseHelper(this,"Alarm.db",null,1);
         db = mDataBaseHelper.getWritableDatabase();
         alarmList = new ArrayList<Alarm>();
+        Log.d("nihao","MainActivity onCreate beforeCursor");
         Cursor cursor = db.query("Alarm_Table",null,null,null,null,null,null);
         if (cursor.moveToFirst()){
             do {
@@ -121,13 +123,14 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tone")));
+                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tonepath")));
+                alarm.setRingToneName(cursor.getString(cursor.getColumnIndex("alarm_tonename")));
                 alarmList.add(alarm);
             } while (cursor.moveToNext());
             cursor.close();
         }
 
-
+        Log.d("nihao","MainActivity onCreate afterCursor");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         emptyView = (TextView)findViewById(R.id.empty_image);
@@ -139,7 +142,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Log.d("nihao","before MainActivity FAB click");
                 Alarm newAlarm = new Alarm();
+                Log.d("nihao","after MainActivity FAB click");
                 Bundle data = new Bundle();
                 data.putSerializable("Alarm", newAlarm);
                 Intent intent = new Intent(MainActivity.this, AlarmPropertyActivity.class);
@@ -249,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendMessage(msg);
             }
         }, 0 , 60000);
+        Log.d("nihao", "MainActivity onCreate over");
     }
 
 
@@ -301,7 +307,8 @@ public class MainActivity extends AppCompatActivity {
             } catch (Exception e){
             }
             values.put("alarm_text",alarm.getAlarmText());
-            values.put("alarm_tone",alarm.getAlarmTonePath());
+            values.put("alarm_tonepath",alarm.getAlarmTonePath());
+            values.put("alarm_tonename",alarm.getRingToneName());
             db.insert("Alarm_Table",null,values);
             values.clear();
         }

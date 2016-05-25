@@ -53,7 +53,7 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         try{
             mediaPlayer.setVolume(1.0f, 1.0f);
             mediaPlayer.setDataSource(this,
-                    Uri.parse(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM).toString()));
+                    Uri.parse(alarm.getAlarmTonePath()));
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
             mediaPlayer.setLooping(true);
             mediaPlayer.prepare();

@@ -59,9 +59,17 @@ public class Alarm implements Serializable {
     private Boolean repeatFlag = true;
     private String alarmName;
     private String alarmText = new String("");
+    private String ringToneName = "默认铃声";
 
     public Alarm(){
 
+    }
+    public void setRingToneName(String ringToneName){
+        this.ringToneName = ringToneName;
+    }
+    public String getRingToneName(){
+        Log.d("nihao","Alarm getRingToneName");
+        return ringToneName;
     }
     public Boolean getRepeatFlag(){
         return repeatFlag;

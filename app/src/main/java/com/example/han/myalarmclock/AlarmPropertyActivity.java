@@ -32,6 +32,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -44,7 +45,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     private TimePicker timePicker;
     private Alarm alarm;
     private TextView untilTimeText;
-    private TextView onRepeat;
+    private TextView ringName;
     private TextView ri;
     private TextView yi;
     private TextView er;
@@ -69,7 +70,9 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     private String[] alarmTones;
     private String[] alarmTonesPaths;
     private AlertDialog.Builder alertDialog;
-    private String tonePath;
+    private String tonePath,toneName;
+    private RingtoneManager ringtoneManager;
+    private Cursor cursor;
 
 
     /**
@@ -80,9 +83,11 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Calendar calendar1 = Calendar.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_property_activity);
 
+        Log.d("nihao","AlarmPropertyActivity onCreate before init()");
         init();
         setTimer();
 
@@ -201,45 +206,65 @@ public class AlarmPropertyActivity extends AppCompatActivity{
     }
 
     private void init(){
+        intent = getIntent();
+        alarm = (Alarm) intent.getSerializableExtra("Alarm");
+        ringtoneManager = new RingtoneManager(getApplicationContext());
+        ringName = (TextView) findViewById(R.id.ring_name);
+        Log.d("nihao", "before set ringName Text");
+        ringName.setText(alarm.getRingToneName());
+        Log.d("nihao", alarm.getRingToneName());
+        Log.d("nihao", "after set ringName Text");
 
-        RingtoneManager ringtoneManager = new RingtoneManager(getApplicationContext());
         ringtoneManager.setType(RingtoneManager.TYPE_ALARM);
-        Cursor cursor = ringtoneManager.getCursor();
+        cursor = ringtoneManager.getCursor();
 
 
 
         alarmTones = new String[cursor.getCount()];
         alarmTonesPaths = new String[cursor.getCount()];
 
-        if (cursor.moveToFirst()){
-            do {
-                alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
-                alarmTonesPaths[cursor.getPosition()] = ringtoneManager.getRingtoneUri(cursor.getPosition()).toString();
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
+//        final Handler handler = new Handler(){
+//            @Override
+//            public void handleMessage(Message msg) {
+//                if (msg.what == 0x12345){
+                    if (cursor.moveToFirst()){
+                        do {
+                            alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
+                            alarmTonesPaths[cursor.getPosition()] = ringtoneManager.getRingtoneUri(cursor.getPosition()).toString();
+                        } while (cursor.moveToNext());
+                    }
+                    cursor.close();
+//                }
+//            }
+//        };
 
-
-        alertDialog = new AlertDialog.Builder(this);
+//        new Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                handler.sendEmptyMessage(0x12345);
+//            }
+//        },700);
+ alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("选取闹钟铃声");
         CharSequence[] items = new CharSequence[alarmTones.length];
         for (int i = 0; i < items.length;i ++){
             items[i] = alarmTones[i];
         }
 
-        alertDialog.setSingleChoiceItems(items,1, new DialogInterface.OnClickListener() {
+        alertDialog.setSingleChoiceItems(items, 1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 tonePath = alarmTonesPaths[which];
-                if (tonePath != null){
-                    if (mediaPlayer == null){
+                toneName = alarmTones[which];
+                if (tonePath != null) {
+                    if (mediaPlayer == null) {
                         mediaPlayer = new MediaPlayer();
-                    }else {
+                    } else {
                         if (mediaPlayer.isPlaying())
                             mediaPlayer.stop();
                         mediaPlayer.reset();
                     }
-                    try{
+                    try {
                         mediaPlayer.setDataSource(AlarmPropertyActivity.this, Uri.parse(tonePath));
                         mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
                         mediaPlayer.setLooping(false);
@@ -247,11 +272,11 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         mediaPlayer.start();
 
 
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         try {
                             if (mediaPlayer.isPlaying())
                                 mediaPlayer.stop();
-                        }catch (Exception e2){
+                        } catch (Exception e2) {
 
                         }
                     }
@@ -263,11 +288,15 @@ public class AlarmPropertyActivity extends AppCompatActivity{
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 alarm.setAlarmTonePath(tonePath);
-                try{
-                    if (mediaPlayer.isPlaying()){
+                alarm.setRingToneName(toneName);
+                ringName.setText(toneName);
+                Log.d("nihao",toneName);
+
+                try {
+                    if (mediaPlayer.isPlaying()) {
                         mediaPlayer.stop();
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
 
                 }
 
@@ -296,10 +325,10 @@ public class AlarmPropertyActivity extends AppCompatActivity{
             }
         });
         anim1 = AnimationUtils.loadAnimation(this,R.anim.input_error_anim);
-        animEmpty = AnimationUtils.loadAnimation(this,R.anim.empty_shake);
+        animEmpty = AnimationUtils.loadAnimation(this, R.anim.empty_shake);
 
-        intent = getIntent();
-        alarm = (Alarm) intent.getSerializableExtra("Alarm");
+
+
         position = intent.getIntExtra("AlarmPosition", -1);
 
         timePicker = (TimePicker) findViewById(R.id.timePicker);
