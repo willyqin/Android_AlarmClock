@@ -225,6 +225,8 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         alarmTones = new String[cursor.getCount()];
         alarmTonesPaths = new String[cursor.getCount()];
 
+        cardView3 =(CardView) findViewById(R.id.card_view3);
+
         final Handler handler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
@@ -233,105 +235,187 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         do {
                             alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
                             alarmTonesPaths[cursor.getPosition()] = ringtoneManager.getRingtoneUri(cursor.getPosition()).toString();
+//                            Log.d("nihao",alarmTones[cursor.getPosition()]);
                         } while (cursor.moveToNext());
                     }
                     cursor.close();
+//                    // TODO: 2016/5/25
+
+                    alertDialog = new AlertDialog.Builder(AlarmPropertyActivity.this);
+                    alertDialog.setTitle("选取闹钟铃声");
+                    CharSequence[] items = new CharSequence[alarmTones.length];
+                    for (int i = 0; i < items.length;i ++){
+                        items[i] = alarmTones[i];
+                        Log.d("nihao",alarmTones[i]);
+                    }
+
+                    alertDialog.setSingleChoiceItems(items, 1, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            tonePath = alarmTonesPaths[which];
+                            toneName = alarmTones[which];
+                            if (tonePath != null) {
+                                if (mediaPlayer == null) {
+                                    mediaPlayer = new MediaPlayer();
+                                } else {
+                                    if (mediaPlayer.isPlaying())
+                                        mediaPlayer.stop();
+                                    mediaPlayer.reset();
+                                }
+                                try {
+                                    mediaPlayer.setDataSource(AlarmPropertyActivity.this, Uri.parse(tonePath));
+                                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
+                                    mediaPlayer.setLooping(false);
+                                    mediaPlayer.prepare();
+                                    mediaPlayer.start();
+
+
+                                } catch (Exception e) {
+                                    try {
+                                        if (mediaPlayer.isPlaying())
+                                            mediaPlayer.stop();
+                                    } catch (Exception e2) {
+
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    alertDialog.setNegativeButton("确定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            alarm.setAlarmTonePath(tonePath);
+                            alarm.setRingToneName(toneName);
+                            ringName.setText(toneName);
+                            Log.d("nihao", toneName);
+
+                            try {
+                                if (mediaPlayer.isPlaying()) {
+                                    mediaPlayer.stop();
+                                }
+                            } catch (Exception e) {
+
+                            }
+
+                        }
+                    });
+                    alertDialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            try {
+                                if (mediaPlayer.isPlaying()) {
+                                    mediaPlayer.stop();
+                                }
+                            } catch (Exception e) {
+
+                            }
+                        }
+                    });
+
+                    cardView3.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            alertDialog.show();
+                        }
+                    });
                 }
             }
         };
 
-        new Thread(){
-            @Override
-            public void run() {
-                handler.sendEmptyMessage(0x12345);
-            }
-        }.start();
-//        new Timer().schedule(new TimerTask() {
+//        new Thread(){
 //            @Override
 //            public void run() {
 //                handler.sendEmptyMessage(0x12345);
 //            }
-//        },700);
- alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle("选取闹钟铃声");
-        CharSequence[] items = new CharSequence[alarmTones.length];
-        for (int i = 0; i < items.length;i ++){
-            items[i] = alarmTones[i];
-        }
-
-        alertDialog.setSingleChoiceItems(items, 1, new DialogInterface.OnClickListener() {
+//        }.start();
+        new Timer().schedule(new TimerTask() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-                tonePath = alarmTonesPaths[which];
-                toneName = alarmTones[which];
-                if (tonePath != null) {
-                    if (mediaPlayer == null) {
-                        mediaPlayer = new MediaPlayer();
-                    } else {
-                        if (mediaPlayer.isPlaying())
-                            mediaPlayer.stop();
-                        mediaPlayer.reset();
-                    }
-                    try {
-                        mediaPlayer.setDataSource(AlarmPropertyActivity.this, Uri.parse(tonePath));
-                        mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
-                        mediaPlayer.setLooping(false);
-                        mediaPlayer.prepare();
-                        mediaPlayer.start();
-
-
-                    } catch (Exception e) {
-                        try {
-                            if (mediaPlayer.isPlaying())
-                                mediaPlayer.stop();
-                        } catch (Exception e2) {
-
-                        }
-                    }
-                }
+            public void run() {
+                handler.sendEmptyMessage(0x12345);
             }
-        });
-
-        alertDialog.setNegativeButton("确定", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                alarm.setAlarmTonePath(tonePath);
-                alarm.setRingToneName(toneName);
-                ringName.setText(toneName);
-                Log.d("nihao",toneName);
-
-                try {
-                    if (mediaPlayer.isPlaying()) {
-                        mediaPlayer.stop();
-                    }
-                } catch (Exception e) {
-
-                }
-
-            }
-        });
-        alertDialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                try{
-                    if (mediaPlayer.isPlaying()){
-                        mediaPlayer.stop();
-                    }
-                }catch (Exception e){
-
-                }
-            }
-        });
+        },700);
+// alertDialog = new AlertDialog.Builder(this);
+//        alertDialog.setTitle("选取闹钟铃声");
+//        CharSequence[] items = new CharSequence[alarmTones.length];
+//        for (int i = 0; i < items.length;i ++){
+//            items[i] = alarmTones[i];
+//            Log.d("nihao",alarmTones[i]);
+//        }
+//
+//        alertDialog.setSingleChoiceItems(items, 1, new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                tonePath = alarmTonesPaths[which];
+//                toneName = alarmTones[which];
+//                if (tonePath != null) {
+//                    if (mediaPlayer == null) {
+//                        mediaPlayer = new MediaPlayer();
+//                    } else {
+//                        if (mediaPlayer.isPlaying())
+//                            mediaPlayer.stop();
+//                        mediaPlayer.reset();
+//                    }
+//                    try {
+//                        mediaPlayer.setDataSource(AlarmPropertyActivity.this, Uri.parse(tonePath));
+//                        mediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
+//                        mediaPlayer.setLooping(false);
+//                        mediaPlayer.prepare();
+//                        mediaPlayer.start();
+//
+//
+//                    } catch (Exception e) {
+//                        try {
+//                            if (mediaPlayer.isPlaying())
+//                                mediaPlayer.stop();
+//                        } catch (Exception e2) {
+//
+//                        }
+//                    }
+//                }
+//            }
+//        });
+//
+//        alertDialog.setNegativeButton("确定", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                alarm.setAlarmTonePath(tonePath);
+//                alarm.setRingToneName(toneName);
+//                ringName.setText(toneName);
+//                Log.d("nihao",toneName);
+//
+//                try {
+//                    if (mediaPlayer.isPlaying()) {
+//                        mediaPlayer.stop();
+//                    }
+//                } catch (Exception e) {
+//
+//                }
+//
+//            }
+//        });
+//        alertDialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                try{
+//                    if (mediaPlayer.isPlaying()){
+//                        mediaPlayer.stop();
+//                    }
+//                }catch (Exception e){
+//
+//                }
+//            }
+//        });
 
 
         cardView4 = (CardView) findViewById(R.id.card_view4);
-        cardView3 =(CardView) findViewById(R.id.card_view3);
-        cardView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                alertDialog.show();
-            }
-        });
+//        cardView3 =(CardView) findViewById(R.id.card_view3);
+//        cardView3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                alertDialog.show();
+//            }
+//        });
         anim1 = AnimationUtils.loadAnimation(this,R.anim.input_error_anim);
         animEmpty = AnimationUtils.loadAnimation(this, R.anim.empty_shake);
 
