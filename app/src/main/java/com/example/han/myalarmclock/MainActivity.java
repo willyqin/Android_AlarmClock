@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 0 && resultCode == 1){
             Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+//            Log.d("nihao","保存的铃声名字" + alarm.getRingToneName());
+//            Log.d("nihao","保存的铃声的path" + alarm.getAlarmTonePath());
             int position = data.getIntExtra("AlarmSavedPosition",-1);
             alarm.setAlarmActive(true);
             alarmList.set(position, alarm);     //数据更新 ok
@@ -61,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 1 && resultCode == 1){
             recyclerView.setVisibility(View.VISIBLE);
             Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+//            Log.d("nihao","保存的铃声名字" + alarm.getRingToneName());
+//            Log.d("nihao", "保存的铃声的path" + alarm.getAlarmTonePath());
             alarmList.add(alarm);                //数据添加 ok
             mAdapter.notifyDataSetChanged(); //mark
             emptyView.setVisibility(View.INVISIBLE);
@@ -92,11 +96,11 @@ public class MainActivity extends AppCompatActivity {
 
         callAlarmServiceBroadcastReceiver();
 
-        Log.d("nihao", "MainActivity onCreate1");
+//        Log.d("nihao", "MainActivity onCreate1");
         mDataBaseHelper  = new MyDataBaseHelper(this,"Alarm.db",null,1);
         db = mDataBaseHelper.getWritableDatabase();
         alarmList = new ArrayList<Alarm>();
-        Log.d("nihao","MainActivity onCreate beforeCursor");
+//        Log.d("nihao","MainActivity onCreate beforeCursor");
         Cursor cursor = db.query("Alarm_Table",null,null,null,null,null,null);
         if (cursor.moveToFirst()){
             do {
@@ -130,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
         }
 
-        Log.d("nihao","MainActivity onCreate afterCursor");
+//        Log.d("nihao","MainActivity onCreate afterCursor");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         emptyView = (TextView)findViewById(R.id.empty_image);
@@ -142,9 +146,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Log.d("nihao","before MainActivity FAB click");
+//                Log.d("nihao","before MainActivity FAB click");
                 Alarm newAlarm = new Alarm();
-                Log.d("nihao","after MainActivity FAB click");
+//                Log.d("nihao","after MainActivity FAB click");
                 Bundle data = new Bundle();
                 data.putSerializable("Alarm", newAlarm);
                 Intent intent = new Intent(MainActivity.this, AlarmPropertyActivity.class);
@@ -254,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendMessage(msg);
             }
         }, 0 , 60000);
-        Log.d("nihao", "MainActivity onCreate over");
+//        Log.d("nihao", "MainActivity onCreate over");
     }
 
 

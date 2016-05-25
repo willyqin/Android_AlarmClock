@@ -87,11 +87,11 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_property_activity);
 
-        Log.d("nihao", "AlarmPropertyActivity onCreate before init()");
+//        Log.d("nihao", "AlarmPropertyActivity onCreate before init()");
         init();
         setTimer();
         Calendar calendar2 = Calendar.getInstance();
-        Log.d("nihao",calendar2.getTimeInMillis() - calendar1.getTimeInMillis() + "");
+//        Log.d("nihao",calendar2.getTimeInMillis() - calendar1.getTimeInMillis() + "");
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -122,6 +122,8 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                     if (input) {
                         alarm.setAlarmText(inputWords.getText().toString());
                         alarm.setAlarmActive(true);
+//                        Log.d("nihao","保存前的名字" + alarm.getRingToneName());
+//                        Log.d("nihao","保存前的path" + alarm.getAlarmTonePath());
                         Bundle data = new Bundle();
                         data.putSerializable("AlarmSaved", alarm);
                         intent.putExtras(data);
@@ -136,7 +138,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
                     }
                 }else{
-                    Log.d("nihao","empty");
+//                    Log.d("nihao","empty");
                     Toast.makeText(MyApplication.getContext(),"请输入唤醒自己的文字",Toast.LENGTH_SHORT).show();
                     cardView4.setElevation(24);
                     cardView4.startAnimation(animEmpty);
@@ -212,10 +214,10 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         alarm = (Alarm) intent.getSerializableExtra("Alarm");
         ringtoneManager = new RingtoneManager(getApplicationContext());
         ringName = (TextView) findViewById(R.id.ring_name);
-        Log.d("nihao", "before set ringName Text");
+//        Log.d("nihao", "before set ringName Text");
         ringName.setText(alarm.getRingToneName());
-        Log.d("nihao", alarm.getRingToneName());
-        Log.d("nihao", "after set ringName Text");
+//        Log.d("nihao", alarm.getRingToneName());
+//        Log.d("nihao", "after set ringName Text");
 
         ringtoneManager.setType(RingtoneManager.TYPE_ALARM);
         cursor = ringtoneManager.getCursor();
@@ -236,6 +238,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                             alarmTones[cursor.getPosition()] = ringtoneManager.getRingtone(cursor.getPosition()).getTitle(getApplicationContext());
                             alarmTonesPaths[cursor.getPosition()] = ringtoneManager.getRingtoneUri(cursor.getPosition()).toString();
 //                            Log.d("nihao",alarmTones[cursor.getPosition()]);
+//                            Log.d("nihao",alarmTonesPaths[cursor.getPosition()]);  输出path正确
                         } while (cursor.moveToNext());
                     }
                     cursor.close();
@@ -246,7 +249,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                     CharSequence[] items = new CharSequence[alarmTones.length];
                     for (int i = 0; i < items.length;i ++){
                         items[i] = alarmTones[i];
-                        Log.d("nihao",alarmTones[i]);
+//                        Log.d("nihao",alarmTones[i]);
                     }
 
                     alertDialog.setSingleChoiceItems(items, 1, new DialogInterface.OnClickListener() {
@@ -254,6 +257,8 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         public void onClick(DialogInterface dialog, int which) {
                             tonePath = alarmTonesPaths[which];
                             toneName = alarmTones[which];
+//                            Log.d("nihao","确定铃声的名字" + toneName);      输出正确
+//                            Log.d("nihao","确定铃声的path" + tonePath);
                             if (tonePath != null) {
                                 if (mediaPlayer == null) {
                                     mediaPlayer = new MediaPlayer();
@@ -288,7 +293,8 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                             alarm.setAlarmTonePath(tonePath);
                             alarm.setRingToneName(toneName);
                             ringName.setText(toneName);
-                            Log.d("nihao", toneName);
+//                            Log.d("nihao", "确定的铃声名字" + toneName);     输出正确
+//                            Log.d("nihao","确定的铃声path" + tonePath);
 
                             try {
                                 if (mediaPlayer.isPlaying()) {

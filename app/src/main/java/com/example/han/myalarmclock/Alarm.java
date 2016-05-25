@@ -68,7 +68,7 @@ public class Alarm implements Serializable {
         this.ringToneName = ringToneName;
     }
     public String getRingToneName(){
-        Log.d("nihao","Alarm getRingToneName");
+//        Log.d("nihao","Alarm getRingToneName");
         return ringToneName;
     }
     public Boolean getRepeatFlag(){
@@ -272,8 +272,10 @@ public class Alarm implements Serializable {
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 
         alarmManager.set(AlarmManager.RTC_WAKEUP, getAlarmTime().getTimeInMillis(), pendingIntent);
-        Log.d("nihao", "schedule");
-        Log.d("nihao",getAlarmTimeString());
+//        Log.d("nihao", "schedule");
+//        Log.d("nihao","闹钟时间" + getAlarmTimeString());
+//        Log.d("nihao","铃声的名字" + getRingToneName());
+//        Log.d("nihao","铃声路径" + getAlarmTonePath());
     }
 
     public String getTimeUntilNextAlarmMessage(){

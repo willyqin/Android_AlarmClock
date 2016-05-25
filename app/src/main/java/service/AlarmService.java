@@ -89,7 +89,7 @@ public class AlarmService extends Service {
                 }
 
                 alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tonepath")));
-                alarm.setAlarmTonePath(cursor.getString(cursor.getColumnIndex("alarm_tonename")));
+                alarm.setRingToneName(cursor.getString(cursor.getColumnIndex("alarm_tonename")));
                 alarms.add(alarm);
             } while (cursor.moveToNext());
             cursor.close();
@@ -120,10 +120,10 @@ public class AlarmService extends Service {
 //        Log.d("nihao", "hello");
         Alarm alarm = getNext();
         if (alarm != null){
-            Log.d("nihao","!null");
+//            Log.d("nihao","!null");
             alarm.schedule(getApplicationContext());
         }else {
-            Log.d("nihao","null");
+//            Log.d("nihao","null");
             Intent mintent = new Intent(getApplicationContext(), AlertActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, mintent, PendingIntent.FLAG_CANCEL_CURRENT);
             AlarmManager alarmManager = (AlarmManager)getApplicationContext().getSystemService(Context.ALARM_SERVICE);
