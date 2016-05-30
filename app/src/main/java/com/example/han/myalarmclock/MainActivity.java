@@ -2,6 +2,7 @@ package com.example.han.myalarmclock;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -16,9 +17,11 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +41,8 @@ import service.AlarmServiceBroadcasetReceiver;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    public static boolean isNightMode = false;
 
     private MyDataBaseHelper mDataBaseHelper;
     private SQLiteDatabase db;
@@ -92,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
+//        localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
+
         setContentView(R.layout.activity_main);
 
         callAlarmServiceBroadcastReceiver();
@@ -277,9 +286,32 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case  R.id.action_theme:
+                if (isNightMode){
+                    setTheme(R.style.AppTheme_NoActionBar_Light);
+                    isNightMode = false;
+                }else {
+                    setTheme(R.style.AppTheme_NoActionBar_Night);
+                    isNightMode = true;
+                }
+//                setContentView(R.layout.activity_main);
+                TypedValue typedValue = new TypedValue();
+                Resources.Theme theme = getTheme();
+//                theme.resolveAttribute(R.attr.cardview_bgcolor,typedValue,true);
+//                findViewById(R.id.recycler_view).setBackgroundColor(typedValue.data);
+
+                theme.resolveAttribute(R.attr.window_bgcolor, typedValue, true);
+                findViewById(R.id.main_activity).setBackgroundColor(typedValue.data);
+
+                theme.resolveAttribute(R.attr.toolbar_bgcolor, typedValue, true);
+                findViewById(R.id.toolbar).setBackgroundColor(typedValue.data);
+
+
+                break;
+            default:
+                break;
+
         }
 
         return super.onOptionsItemSelected(item);

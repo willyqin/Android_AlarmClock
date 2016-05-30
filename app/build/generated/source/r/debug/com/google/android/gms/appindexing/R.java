@@ -8,9 +8,9 @@ package com.google.android.gms.appindexing;
 
 public final class R {
 	public static final class attr {
-		public static final int circleCrop = 0x7f010055;
-		public static final int imageAspectRatio = 0x7f010054;
-		public static final int imageAspectRatioAdjust = 0x7f010053;
+		public static final int circleCrop = 0x7f010058;
+		public static final int imageAspectRatio = 0x7f010057;
+		public static final int imageAspectRatioAdjust = 0x7f010056;
 	}
 	public static final class color {
 		public static final int common_action_bar_splitter = 0x7f0b001b;
@@ -79,7 +79,7 @@ public final class R {
 	public static final class style {
 	}
 	public static final class styleable {
-		public static final int[] LoadingImageView = { 0x7f010053, 0x7f010054, 0x7f010055 };
+		public static final int[] LoadingImageView = { 0x7f010056, 0x7f010057, 0x7f010058 };
 		public static final int LoadingImageView_circleCrop = 2;
 		public static final int LoadingImageView_imageAspectRatio = 1;
 		public static final int LoadingImageView_imageAspectRatioAdjust = 0;
