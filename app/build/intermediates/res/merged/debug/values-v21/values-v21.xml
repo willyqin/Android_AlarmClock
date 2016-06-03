@@ -7,8 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:actionBarSize">55dp</item>
         <item name="android:windowBackground">@android:color/white</item>
-
         <item name="cardview_bgcolor">@android:color/white</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
     </style>
     <style name="AppThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryNight</item>
@@ -18,6 +18,8 @@
         <item name="android:windowBackground">@color/colorBgNight</item>
         <item name="cardview_bgcolor">@color/colorCardNight</item>
         <item name="android:colorControlNormal">@color/colorControlNight</item>
+
+        <item name="android:logo">@drawable/ic_alarm_black_24dp</item>
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

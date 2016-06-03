@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.d("nihao","MainActivity onCreate afterCursor");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setLogo(R.mipmap.ic_launcher);
+        toolbar.setLogo(R.drawable.ic_alarm_white_36dp);
         toolbar.inflateMenu(R.menu.menu_main);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
