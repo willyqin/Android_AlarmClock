@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="navigation_padding_top_default">24dp</dimen>
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#607D8B</item>
-        <item name="colorPrimaryDark">#00000000</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
-        <item name="android:listDivider">@drawable/divider_bg</item>
+    <style name="AppThemeDay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:actionBarSize">55dp</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="cardview_bgcolor">@android:color/white</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:statusBarColor">#00000000</item>
-        <item name="android:editTextColor">#000000</item>
-        <item name="android:actionBarSize">80dp</item>
+    <style name="AppThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorAccent">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="android:actionBarSize">55dp</item>
+        <item name="android:windowBackground">@color/colorBgNight</item>
+        <item name="cardview_bgcolor">@color/colorCardNight</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
     </style>
-    <style name="AppTheme.NoActionBar.Light" parent="AppTheme.NoActionBar">
-        <item name="cardview_bgcolor">#FFFFFF</item>
-        <item name="window_bgcolor">#F5F5F5</item>
-        <item name="toolbar_bgcolor">@color/colorPrimary</item>
-    </style>
-    <style name="AppTheme.NoActionBar.Night" parent="AppTheme.NoActionBar">
-        <item name="cardview_bgcolor">#888888</item>
-        <item name="window_bgcolor">#444444</item>
-        <item name="toolbar_bgcolor">#212121</item>
-    </style>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
     <style name="Base.TextAppearance.AppCompat.Body2" parent="android:TextAppearance.Material.Body2"/>
@@ -247,9 +237,6 @@
     <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/>
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
-    </style>
-    <style name="Color1SwitchStyle">
-        <item name="colorControlActivated">#607D8B</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>

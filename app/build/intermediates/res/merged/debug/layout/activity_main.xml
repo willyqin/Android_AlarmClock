@@ -4,26 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:id="@+id/main_activity"
     tools:context="com.example.han.myalarmclock.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:paddingTop="18dp"
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <TextView
+            android:layout_marginTop="65dp"
+            android:layout_centerHorizontal="true"
+            android:text="暂时没有闹钟"
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/transparent"
+            android:layout_marginTop="65dp"
+            android:layout_below="@id/toolbar"
+            android:id="@+id/recycler_view"
+            android:scrollbars="vertical"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="?attr/colorPrimary"
-             />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

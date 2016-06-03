@@ -22,6 +22,7 @@
         card_view:contentPaddingRight="8dp"
         card_view:contentPaddingBottom="8dp"
         android:clickable="true"
+        card_view:cardBackgroundColor="?attr/cardview_bgcolor"
         android:foreground="?android:attr/selectableItemBackground"
         >
         <RelativeLayout
@@ -45,7 +46,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:theme="@style/Color1SwitchStyle"
                 android:layout_alignParentRight="true"/>
             <TextView
                 android:id="@+id/time_until_text_view"

@@ -42,7 +42,6 @@ import service.AlarmServiceBroadcasetReceiver;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static boolean isNightMode = false;
 
     private MyDataBaseHelper mDataBaseHelper;
     private SQLiteDatabase db;
@@ -96,20 +95,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
-//        WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
-//        localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
+        ThemeUtile.selectTheme(this);
+
+        super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
 
         callAlarmServiceBroadcastReceiver();
 
-//        Log.d("nihao", "MainActivity onCreate1");
         mDataBaseHelper  = new MyDataBaseHelper(this,"Alarm.db",null,1);
         db = mDataBaseHelper.getWritableDatabase();
         alarmList = new ArrayList<Alarm>();
-//        Log.d("nihao","MainActivity onCreate beforeCursor");
         Cursor cursor = db.query("Alarm_Table",null,null,null,null,null,null);
         if (cursor.moveToFirst()){
             do {
@@ -145,7 +142,20 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.d("nihao","MainActivity onCreate afterCursor");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        toolbar.setLogo(R.mipmap.ic_launcher);
+        toolbar.inflateMenu(R.menu.menu_main);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.action_theme:
+                        startActivity(new Intent(MainActivity.this,SelectTheme.class));
+                        break;
+                }
+                return false;
+            }
+        });
+
         emptyView = (TextView)findViewById(R.id.empty_image);
         if (alarmList.size() != 0){
             emptyView.setVisibility(View.INVISIBLE);
@@ -268,53 +278,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 0 , 60000);
 //        Log.d("nihao", "MainActivity onCreate over");
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        switch (id){
-            case  R.id.action_theme:
-                if (isNightMode){
-                    setTheme(R.style.AppTheme_NoActionBar_Light);
-                    isNightMode = false;
-                }else {
-                    setTheme(R.style.AppTheme_NoActionBar_Night);
-                    isNightMode = true;
-                }
-//                setContentView(R.layout.activity_main);
-                TypedValue typedValue = new TypedValue();
-                Resources.Theme theme = getTheme();
-//                theme.resolveAttribute(R.attr.cardview_bgcolor,typedValue,true);
-//                findViewById(R.id.recycler_view).setBackgroundColor(typedValue.data);
-
-                theme.resolveAttribute(R.attr.window_bgcolor, typedValue, true);
-                findViewById(R.id.main_activity).setBackgroundColor(typedValue.data);
-
-                theme.resolveAttribute(R.attr.toolbar_bgcolor, typedValue, true);
-                findViewById(R.id.toolbar).setBackgroundColor(typedValue.data);
-
-
-                break;
-            default:
-                break;
-
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

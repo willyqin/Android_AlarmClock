@@ -76,6 +76,10 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_theme_activity.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\layout\\select_theme_activity.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_view.xml"
     },

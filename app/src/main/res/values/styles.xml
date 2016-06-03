@@ -1,32 +1,24 @@
-<resources>
+<resources>>
 
-    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
-    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
-        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-        <!--<item name="colorPrimary">#607D8B</item>-->
-        <!--<item name="colorPrimaryDark">#506D7B</item>-->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
-        <!--<item name="android:listDivider">@drawable/divider_bg</item>-->
-    <!--</style>-->
 
-    <!--<style name="AppTheme.NoActionBar">-->
-        <!--<item name="windowActionBar">false</item>-->
-        <!--<item name="windowNoTitle">true</item>-->
-    <!--</style>-->
-    <!--<style name="AppTheme.Property">-->
-        <!--<item name="colorPrimary">#607D8B</item>-->
-        <!--<item name="colorPrimaryDark">#607D8B</item>-->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
-        <!--<item name="windowActionBar">true</item>-->
-        <!--<item name="windowNoTitle">true</item>-->
-    <!--</style>-->
+    <style name="AppThemeDay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:actionBarSize">55dp</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
 
-    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+    <style name="AppThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="android:actionBarSize">55dp</item>
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+    </style>
 
-    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
-
-    <!--<style name="Color1SwitchStyle">-->
-        <!--<item name="colorControlActivated">#607D8B</item>-->
-    <!--</style>-->
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">#607D8B</item>
+    </style>
 
 </resources>
