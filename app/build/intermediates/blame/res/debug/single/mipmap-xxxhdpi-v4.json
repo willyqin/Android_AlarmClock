@@ -8,18 +8,6 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_backspace_white_36dp.png",
-        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_backspace_white_36dp.png"
-    },
-    {
-        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_backspace_white_24dp.png",
-        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_backspace_white_24dp.png"
-    },
-    {
-        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_backspace_white_18dp.png",
-        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_backspace_white_18dp.png"
-    },
-    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_save_white_36dp.png",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_save_white_36dp.png"
     }

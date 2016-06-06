@@ -17,10 +17,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppThemeDay" >
-        <activity
-            android:name="com.example.han.myalarmclock.MainActivity"
-            android:theme="@style/AppThemeDay" >
+        android:theme="@style/AppThemeGreen" >
+        <activity android:name="com.example.han.myalarmclock.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

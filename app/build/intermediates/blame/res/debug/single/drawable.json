@@ -1,11 +1,19 @@
 [
     {
-        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
-        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indigo_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\indigo_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\amber_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\amber_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_add_white_24dp.png",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\ic_add_white_24dp.png"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -24,6 +32,14 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\ic_add.png"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\green_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\night_moon.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\night_moon.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\color_drawable.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\color_drawable.xml"
     },
@@ -34,6 +50,22 @@
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\moon_bitmap.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\moon_bitmap.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lime_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\lime_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_gray_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\blue_gray_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\night_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\night_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recyclerview_empty_bg.xml",
@@ -48,6 +80,10 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\gray_drawable.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
     },
@@ -58,6 +94,10 @@
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\fab_background.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\orange_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
@@ -80,6 +120,10 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brown_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\brown_drawable.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
@@ -92,20 +136,48 @@
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cyan_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\cyan_drawable.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\purple_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\purple_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pink_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\pink_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\red_drawable.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yellow_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\yellow_drawable.xml"
+    },
+    {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\blue_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\teal_drawable.xml",
+        "source": "D:\\AndroidCode\\MyAlarmClock\\app\\src\\main\\res\\drawable\\teal_drawable.xml"
     },
     {
         "merged": "D:\\AndroidCode\\MyAlarmClock\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\switch_color.xml",

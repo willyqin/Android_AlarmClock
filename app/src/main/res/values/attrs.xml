@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cardview_bgcolor" format="color|reference"></attr>
+
+    <attr name="window_bgcolor"  format="color|reference"></attr>
+
+    <attr name="toolbar_bgcolor" format="color|reference"></attr>
+
+    <attr name="fab_color" format="color|reference"></attr>
+
+</resources>

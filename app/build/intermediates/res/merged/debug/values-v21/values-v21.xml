@@ -1,25 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="navigation_padding_top_default">24dp</dimen>
-    <style name="AppThemeDay" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <style name="AppThemeAmber" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorAmber</item>
+        <item name="colorAccent">@color/colorAmber</item>
+        <item name="colorPrimaryDark">@color/colorAmber</item>
+        <item name="fab_color">@color/colorAmber</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
         <item name="android:actionBarSize">55dp</item>
-        <item name="android:windowBackground">@android:color/white</item>
-        <item name="cardview_bgcolor">@android:color/white</item>
-        <item name="android:colorControlNormal">@android:color/white</item>
+    </style>
+    <style name="AppThemeBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="fab_color">@color/colorBlue</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeBlueGray" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlueGray</item>
+        <item name="colorAccent">@color/colorBlueGray</item>
+        <item name="colorPrimaryDark">@color/colorBlueGray</item>
+        <item name="fab_color">@color/colorBlueGray</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeBrown" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBrown</item>
+        <item name="colorAccent">@color/colorBrown</item>
+        <item name="colorPrimaryDark">@color/colorBrown</item>
+        <item name="fab_color">@color/colorBrown</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeCyan" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorCyan</item>
+        <item name="colorAccent">@color/colorCyan</item>
+        <item name="colorPrimaryDark">@color/colorCyan</item>
+        <item name="fab_color">@color/colorCyan</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeGray" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorGray</item>
+        <item name="colorAccent">@color/colorGray</item>
+        <item name="colorPrimaryDark">@color/colorGray</item>
+        <item name="fab_color">@color/colorGray</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeGreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+        <item name="fab_color">@color/colorGreen</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeIndigo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorIndigo</item>
+        <item name="colorAccent">@color/colorIndigo</item>
+        <item name="colorPrimaryDark">@color/colorIndigo</item>
+        <item name="fab_color">@color/colorIndigo</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeLime" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorLime</item>
+        <item name="colorAccent">@color/colorLime</item>
+        <item name="colorPrimaryDark">@color/colorLime</item>
+        <item name="fab_color">@color/colorLime</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
     </style>
     <style name="AppThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryNight</item>
         <item name="colorAccent">@color/colorPrimaryNight</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
-        <item name="android:actionBarSize">55dp</item>
+        <item name="fab_color">@color/colorCardNight</item>
         <item name="android:windowBackground">@color/colorBgNight</item>
-        <item name="cardview_bgcolor">@color/colorCardNight</item>
         <item name="android:colorControlNormal">@color/colorControlNight</item>
-
-        <item name="android:logo">@drawable/ic_alarm_black_24dp</item>
+        <item name="cardview_bgcolor">@color/colorCardNight</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeOrange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="fab_color">@color/colorOrange</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemePink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPink</item>
+        <item name="colorAccent">@color/colorPink</item>
+        <item name="colorPrimaryDark">@color/colorPink</item>
+        <item name="fab_color">@color/colorPink</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemePurple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPurple</item>
+        <item name="colorAccent">@color/colorPurple</item>
+        <item name="colorPrimaryDark">@color/colorPurple</item>
+        <item name="fab_color">@color/colorPurple</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorRed</item>
+        <item name="colorAccent">@color/colorRed</item>
+        <item name="colorPrimaryDark">@color/colorRed</item>
+        <item name="fab_color">@color/colorRed</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorWhite</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeTeal" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTeal</item>
+        <item name="colorAccent">@color/colorTeal</item>
+        <item name="colorPrimaryDark">@color/colorTeal</item>
+        <item name="fab_color">@color/colorTeal</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
+    </style>
+    <style name="AppThemeYellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorYellow</item>
+        <item name="colorAccent">@color/colorYellow</item>
+        <item name="colorPrimaryDark">@color/colorYellow</item>
+        <item name="fab_color">@color/colorYellow</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:colorControlNormal">@color/colorControlNight</item>
+        <item name="cardview_bgcolor">@color/colorWhite</item>
+        <item name="android:actionBarSize">55dp</item>
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

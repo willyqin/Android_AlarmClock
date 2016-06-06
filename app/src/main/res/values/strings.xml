@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <item name="alarm_tag" type="id"></item>
     <item name="position_tag" type="id"></item>
+
 </resources>

@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        app:backgroundTint="#607D8B"
+        app:backgroundTint="?attr/fab_color"
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_add_white_24dp"/>
 

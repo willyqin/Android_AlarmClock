@@ -1,7 +1,6 @@
 package com.example.han.myalarmclock;
 
 import android.app.AlertDialog;
-import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -17,7 +16,6 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.text.InputFilter;
 import android.text.Spanned;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,7 +30,6 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -83,14 +80,13 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Calendar calendar1 = Calendar.getInstance();
+        ThemeUtile.selectTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_property_activity);
 
 //        Log.d("nihao", "AlarmPropertyActivity onCreate before init()");
         init();
         setTimer();
-        Calendar calendar2 = Calendar.getInstance();
 //        Log.d("nihao",calendar2.getTimeInMillis() - calendar1.getTimeInMillis() + "");
 
 
