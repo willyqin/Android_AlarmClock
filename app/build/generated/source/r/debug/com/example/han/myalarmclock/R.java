@@ -2282,7 +2282,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int action_mode_bar=0x7f0c0059;
         public static final int action_mode_bar_stub=0x7f0c0058;
         public static final int action_mode_close_button=0x7f0c0041;
-        public static final int action_settings=0x7f0c00b1;
+        public static final int action_presentation=0x7f0c00b1;
         public static final int action_theme=0x7f0c00b2;
         public static final int activity_chooser_view_content=0x7f0c0042;
         public static final int adjust_height=0x7f0c002e;

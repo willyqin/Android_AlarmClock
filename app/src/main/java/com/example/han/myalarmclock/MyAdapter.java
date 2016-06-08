@@ -61,7 +61,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> implem
 //        holder.textView.setText(mData[position]);
         final Alarm tempAlarm = mData.get(position);
         holder.timeTextView.setText(tempAlarm.getAlarmTimeString());
-        holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
+        if (tempAlarm.getAlarmActive()) {
+            holder.timeUntilTextView.setText("还有" + tempAlarm.getTimeUntilNextAlarmMessage());
+        }else {
+            holder.timeUntilTextView.setText("闹钟已关闭");
+        }
         holder.repeatDays.setText(tempAlarm.getDaysString());
         holder.aSwitch.setChecked(tempAlarm.getAlarmActive());
         Integer pos;

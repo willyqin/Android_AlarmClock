@@ -1,17 +1,23 @@
 package service;
 
 import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Message;
 import android.support.annotation.Nullable;
-import android.util.Log;
+import android.support.v7.app.NotificationCompat;
 
 import com.example.han.myalarmclock.Alarm;
+import com.example.han.myalarmclock.AlertActivity;
+import com.example.han.myalarmclock.R;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -21,9 +27,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.TreeSet;
 
-import com.example.han.myalarmclock.AlertActivity;
 import Database.MyDataBaseHelper;
 
 /**
@@ -31,8 +38,13 @@ import Database.MyDataBaseHelper;
  */
 public class AlarmService extends Service {
 
+    private static final String TAG = "AlarmService";
     private MyDataBaseHelper myDataBaseHelper;
     private SQLiteDatabase db;
+    private NotificationManager notificationManager;
+    private Notification notification;
+    private Timer timer;
+    private NotificationCompat.Builder builder;
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -117,13 +129,52 @@ public class AlarmService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-//        Log.d("nihao", "hello");
-        Alarm alarm = getNext();
+        final Alarm alarm = getNext();
+        notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (alarm != null){
-//            Log.d("nihao","!null");
+//            notification = new Notification(R.drawable.ic_alarm_white_36dp,"闹钟已创建",System.currentTimeMillis());
+//            notification.setLatestEventInfo(getApplicationContext(), alarm.getAlarmTimeString(), "还有" + alarm.getTimeUntilNextAlarmMessage(), null);
+            builder = new NotificationCompat.Builder(this);
+            builder.setSmallIcon(R.drawable.ic_alarm_white_36dp);
+            builder.setContentTitle(alarm.getAlarmTimeString());
+            builder.setContentText("还有" + alarm.getTimeUntilNextAlarmMessage());
+            builder.setOngoing(true);
+            builder.setWhen(System.currentTimeMillis());
+            notificationManager.notify(1, builder.build());
             alarm.schedule(getApplicationContext());
+
+            timer = new Timer();
+            final Handler handler = new Handler(){
+                @Override
+                public void handleMessage(Message msg) {
+                    if (msg.what == 0x001){
+                        Alarm mAlarm = getNext();
+                        if (mAlarm != null) {
+                            builder.setSmallIcon(R.drawable.ic_alarm_white_36dp);
+                            builder.setContentTitle(mAlarm.getAlarmTimeString());
+                            builder.setContentText("还有" + mAlarm.getTimeUntilNextAlarmMessage());
+                            builder.setOngoing(true);
+                            builder.setWhen(System.currentTimeMillis());
+                            notificationManager.cancel(1);
+                            notificationManager.notify(1, builder.build());
+                        }else {
+                            timer.cancel();
+                        }
+//                        Log.d(TAG, "handleMessage: run");
+                    }
+                }
+            };
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    Message message = new Message();
+                    message.what = 0x001;
+                    handler.sendMessage(message);
+                }
+            },0,60000);
+
         }else {
-//            Log.d("nihao","null");
+            notificationManager.cancel(1);
             Intent mintent = new Intent(getApplicationContext(), AlertActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, mintent, PendingIntent.FLAG_CANCEL_CURRENT);
             AlarmManager alarmManager = (AlarmManager)getApplicationContext().getSystemService(Context.ALARM_SERVICE);

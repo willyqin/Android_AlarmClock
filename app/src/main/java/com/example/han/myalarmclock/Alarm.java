@@ -5,7 +5,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
-import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -271,7 +270,9 @@ public class Alarm implements Serializable {
 
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 
-        alarmManager.set(AlarmManager.RTC_WAKEUP, getAlarmTime().getTimeInMillis(), pendingIntent);
+//        alarmManager.set(AlarmManager.RTC_WAKEUP, getAlarmTime().getTimeInMillis(), pendingIntent);
+        AlarmManager.AlarmClockInfo info = new AlarmManager.AlarmClockInfo(getAlarmTime().getTimeInMillis(),pendingIntent);
+        alarmManager.setAlarmClock(info,pendingIntent);
 //        Log.d("nihao", "schedule");
 //        Log.d("nihao","闹钟时间" + getAlarmTimeString());
 //        Log.d("nihao","铃声的名字" + getRingToneName());

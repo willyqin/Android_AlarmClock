@@ -622,7 +622,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c0059
 int id action_mode_bar_stub 0x7f0c0058
 int id action_mode_close_button 0x7f0c0041
-int id action_settings 0x7f0c00b1
+int id action_presentation 0x7f0c00b1
 int id action_theme 0x7f0c00b2
 int id activity_chooser_view_content 0x7f0c0042
 int id adjust_height 0x7f0c002e

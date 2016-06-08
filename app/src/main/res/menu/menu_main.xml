@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.han.myalarmclock.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_presentation"
         android:orderInCategory="100"
-        android:title="设置"
+        android:title="演示"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_theme"

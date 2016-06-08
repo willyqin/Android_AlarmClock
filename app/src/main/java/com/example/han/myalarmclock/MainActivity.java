@@ -2,7 +2,6 @@ package com.example.han.myalarmclock;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -16,14 +15,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
-import android.util.TypedValue;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -150,6 +144,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.action_theme:
                         startActivity(new Intent(MainActivity.this,SelectTheme.class));
+                        break;
+                    case R.id.action_presentation:
+                        Alarm alarm = new Alarm();
+                        Intent alertActivityIntent = new Intent(MainActivity.this,AlertActivity.class);
+                        Bundle mBundle = new Bundle();
+                        mBundle.putSerializable("alarm",alarm);
+                        alertActivityIntent.putExtras(mBundle);
+                        alertActivityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(alertActivityIntent);
                         break;
                 }
                 return false;
