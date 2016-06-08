@@ -147,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.action_presentation:
                         Alarm alarm = new Alarm();
+                        alarm.setAlarmText("你好，测试");
                         Intent alertActivityIntent = new Intent(MainActivity.this,AlertActivity.class);
                         Bundle mBundle = new Bundle();
                         mBundle.putSerializable("alarm",alarm);

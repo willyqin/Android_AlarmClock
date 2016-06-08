@@ -29,4 +29,6 @@
     <color name="colorBrown">#795548</color>
     <color name="colorGray">#9E9E9E</color>
     <color name="colorBlueGray">#607D8B</color>
+
+    <color name="colorBlack">#000000</color>
 </resources>

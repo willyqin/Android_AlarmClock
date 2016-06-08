@@ -32,6 +32,8 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD | WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
+        window.setBackgroundDrawableResource(R.drawable.alert_bg);
+        window.setStatusBarColor(getResources().getColor(R.color.transparent));
         setContentView(R.layout.alert_activity_layout);
 
         Bundle bundle = this.getIntent().getExtras();
@@ -39,7 +41,10 @@ public class AlertActivity extends Activity implements View.OnClickListener{
 
         TextView textView =(TextView) findViewById(R.id.alert_textview2);
         textView.setText(alarm.getAlarmText());
+        textView.setBackground(getResources().getDrawable(R.drawable.alert_bg));
+
         editText = (EditText) findViewById(R.id.alert_textview);
+        editText.setBackground(getResources().getDrawable(R.drawable.alert_bg));
         button = (Button) findViewById(R.id.alert_button);
         button.setOnClickListener(this);
 //        Toast.makeText(this,"before media",Toast.LENGTH_LONG).show();

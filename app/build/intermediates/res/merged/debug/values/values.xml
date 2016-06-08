@@ -40,6 +40,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorAmber">#FFC107</color>
     <color name="colorBgNight">#616161</color>
+    <color name="colorBlack">#000000</color>
     <color name="colorBlue">#2196F3</color>
     <color name="colorBlueGray">#607D8B</color>
     <color name="colorBrown">#795548</color>
@@ -340,7 +341,7 @@
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppThemeDay" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorBlack</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:actionBarSize">55dp</item>
         <item name="android:windowBackground">@android:color/white</item>
