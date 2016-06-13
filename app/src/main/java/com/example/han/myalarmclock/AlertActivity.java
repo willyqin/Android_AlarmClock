@@ -36,8 +36,9 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         window.setStatusBarColor(getResources().getColor(R.color.transparent));
         setContentView(R.layout.alert_activity_layout);
 
-        Bundle bundle = this.getIntent().getExtras();
-        alarm = (Alarm) bundle.getSerializable("alarm");
+//        Bundle bundle = this.getIntent().getExtras();
+//        alarm = (Alarm) bundle.getSerializable("alarm");
+        alarm = (Alarm) this.getIntent().getParcelableExtra("alarm");
 
         TextView textView =(TextView) findViewById(R.id.alert_textview2);
         textView.setText(alarm.getAlarmText());

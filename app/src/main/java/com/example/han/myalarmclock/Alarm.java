@@ -5,8 +5,10 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.Log;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -16,7 +18,9 @@ import java.util.List;
 /**
  * Created by Han on 2016/4/13.
  */
-public class Alarm implements Serializable {
+public class Alarm implements Parcelable {
+
+
     public enum Day{
         SUNDAY,
         MONDAY,
@@ -24,9 +28,7 @@ public class Alarm implements Serializable {
         WEDNSDAY,
         THURSDAY,
         FRIDAY,
-        SATURDAY,;
-
-
+        SATURDAY;
         @Override
         public String toString() {
             switch (this.ordinal()){
@@ -47,9 +49,11 @@ public class Alarm implements Serializable {
             }
             return super.toString();
         }
-    }
 
+
+    }
     private int id;
+
     private Boolean alarmActive = true;
     private Calendar alarmTime = Calendar.getInstance();
     private Day[] days = {Day.SUNDAY,Day.MONDAY,Day.TUESDAY,Day.WEDNSDAY,Day.THURSDAY,Day.FRIDAY,Day.SATURDAY};
@@ -59,10 +63,70 @@ public class Alarm implements Serializable {
     private String alarmName;
     private String alarmText = new String("");
     private String ringToneName = "默认铃声";
-
     public Alarm(){
 
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        List<Integer> dayInts = new ArrayList<Integer>();
+        for (Day tempDay : days){
+            dayInts.add(tempDay.ordinal());
+        }
+        dest.writeInt(id);
+        dest.writeByte((byte) (alarmActive ? 1 : 0));
+        dest.writeLong(alarmTime.getTimeInMillis());
+        dest.writeString(alarmTime.getTimeZone().getID());
+        dest.writeList(dayInts);
+        dest.writeString(alarmTonePath);
+        dest.writeByte((byte) (vibrate ? 1 : 0));
+        dest.writeByte((byte) (repeatFlag ? 1 : 0));
+        dest.writeString(alarmName);
+        dest.writeString(alarmText);
+        dest.writeString(ringToneName);
+//        Log.d("nihao", "writeToParcel: ");
+    }
+
+    public static final Parcelable.Creator<Alarm> CREATOR = new Parcelable.Creator<Alarm>(){
+
+        @Override
+        public Alarm createFromParcel(Parcel source) {
+            List<Integer> dayInts = new ArrayList<Integer>();
+            List<Day> days = new ArrayList<>();
+            Alarm mAlarm = new Alarm();
+            mAlarm.id = source.readInt();
+            mAlarm.alarmActive = source.readByte() != 0;
+            mAlarm.alarmTime.setTimeInMillis(source.readLong());
+            mAlarm.alarmTime.getTimeZone().setID(source.readString());
+            source.readList(dayInts, null);
+            mAlarm.alarmTonePath = source.readString();
+            mAlarm.vibrate = source.readByte() != 0;
+            mAlarm.repeatFlag = source.readByte() != 0;
+            mAlarm.alarmName = source.readString();
+            mAlarm.alarmText = source.readString();
+            mAlarm.ringToneName = source.readString();
+            Log.d("nihao", "createFromParcel: 4");
+//            mAlarm.days = dayInts.toArray(new Day[dayInts.size()]);
+//            mAlarm.setDays(dayInts.toArray(new Day[dayInts.size()]));
+            Log.d("nihao", "createFromParcel: 5");
+            for (int temp : dayInts){
+                days.add(Day.values()[temp]);
+            }
+            mAlarm.days = days.toArray(new Day[days.size()]);
+            return mAlarm;
+//            setDays(daysList.toArray(new Day[daysList.size()]));
+        }
+
+        @Override
+        public Alarm[] newArray(int size) {
+            return new Alarm[size];
+        }
+    };
     public void setRingToneName(String ringToneName){
         this.ringToneName = ringToneName;
     }

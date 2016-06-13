@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 0 && resultCode == 1){
-            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+//            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+            Alarm alarm = (Alarm) data.getParcelableExtra("AlarmSaved");
 //            Log.d("nihao","保存的铃声名字" + alarm.getRingToneName());
 //            Log.d("nihao","保存的铃声的path" + alarm.getAlarmTonePath());
             int position = data.getIntExtra("AlarmSavedPosition",-1);
@@ -60,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
         }
         if (requestCode == 1 && resultCode == 1){
             recyclerView.setVisibility(View.VISIBLE);
-            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+//            Alarm alarm = (Alarm)data.getSerializableExtra("AlarmSaved");
+            Alarm alarm = (Alarm) data.getParcelableExtra("AlarmSaved");
 //            Log.d("nihao","保存的铃声名字" + alarm.getRingToneName());
 //            Log.d("nihao", "保存的铃声的path" + alarm.getAlarmTonePath());
             alarmList.add(alarm);                //数据添加 ok
@@ -149,9 +151,7 @@ public class MainActivity extends AppCompatActivity {
                         Alarm alarm = new Alarm();
                         alarm.setAlarmText("你好，测试");
                         Intent alertActivityIntent = new Intent(MainActivity.this,AlertActivity.class);
-                        Bundle mBundle = new Bundle();
-                        mBundle.putSerializable("alarm",alarm);
-                        alertActivityIntent.putExtras(mBundle);
+                        alertActivityIntent.putExtra("alarm", alarm);
                         alertActivityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(alertActivityIntent);
                         break;
@@ -172,10 +172,10 @@ public class MainActivity extends AppCompatActivity {
 //                Log.d("nihao","before MainActivity FAB click");
                 Alarm newAlarm = new Alarm();
 //                Log.d("nihao","after MainActivity FAB click");
-                Bundle data = new Bundle();
-                data.putSerializable("Alarm", newAlarm);
+//                Bundle data = new Bundle();
+//                data.putSerializable("Alarm", newAlarm);
                 Intent intent = new Intent(MainActivity.this, AlarmPropertyActivity.class);
-                intent.putExtras(data);
+                intent.putExtra("Alarm", newAlarm);
                 startActivityForResult(intent, 1);
 //                alarmList.add(newAlarm);
 //                mAdapter.notifyDataSetChanged();
@@ -197,10 +197,10 @@ public class MainActivity extends AppCompatActivity {
         mAdapter.setOnItemClickListener(new MyAdapter.RecyclerViewClickListener() {
             @Override
             public void onItemClick(Alarm alarm, int position) {
-                Bundle data = new Bundle();
-                data.putSerializable("Alarm", alarm);
+//                Bundle data = new Bundle();
+//                data.putSerializable("Alarm", alarm);
                 Intent intent = new Intent(MainActivity.this, AlarmPropertyActivity.class);
-                intent.putExtras(data);
+                intent.putExtra("Alarm", alarm);
                 intent.putExtra("AlarmPosition", position);
                 startActivityForResult(intent, 0);
             }

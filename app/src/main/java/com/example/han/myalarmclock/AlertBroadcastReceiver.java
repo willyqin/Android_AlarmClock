@@ -18,12 +18,12 @@ public class AlertBroadcastReceiver extends BroadcastReceiver {
 
         StaticWakeLock.LockOn(context);
         Bundle bundle = intent.getExtras();
-        Alarm alarm = (Alarm)bundle.getSerializable("alarm");
+        Alarm alarm = (Alarm)bundle.getParcelable("alarm");
 
         Intent alertActivityIntent = new Intent(context,AlertActivity.class);
-        Bundle mBundle = new Bundle();
-        mBundle.putSerializable("alarm",alarm);
-        alertActivityIntent.putExtras(mBundle);
+//        Bundle mBundle = new Bundle();
+//        mBundle.putSerializable("alarm",alarm);
+        alertActivityIntent.putExtra("alarm",alarm);
         alertActivityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(alertActivityIntent);
 

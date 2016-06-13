@@ -120,9 +120,9 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         alarm.setAlarmActive(true);
 //                        Log.d("nihao","保存前的名字" + alarm.getRingToneName());
 //                        Log.d("nihao","保存前的path" + alarm.getAlarmTonePath());
-                        Bundle data = new Bundle();
-                        data.putSerializable("AlarmSaved", alarm);
-                        intent.putExtras(data);
+//                        Bundle data = new Bundle();
+//                        data.putSerializable("AlarmSaved", alarm);
+                        intent.putExtra("AlarmSaved",alarm);
                         intent.putExtra("AlarmSavedPosition", position);
 //                        Log.d("nihao","saved");
                         AlarmPropertyActivity.this.setResult(1, intent);
@@ -207,7 +207,8 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
     private void init(){
         intent = getIntent();
-        alarm = (Alarm) intent.getSerializableExtra("Alarm");
+//        alarm = (Alarm) intent.getSerializableExtra("Alarm");
+        alarm = (Alarm) intent.getParcelableExtra("Alarm");
         ringtoneManager = new RingtoneManager(getApplicationContext());
         ringName = (TextView) findViewById(R.id.ring_name);
 //        Log.d("nihao", "before set ringName Text");
@@ -283,7 +284,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
                         }
                     });
 
-                    alertDialog.setNegativeButton("确定", new DialogInterface.OnClickListener() {
+                    alertDialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             alarm.setAlarmTonePath(tonePath);
@@ -302,7 +303,7 @@ public class AlarmPropertyActivity extends AppCompatActivity{
 
                         }
                     });
-                    alertDialog.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+                    alertDialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             try {
@@ -706,9 +707,9 @@ public class AlarmPropertyActivity extends AppCompatActivity{
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle data = new Bundle();
-                data.putSerializable("AlarmSaved",alarm);
-                intent.putExtras(data);
+//                Bundle data = new Bundle();
+//                data.putSerializable("AlarmSaved",alarm);
+                intent.putExtra("AlarmSaved",alarm);
                 intent.putExtra("AlarmSavedPosition", position);
                 AlarmPropertyActivity.this.setResult(0, intent);
                 AlarmPropertyActivity.this.finish();
