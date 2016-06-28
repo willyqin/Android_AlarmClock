@@ -1,6 +1,7 @@
 package com.example.han.myalarmclock;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,11 +15,16 @@ import android.widget.Toast;
 public class SelectTheme extends AppCompatActivity {
     private Button night,red,pink,purple,indigo,blue,cyan,teal,green,lime,yellow,amber,orange,brown,gray,blueGray;
     private Toolbar toolbar;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ThemeUtile.selectTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select_theme_activity);
+
+        preferences = getSharedPreferences("myClock",MODE_PRIVATE);
+        editor = preferences.edit();
 
         toolbar = (Toolbar) findViewById(R.id.theme_toolbar);
         toolbar.setTitle("选取主题");
@@ -43,6 +49,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDarkNight));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorBgNight));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDarkNight));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Night.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -57,6 +65,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorRed));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorRed));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Red.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -71,6 +81,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorPink));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorPink));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Pink.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -85,6 +97,9 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorPurple));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorPurple));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Purple.ordinal());
+                    editor.commit();
+
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -99,6 +114,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorIndigo));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorIndigo));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Indigo.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -113,6 +130,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorBlue));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorBlue));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Blue.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -127,6 +146,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorCyan));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorCyan));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Cyan.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -141,6 +162,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorTeal));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorTeal));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Teal.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(),"已选择该主题",Toast.LENGTH_SHORT).show();
             }
@@ -155,6 +178,9 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorGreen));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorGreen));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Green.ordinal());
+                    editor.commit();
+
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -169,6 +195,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorLime));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorLime));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Lime.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -183,6 +211,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorYellow));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorYellow));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Yellow.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -197,6 +227,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorAmber));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorAmber));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Amber.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -211,6 +243,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorOrange));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorOrange));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Orange.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -225,6 +259,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorBrown));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorBrown));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Brown.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -239,6 +275,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorGray));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorGray));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.Gray.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }
@@ -253,6 +291,8 @@ public class SelectTheme extends AppCompatActivity {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.colorBlueGray));
                     findViewById(R.id.theme_activity).setBackgroundColor(getResources().getColor(R.color.colorWhite));
                     toolbar.setBackgroundColor(getResources().getColor(R.color.colorBlueGray));
+                    editor.putInt("Theme", ThemeUtile.ThemeType.BlueGray.ordinal());
+                    editor.commit();
                 }
                 Toast.makeText(getApplicationContext(), "已选择该主题", Toast.LENGTH_SHORT).show();
             }

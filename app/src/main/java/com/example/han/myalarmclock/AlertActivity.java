@@ -13,18 +13,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.show.api.ShowApiRequest;
+
+import org.json.JSONObject;
+
 import java.io.IOException;
+import java.util.Date;
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
 
 
 /**
  * Created by Han on 2016/5/15.
  */
 public class AlertActivity extends Activity implements View.OnClickListener{
+    private static final String TAG = "AlertActivity";
     private Alarm alarm;
     private MediaPlayer mediaPlayer;
     private Boolean alarmActive;
     private EditText editText;
     private Button button;
+    private int similarNun;
+    private String stringAlarm;
+    private String stringAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,11 +134,71 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         }
     }
 
+    class RtnTread implements Callable<Integer>{
+
+        @Override
+        public Integer call() throws Exception {
+            String appid = "21010";
+            String secret = "8787a55f33cc48b1bf93532832fee3d4";
+            final String res = new ShowApiRequest("http://route.showapi.com/294-1",appid,secret)
+                    .addTextPara("t1",stringAlarm).addTextPara("t2", stringAlert).post();
+            System.out.println(res);
+
+            Log.d(TAG, res + new Date());
+
+            similarNun = parseJSON(res);
+            Log.d(TAG, "call: similarNum" + similarNun);
+            return similarNun;
+        }
+    }
     private Boolean  isCorrect(){
-        String stringAlarm = alarm.getAlarmText();
-        String stringAlert = editText.getText().toString();
-         return stringAlarm.equals(stringAlert);
+        stringAlarm = alarm.getAlarmText();
+        stringAlert = editText.getText().toString();
 
 
+//        new Thread(){
+//            public void run(){
+//                String appid = "21010";
+//                String secret = "8787a55f33cc48b1bf93532832fee3d4";
+//                final String res = new ShowApiRequest("http://route.showapi.com/294-1",appid,secret)
+//                        .addTextPara("t1",stringAlarm).addTextPara("t2", stringAlert).post();
+//                System.out.println(res);
+//
+//                Log.d(TAG, res + new Date());
+//
+//                similarNun = parseJSON(res);
+//
+//            }
+//        }.start();
+
+        RtnTread rtnTread = new RtnTread();
+        FutureTask<Integer> task = new FutureTask<Integer>(rtnTread);
+
+        new Thread(task).start();
+        try {
+            Log.d(TAG, "isCorrect: " + task.get());
+            return task.get() > 0.5 ? true:false;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return true;
+    }
+
+    private int parseJSON(String jsonData){
+        try{
+            JSONObject jsonObject = new JSONObject(jsonData);
+            String showapi_res_code = jsonObject.getString("showapi_res_code");
+            String showapi_res_error = jsonObject.getString("showapi_res_error");
+            String showapi_res_body = jsonObject.getString("showapi_res_body");
+
+            JSONObject jsonObjectBody = new JSONObject(showapi_res_body);
+            String likeNum = jsonObjectBody.getString("like");
+            Log.d(TAG, "parseJSON: likeNum: " + likeNum);
+            return Double.parseDouble(likeNum) > 0.5 ? 1 : 0;
+        } catch (Exception e){
+            e.printStackTrace();
+            Log.d(TAG, "parseJSON: Exception");
+        }
+        return -1;
     }
 }

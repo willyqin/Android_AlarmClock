@@ -2,6 +2,7 @@ package com.example.han.myalarmclock;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     TextView emptyView;
     RecyclerView.LayoutManager layoutManager;
     List<Alarm> alarmList;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -91,6 +94,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        preferences = getSharedPreferences("myClock",MODE_PRIVATE);
+        editor = preferences.edit();
+
+        ThemeUtile.themeType = ThemeUtile.ThemeType.values()[preferences.getInt("Theme", 3)];
 
         ThemeUtile.selectTheme(this);
 
