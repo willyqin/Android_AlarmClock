@@ -155,22 +155,6 @@ public class AlertActivity extends Activity implements View.OnClickListener{
         stringAlarm = alarm.getAlarmText();
         stringAlert = editText.getText().toString();
 
-
-//        new Thread(){
-//            public void run(){
-//                String appid = "21010";
-//                String secret = "8787a55f33cc48b1bf93532832fee3d4";
-//                final String res = new ShowApiRequest("http://route.showapi.com/294-1",appid,secret)
-//                        .addTextPara("t1",stringAlarm).addTextPara("t2", stringAlert).post();
-//                System.out.println(res);
-//
-//                Log.d(TAG, res + new Date());
-//
-//                similarNun = parseJSON(res);
-//
-//            }
-//        }.start();
-
         RtnTread rtnTread = new RtnTread();
         FutureTask<Integer> task = new FutureTask<Integer>(rtnTread);
 
